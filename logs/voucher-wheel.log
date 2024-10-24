@@ -5485,3 +5485,7 @@ NameError: name 'WithdrawForm' is not defined
 2024-10-24 16:28:47,093 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 3479
 2024-10-24 16:29:08,813 INFO basehttp: "GET /register HTTP/1.1" 200 4366
 2024-10-24 16:29:17,801 INFO basehttp: "GET /register HTTP/1.1" 200 4366
+2024-10-24 16:32:40,320 INFO autoreload: C:\Users\Administrator\Desktop\spin-vantage\app\models.py changed, reloading.
+2024-10-24 16:32:41,162 INFO autoreload: Watching for file changes with StatReloader
+2024-10-24 16:32:55,662 INFO autoreload: C:\Users\Administrator\Desktop\spin-vantage\app\models.py changed, reloading.
+2024-10-24 16:32:56,569 INFO autoreload: Watching for file changes with StatReloader
