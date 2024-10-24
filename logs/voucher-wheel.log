@@ -5371,3 +5371,117 @@ NameError: name 'WithdrawForm' is not defined
 2024-10-24 14:58:01,087 INFO basehttp: "GET /static/img/logo.svg HTTP/1.1" 304 0
 2024-10-24 14:58:13,815 INFO basehttp: "GET /deposit HTTP/1.1" 200 4709
 2024-10-24 14:58:15,526 INFO basehttp: "GET /static/img/logo.svg HTTP/1.1" 304 0
+2024-10-24 16:12:53,105 INFO autoreload: Watching for file changes with StatReloader
+2024-10-24 16:13:09,452 INFO basehttp: "GET / HTTP/1.1" 200 3789
+2024-10-24 16:13:09,497 INFO basehttp: "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+2024-10-24 16:13:09,506 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 200 1127
+2024-10-24 16:13:09,509 INFO basehttp: "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+2024-10-24 16:13:09,515 INFO basehttp: "GET /static/img/logo.svg HTTP/1.1" 200 124247
+2024-10-24 16:13:09,530 INFO basehttp: "GET /static/js/confetti.js HTTP/1.1" 200 7222
+2024-10-24 16:13:09,534 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 200 4868
+2024-10-24 16:13:09,588 INFO basehttp: "GET /static/img/wheel.png HTTP/1.1" 200 407425
+2024-10-24 16:13:09,595 INFO basehttp: "GET /static/img/outwheel.png HTTP/1.1" 200 440976
+2024-10-24 16:13:09,596 INFO basehttp: "GET /static/media/roulette.mp3 HTTP/1.1" 200 95433
+2024-10-24 16:13:09,639 WARNING log: Not Found: /favicon.ico
+2024-10-24 16:13:09,640 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 3475
+2024-10-24 16:19:06,846 INFO basehttp: "GET / HTTP/1.1" 200 3789
+2024-10-24 16:19:07,178 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 200 1127
+2024-10-24 16:19:07,314 INFO basehttp: "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+2024-10-24 16:19:08,740 INFO basehttp: "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+2024-10-24 16:19:08,816 INFO basehttp: "GET /static/img/logo.svg HTTP/1.1" 200 124247
+2024-10-24 16:19:09,084 INFO basehttp: "GET /static/js/confetti.js HTTP/1.1" 200 7222
+2024-10-24 16:19:09,430 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 200 4868
+2024-10-24 16:19:09,948 INFO basehttp: "GET /static/media/roulette.mp3 HTTP/1.1" 200 95433
+2024-10-24 16:19:10,109 INFO basehttp: "GET /static/img/wheel.png HTTP/1.1" 200 407425
+2024-10-24 16:19:12,567 INFO basehttp: "GET /static/img/outwheel.png HTTP/1.1" 200 440976
+2024-10-24 16:19:13,832 WARNING log: Not Found: /favicon.ico
+2024-10-24 16:19:13,833 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 3479
+2024-10-24 16:19:36,678 INFO basehttp: "GET / HTTP/1.1" 200 3789
+2024-10-24 16:20:11,748 INFO basehttp: "GET / HTTP/1.1" 200 3789
+2024-10-24 16:20:12,001 INFO basehttp: "GET /static/admin/css/base.css HTTP/1.1" 304 0
+2024-10-24 16:20:12,629 INFO basehttp: "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+2024-10-24 16:20:30,036 INFO basehttp: "GET /admin HTTP/1.1" 301 0
+2024-10-24 16:20:30,395 INFO basehttp: "GET /admin/ HTTP/1.1" 302 0
+2024-10-24 16:20:30,788 INFO basehttp: "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2215
+2024-10-24 16:20:31,068 INFO basehttp: "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+2024-10-24 16:20:31,068 INFO basehttp: "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2271
+2024-10-24 16:20:31,068 INFO basehttp: "GET /static/admin/css/login.css HTTP/1.1" 200 939
+2024-10-24 16:20:31,238 INFO basehttp: "GET /static/admin/css/responsive.css HTTP/1.1" 200 18545
+2024-10-24 16:20:31,662 INFO basehttp: "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+2024-10-24 16:20:31,678 INFO basehttp: "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+2024-10-24 16:20:42,293 INFO basehttp: "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+2024-10-24 16:20:42,679 INFO basehttp: "GET /admin/ HTTP/1.1" 200 4790
+2024-10-24 16:20:42,898 INFO basehttp: "GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+2024-10-24 16:20:43,494 INFO basehttp: "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+2024-10-24 16:20:43,497 INFO basehttp: "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+2024-10-24 16:20:43,514 INFO basehttp: "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+2024-10-24 16:20:52,965 INFO basehttp: "GET /admin/logout/ HTTP/1.1" 200 1530
+2024-10-24 16:20:55,459 INFO basehttp: "GET /admin/ HTTP/1.1" 302 0
+2024-10-24 16:20:55,850 INFO basehttp: "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2215
+2024-10-24 16:21:01,024 INFO basehttp: "GET / HTTP/1.1" 200 3789
+2024-10-24 16:21:08,791 INFO basehttp: "POST / HTTP/1.1" 200 3874
+2024-10-24 16:21:14,275 INFO basehttp: "GET /admin/ HTTP/1.1" 302 0
+2024-10-24 16:21:14,630 INFO basehttp: "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2215
+2024-10-24 16:21:14,899 INFO basehttp: "GET /static/admin/css/base.css HTTP/1.1" 304 0
+2024-10-24 16:21:15,481 INFO basehttp: "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+2024-10-24 16:21:24,599 INFO basehttp: "POST /admin/login/?next=/admin/ HTTP/1.1" 200 2384
+2024-10-24 16:22:56,966 INFO basehttp: "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+2024-10-24 16:22:57,334 INFO basehttp: "GET /admin/ HTTP/1.1" 200 4790
+2024-10-24 16:22:57,579 INFO basehttp: "GET /static/admin/css/base.css HTTP/1.1" 304 0
+2024-10-24 16:22:57,758 INFO basehttp: "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+2024-10-24 16:22:57,760 INFO basehttp: "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+2024-10-24 16:22:57,760 INFO basehttp: "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+2024-10-24 16:22:58,521 INFO basehttp: "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+2024-10-24 16:22:58,521 INFO basehttp: "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+2024-10-24 16:22:58,912 INFO basehttp: "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+2024-10-24 16:22:58,928 INFO basehttp: "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+2024-10-24 16:22:58,928 INFO basehttp: "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+2024-10-24 16:22:58,928 INFO basehttp: "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+2024-10-24 16:22:59,078 INFO basehttp: "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+2024-10-24 16:23:03,978 INFO basehttp: "GET /admin/auth/user/ HTTP/1.1" 200 8937
+2024-10-24 16:23:04,255 INFO basehttp: "GET /static/admin/css/changelists.css HTTP/1.1" 200 6874
+2024-10-24 16:23:04,271 INFO basehttp: "GET /static/admin/js/core.js HTTP/1.1" 200 5698
+2024-10-24 16:23:04,286 INFO basehttp: "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2024-10-24 16:23:04,288 INFO basehttp: "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+2024-10-24 16:23:04,411 INFO basehttp: "GET /static/admin/js/actions.js HTTP/1.1" 200 7664
+2024-10-24 16:23:04,411 INFO basehttp: "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 5984
+2024-10-24 16:23:04,430 INFO basehttp: "GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+2024-10-24 16:23:04,450 INFO basehttp: "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+2024-10-24 16:23:04,650 INFO basehttp: "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+2024-10-24 16:23:04,659 INFO basehttp: "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+2024-10-24 16:23:05,084 INFO basehttp: "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+2024-10-24 16:23:05,116 INFO basehttp: "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+2024-10-24 16:23:05,939 INFO basehttp: "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+2024-10-24 16:23:05,941 INFO basehttp: "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+2024-10-24 16:23:17,541 INFO basehttp: "GET /admin/logout/ HTTP/1.1" 200 1530
+2024-10-24 16:23:21,491 INFO basehttp: "GET / HTTP/1.1" 200 3789
+2024-10-24 16:28:36,556 INFO basehttp: code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03@Ç\x9a3\x9d¦Bá\x13\x04\x9c´Bª$-I=Ò\x0f,HÐ|')
+2024-10-24 16:28:36,556 ERROR basehttp: You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2024-10-24 16:28:36,962 INFO basehttp: code 400, message Bad request version ('ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\xadºº\x00\x00\x00')
+2024-10-24 16:28:36,978 ERROR basehttp: You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2024-10-24 16:28:37,243 INFO basehttp: code 400, message Bad request version ('?\x86')
+2024-10-24 16:28:37,259 ERROR basehttp: You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2024-10-24 16:28:37,416 INFO basehttp: code 400, message Bad request version ('Ô!y\x02Ûìvva\x89þÄ\x14wÍ[')
+2024-10-24 16:28:37,416 ERROR basehttp: You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2024-10-24 16:28:37,713 INFO basehttp: code 400, message Bad request version ('1\x92¢\x88')
+2024-10-24 16:28:37,713 ERROR basehttp: You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2024-10-24 16:28:38,401 INFO basehttp: "GET / HTTP/1.1" 200 3789
+2024-10-24 16:28:41,168 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 200 1127
+2024-10-24 16:28:41,497 INFO basehttp: "GET /static/js/confetti.js HTTP/1.1" 200 7222
+2024-10-24 16:28:41,497 INFO basehttp: "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+2024-10-24 16:28:41,497 INFO basehttp: "GET /static/img/logo.svg HTTP/1.1" 200 124247
+2024-10-24 16:28:41,497 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 200 4868
+2024-10-24 16:28:42,029 INFO basehttp: "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+2024-10-24 16:28:44,608 INFO basehttp: "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+2024-10-24 16:28:45,218 INFO basehttp: "GET /static/media/roulette.mp3 HTTP/1.1" 200 95433
+2024-10-24 16:28:45,264 INFO basehttp: "GET /static/img/wheel.png HTTP/1.1" 200 407425
+2024-10-24 16:28:45,859 INFO basehttp: "GET /static/img/outwheel.png HTTP/1.1" 200 440976
+2024-10-24 16:28:47,093 WARNING log: Not Found: /favicon.ico
+2024-10-24 16:28:47,093 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 3479
+2024-10-24 16:29:08,813 INFO basehttp: "GET /register HTTP/1.1" 200 4366
+2024-10-24 16:29:17,801 INFO basehttp: "GET /register HTTP/1.1" 200 4366
