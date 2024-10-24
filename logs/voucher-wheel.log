@@ -5371,3 +5371,24 @@ NameError: name 'WithdrawForm' is not defined
 2024-10-24 14:58:01,087 INFO basehttp: "GET /static/img/logo.svg HTTP/1.1" 304 0
 2024-10-24 14:58:13,815 INFO basehttp: "GET /deposit HTTP/1.1" 200 4709
 2024-10-24 14:58:15,526 INFO basehttp: "GET /static/img/logo.svg HTTP/1.1" 304 0
+2024-10-24 15:18:45,739 INFO basehttp: "GET /dashboard HTTP/1.1" 200 6156
+2024-10-24 15:18:45,795 INFO basehttp: "GET /static/img/logo.svg HTTP/1.1" 304 0
+2024-10-24 15:18:52,162 INFO views: Draw_new with POST
+2024-10-24 15:18:52,184 ERROR draw: UniqueCode matching query does not exist.
+2024-10-24 15:18:52,205 INFO basehttp: "POST /draw HTTP/1.1" 200 5467
+2024-10-24 15:18:52,513 WARNING log: Not Found: /favicon.ico
+2024-10-24 15:18:52,529 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 3479
+2024-10-24 15:19:01,409 INFO views: Draw with GET for id 20
+2024-10-24 15:19:01,411 INFO views: Prize 12, NOTHING, False
+2024-10-24 15:19:01,423 INFO basehttp: "GET /20 HTTP/1.1" 200 5862
+2024-10-24 15:19:03,059 INFO basehttp: "GET /dashboard?csrfmiddlewaretoken=60pjWv39aUOtQb2AaxpXB1M1MC9b1GOEUZWVFp0blJ9wv3R4bHypfjczYvqMbE9m HTTP/1.1" 200 6156
+2024-10-24 15:19:06,557 INFO views: Draw_new with POST
+2024-10-24 15:19:06,571 ERROR draw: UniqueCode matching query does not exist.
+2024-10-24 15:19:06,581 INFO basehttp: "POST /draw HTTP/1.1" 200 5466
+2024-10-24 15:19:06,751 WARNING log: Not Found: /favicon.ico
+2024-10-24 15:19:06,759 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 3479
+2024-10-24 15:19:15,677 INFO views: Draw with GET for id 21
+2024-10-24 15:19:15,683 INFO views: Prize 1, 10% OFF, True
+2024-10-24 15:19:15,700 INFO basehttp: "GET /21 HTTP/1.1" 200 6383
+2024-10-24 15:20:55,648 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\models.py changed, reloading.
+2024-10-24 15:20:58,096 INFO autoreload: Watching for file changes with StatReloader
