@@ -5392,3 +5392,6 @@ NameError: name 'WithdrawForm' is not defined
 2024-10-24 15:19:15,700 INFO basehttp: "GET /21 HTTP/1.1" 200 6383
 2024-10-24 15:20:55,648 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\models.py changed, reloading.
 2024-10-24 15:20:58,096 INFO autoreload: Watching for file changes with StatReloader
+2024-10-24 15:22:16,037 INFO views: Draw with GET for id 21
+2024-10-24 15:22:16,041 INFO views: Prize 1, 10% OFF, True
+2024-10-24 15:22:16,118 INFO basehttp: "GET /21 HTTP/1.1" 200 6392
