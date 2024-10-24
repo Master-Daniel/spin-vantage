@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load widget_tweaks %}
+{% load i18n %} {# Load the translation library #}
+
+{% block content %}
+{% if form.errors and not form.non_field_errors %}
+<p class="errornote">
+    {% if form.errors.items|length == 1 %}{% translate "Please correct the error below." %}{% else %}{% translate
+    "Please correct the errors below." %}{% endif %}
+</p>
+{% endif %}
+
+{% if form.non_field_errors %}
+{% for error in form.non_field_errors %}
+<p class="errornote">
+    {{ error }}
+</p>
+{% endfor %}
+{% endif %}
+
+<div id="content-main">
+    <form action="" method="post" id="register-form">
+        {% csrf_token %}
+        {% for field in form %}
+        <div class="form-group row">
+            <label style="color: white" for="{{ field.id_for_label }}">{{ field.label }}:</label>
+            {{ field|add_class:'form-control form-control-lg' }}
+            {% if field.errors %}
+            <div class="text-danger" role="alert">{{ field.errors.0 }}</div>
+            {% endif %}
+        </div>
+        {% endfor %}
+        <div class="form-group row">
+            <input type="submit" class="btn btn-block" value="{% translate 'Login' %}">
+        </div>
+    </form>
+    <p class="text-white">Don't have an account? <a href="/register">Register</a></p>
+</div>
+{% endblock %}
