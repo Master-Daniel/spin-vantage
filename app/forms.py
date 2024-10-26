@@ -27,6 +27,11 @@ class DrawForm(forms.ModelForm):
         cleaned_data = super().clean()
         code = cleaned_data.get("code")
 
+class ForgottenPasswordForm(forms.ModelForm):
+    class Meta:
+        model = User
+        fields = ('email',)
+
 class RegisterForm(forms.ModelForm):
     username = forms.CharField(max_length=150, required=True, widget=forms.TextInput(attrs={'class': 'form-control form-control-lg'}))
     password = forms.CharField(widget=forms.PasswordInput(attrs={'class': 'form-control form-control-lg'}))

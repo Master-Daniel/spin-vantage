@@ -5395,3 +5395,749 @@ NameError: name 'WithdrawForm' is not defined
 2024-10-24 15:22:16,037 INFO views: Draw with GET for id 21
 2024-10-24 15:22:16,041 INFO views: Prize 1, 10% OFF, True
 2024-10-24 15:22:16,118 INFO basehttp: "GET /21 HTTP/1.1" 200 6392
+2024-10-25 12:45:11,943 INFO autoreload: Watching for file changes with StatReloader
+2024-10-25 12:45:20,563 INFO basehttp: "GET / HTTP/1.1" 200 3515
+2024-10-25 12:45:20,846 INFO basehttp: "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+2024-10-25 12:45:20,846 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 200 1055
+2024-10-25 12:45:20,846 INFO basehttp: "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+2024-10-25 12:45:20,846 INFO basehttp: "GET /static/img/logo.svg HTTP/1.1" 200 124204
+2024-10-25 12:45:21,826 INFO basehttp: "GET /static/js/confetti.js HTTP/1.1" 200 7222
+2024-10-25 12:45:21,826 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 200 4688
+2024-10-25 12:45:22,051 INFO basehttp: "GET /static/media/roulette.mp3 HTTP/1.1" 200 95433
+2024-10-25 12:45:22,116 WARNING log: Not Found: /favicon.ico
+2024-10-25 12:45:22,116 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 3479
+2024-10-25 12:45:45,488 ERROR log: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 470, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\app\views.py", line 109, in login
+    return render(request, 'authentication/login.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader_tags.py", line 103, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 193, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 531, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 14: 'static'. Did you forget to register or load this tag?
+2024-10-25 12:45:45,664 ERROR basehttp: "GET / HTTP/1.1" 500 169373
+2024-10-25 12:46:57,235 INFO basehttp: "GET / HTTP/1.1" 200 4201
+2024-10-25 12:46:57,292 WARNING basehttp: "GET /static/js/master.js HTTP/1.1" 404 1799
+2024-10-25 12:46:57,346 WARNING log: Not Found: /imgs/wheel.png
+2024-10-25 12:46:57,349 WARNING basehttp: "GET /imgs/wheel.png HTTP/1.1" 404 3488
+2024-10-25 12:52:22,349 INFO basehttp: "GET / HTTP/1.1" 200 4204
+2024-10-25 12:52:22,411 WARNING basehttp: "GET /static/js/master.js HTTP/1.1" 404 1799
+2024-10-25 12:52:22,462 INFO basehttp: "GET /static/img/wheel.png HTTP/1.1" 200 407425
+2024-10-25 12:54:53,219 INFO basehttp: "GET / HTTP/1.1" 200 4204
+2024-10-25 12:54:53,274 WARNING basehttp: "GET /static/js/master.js HTTP/1.1" 404 1799
+2024-10-25 12:58:38,874 INFO basehttp: "GET / HTTP/1.1" 200 4204
+2024-10-25 12:58:38,928 WARNING basehttp: "GET /static/js/master.js HTTP/1.1" 404 1799
+2024-10-25 13:02:20,805 INFO basehttp: "GET / HTTP/1.1" 200 4204
+2024-10-25 13:02:20,855 WARNING basehttp: "GET /static/js/master.js HTTP/1.1" 404 1799
+2024-10-25 13:05:14,947 INFO basehttp: "GET / HTTP/1.1" 200 4204
+2024-10-25 13:06:24,288 INFO basehttp: "GET / HTTP/1.1" 200 4213
+2024-10-25 13:06:24,340 WARNING basehttp: "GET /static/js/master.js HTTP/1.1" 404 1799
+2024-10-25 13:06:38,671 INFO basehttp: "GET / HTTP/1.1" 200 4222
+2024-10-25 13:06:38,726 WARNING basehttp: "GET /static/js/master.js HTTP/1.1" 404 1799
+2024-10-25 13:06:46,278 INFO basehttp: "GET / HTTP/1.1" 200 4213
+2024-10-25 13:06:46,333 WARNING basehttp: "GET /static/js/master.js HTTP/1.1" 404 1799
+2024-10-25 13:08:23,938 INFO basehttp: "GET / HTTP/1.1" 200 4170
+2024-10-25 13:08:23,990 WARNING basehttp: "GET /static/css/bootstrap.min.css HTTP/1.1" 404 1826
+2024-10-25 13:08:24,033 WARNING basehttp: "GET /static/js/master.js HTTP/1.1" 404 1799
+2024-10-25 13:08:25,227 INFO basehttp: "GET / HTTP/1.1" 200 4170
+2024-10-25 13:08:25,278 WARNING basehttp: "GET /static/css/bootstrap.min.css HTTP/1.1" 404 1826
+2024-10-25 13:08:25,304 WARNING basehttp: "GET /static/js/master.js HTTP/1.1" 404 1799
+2024-10-25 13:08:41,523 INFO autoreload: Watching for file changes with StatReloader
+2024-10-25 13:08:43,923 INFO basehttp: "GET / HTTP/1.1" 200 4170
+2024-10-25 13:08:43,988 WARNING basehttp: "GET /static/css/bootstrap.min.css HTTP/1.1" 404 1826
+2024-10-25 13:08:43,994 WARNING basehttp: "GET /static/js/master.js HTTP/1.1" 404 1799
+2024-10-25 13:09:04,402 INFO basehttp: "GET / HTTP/1.1" 200 4170
+2024-10-25 13:09:06,546 WARNING basehttp: "GET /static/css/bootstrap.min.css HTTP/1.1" 404 1826
+2024-10-25 15:45:27,710 WARNING basehttp: "GET /static/css/bootstrap.min.css HTTP/1.1" 404 1826
+2024-10-25 15:45:28,986 WARNING basehttp: "GET /static/css/bootstrap.min.css HTTP/1.1" 404 1826
+2024-10-25 15:46:20,770 WARNING basehttp: "GET /static/css/bootstrap.min.css HTTP/1.1" 404 1826
+2024-10-25 15:46:30,599 WARNING basehttp: "GET /static/css/bootstrap.min.css HTTP/1.1" 404 1826
+2024-10-25 15:46:31,972 WARNING basehttp: "GET /static/css/bootstrap.min.css HTTP/1.1" 404 1826
+2024-10-25 15:46:41,626 INFO autoreload: Watching for file changes with StatReloader
+2024-10-25 15:46:44,244 WARNING basehttp: "GET /static/css/bootstrap.min.css HTTP/1.1" 404 1826
+2024-10-25 15:47:16,676 INFO basehttp: "GET / HTTP/1.1" 200 4049
+2024-10-25 15:47:16,722 WARNING basehttp: "GET /static/js/master.js HTTP/1.1" 404 1799
+2024-10-25 15:47:17,619 INFO basehttp: "GET / HTTP/1.1" 200 4049
+2024-10-25 15:47:17,676 WARNING basehttp: "GET /static/js/master.js HTTP/1.1" 404 1799
+2024-10-25 15:47:19,129 INFO basehttp: "GET / HTTP/1.1" 200 4049
+2024-10-25 15:47:19,178 WARNING basehttp: "GET /static/js/master.js HTTP/1.1" 404 1799
+2024-10-25 15:47:20,494 INFO basehttp: "GET / HTTP/1.1" 200 4049
+2024-10-25 15:47:20,546 WARNING basehttp: "GET /static/js/master.js HTTP/1.1" 404 1799
+2024-10-25 15:47:32,267 INFO basehttp: "GET / HTTP/1.1" 200 4058
+2024-10-25 15:47:34,717 INFO basehttp: "GET / HTTP/1.1" 200 4058
+2024-10-25 15:47:45,516 INFO basehttp: "GET / HTTP/1.1" 200 4049
+2024-10-25 15:47:45,560 WARNING basehttp: "GET /static/css/bootstrap.min.css HTTP/1.1" 404 1826
+2024-10-25 15:48:43,423 INFO autoreload: Watching for file changes with StatReloader
+2024-10-25 15:48:46,134 INFO basehttp: "GET / HTTP/1.1" 200 4049
+2024-10-25 15:48:46,204 WARNING basehttp: "GET /static/css/bootstrap.min.css HTTP/1.1" 404 1826
+2024-10-25 15:54:09,086 INFO autoreload: Watching for file changes with StatReloader
+2024-10-25 15:54:12,220 INFO basehttp: "GET / HTTP/1.1" 200 4049
+2024-10-25 15:54:12,532 INFO basehttp: "GET /static/css/bootstrap.min.css HTTP/1.1" 200 160403
+2024-10-25 15:55:19,155 INFO basehttp: "GET / HTTP/1.1" 200 4049
+2024-10-25 15:55:21,573 INFO basehttp: "GET / HTTP/1.1" 200 4049
+2024-10-25 15:55:22,325 INFO basehttp: "GET / HTTP/1.1" 200 4049
+2024-10-25 15:55:22,961 INFO basehttp: "GET / HTTP/1.1" 200 4049
+2024-10-25 15:55:23,639 INFO basehttp: "GET / HTTP/1.1" 200 4049
+2024-10-25 15:55:23,812 INFO basehttp: "GET / HTTP/1.1" 200 4049
+2024-10-25 15:55:24,026 INFO basehttp: "GET / HTTP/1.1" 200 4049
+2024-10-25 15:59:16,517 INFO basehttp: "GET / HTTP/1.1" 200 4867
+2024-10-25 16:00:43,157 INFO autoreload: Watching for file changes with StatReloader
+2024-10-25 16:00:44,287 INFO basehttp: "GET / HTTP/1.1" 200 4867
+2024-10-25 16:00:46,410 INFO basehttp: "GET / HTTP/1.1" 200 4867
+2024-10-25 16:00:49,033 INFO basehttp: "GET / HTTP/1.1" 200 4867
+2024-10-25 16:03:24,017 INFO autoreload: Watching for file changes with StatReloader
+2024-10-25 16:04:01,750 INFO basehttp: "GET / HTTP/1.1" 200 4929
+2024-10-25 16:04:01,931 INFO basehttp: "GET /static/css/spinner.css HTTP/1.1" 200 7925
+2024-10-25 16:04:01,956 INFO basehttp: "GET /static/css/styles_.css HTTP/1.1" 200 17326
+2024-10-25 16:05:13,842 INFO basehttp: "GET / HTTP/1.1" 200 4873
+2024-10-25 16:05:26,782 INFO basehttp: "POST / HTTP/1.1" 302 0
+2024-10-25 16:05:26,844 INFO basehttp: "GET /dashboard HTTP/1.1" 200 6162
+2024-10-25 16:05:26,953 INFO basehttp: "GET /static/img/logo.svg HTTP/1.1" 304 0
+2024-10-25 16:05:27,128 INFO basehttp: "GET /static/img/outwheel.png HTTP/1.1" 200 440976
+2024-10-25 16:05:33,155 INFO basehttp: "POST /logout HTTP/1.1" 302 0
+2024-10-25 16:05:33,194 INFO basehttp: "GET / HTTP/1.1" 200 4873
+2024-10-25 16:11:40,731 INFO basehttp: "GET / HTTP/1.1" 200 4864
+2024-10-25 16:11:40,848 INFO basehttp: "GET /static/js/master.js HTTP/1.1" 200 119
+2024-10-25 16:12:26,576 INFO basehttp: "GET / HTTP/1.1" 200 4856
+2024-10-25 16:12:33,041 INFO basehttp: "GET / HTTP/1.1" 200 4856
+2024-10-25 16:12:33,958 INFO basehttp: "GET / HTTP/1.1" 200 4856
+2024-10-25 16:12:38,527 INFO basehttp: "GET /register HTTP/1.1" 200 5023
+2024-10-25 16:13:04,294 INFO basehttp: "GET /register HTTP/1.1" 200 5554
+2024-10-25 16:13:27,683 ERROR log: Internal Server Error: /register
+Traceback (most recent call last):
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\core\handlers\base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\core\handlers\base.py", line 309, in check_response
+    raise ValueError(
+ValueError: The view app.views.register didn't return an HttpResponse object. It returned None instead.
+2024-10-25 16:13:27,696 ERROR basehttp: "POST /register HTTP/1.1" 500 81264
+2024-10-25 16:14:16,961 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-25 16:14:21,286 INFO autoreload: Watching for file changes with StatReloader
+2024-10-25 16:14:29,612 INFO basehttp: "POST /register HTTP/1.1" 200 5930
+2024-10-25 16:15:28,863 INFO basehttp: "POST /register HTTP/1.1" 200 5932
+2024-10-25 16:16:14,705 INFO basehttp: "GET /admin HTTP/1.1" 301 0
+2024-10-25 16:16:14,783 INFO basehttp: "GET /admin/ HTTP/1.1" 302 0
+2024-10-25 16:16:14,847 INFO basehttp: "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2215
+2024-10-25 16:16:15,280 INFO basehttp: "GET /static/admin/css/responsive.css HTTP/1.1" 200 18545
+2024-10-25 16:16:15,317 INFO basehttp: "GET /static/admin/css/login.css HTTP/1.1" 200 939
+2024-10-25 16:16:15,320 INFO basehttp: "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2271
+2024-10-25 16:16:15,348 INFO basehttp: "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+2024-10-25 16:16:15,455 INFO basehttp: "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+2024-10-25 16:16:15,458 INFO basehttp: "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+2024-10-25 16:16:24,969 INFO basehttp: "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+2024-10-25 16:16:25,045 INFO basehttp: "GET /admin/ HTTP/1.1" 200 7433
+2024-10-25 16:16:25,101 INFO basehttp: "GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+2024-10-25 16:16:25,134 INFO basehttp: "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+2024-10-25 16:16:25,137 INFO basehttp: "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+2024-10-25 16:16:25,142 INFO basehttp: "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+2024-10-25 16:16:25,225 INFO basehttp: "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+2024-10-25 16:16:35,804 INFO basehttp: "GET /admin/auth/user/ HTTP/1.1" 200 10546
+2024-10-25 16:16:35,867 INFO basehttp: "GET /static/admin/css/changelists.css HTTP/1.1" 200 6874
+2024-10-25 16:16:35,874 INFO basehttp: "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2024-10-25 16:16:35,882 INFO basehttp: "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+2024-10-25 16:16:35,887 INFO basehttp: "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+2024-10-25 16:16:35,902 INFO basehttp: "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 5984
+2024-10-25 16:16:35,914 INFO basehttp: "GET /static/admin/js/actions.js HTTP/1.1" 200 7664
+2024-10-25 16:16:35,914 INFO basehttp: "GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+2024-10-25 16:16:35,918 INFO basehttp: "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+2024-10-25 16:16:35,936 INFO basehttp: "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+2024-10-25 16:16:35,936 INFO basehttp: "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+2024-10-25 16:16:35,968 INFO basehttp: "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+2024-10-25 16:16:35,986 INFO basehttp: "GET /static/admin/js/core.js HTTP/1.1" 200 5698
+2024-10-25 16:16:36,007 INFO basehttp: "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+2024-10-25 16:16:36,078 INFO basehttp: "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+2024-10-25 16:16:36,082 INFO basehttp: "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+2024-10-25 16:16:43,804 INFO basehttp: "GET /admin/logout/ HTTP/1.1" 200 1530
+2024-10-25 16:16:48,117 INFO basehttp: "GET / HTTP/1.1" 200 4858
+2024-10-25 16:16:52,548 INFO basehttp: "GET /register HTTP/1.1" 200 5556
+2024-10-25 16:17:12,059 INFO basehttp: "POST /register HTTP/1.1" 302 0
+2024-10-25 16:17:12,086 INFO basehttp: "GET / HTTP/1.1" 200 4858
+2024-10-25 16:18:05,198 INFO basehttp: "GET / HTTP/1.1" 200 5237
+2024-10-25 16:19:00,531 INFO basehttp: "GET / HTTP/1.1" 200 4945
+2024-10-25 16:19:02,357 INFO basehttp: "GET / HTTP/1.1" 200 4945
+2024-10-25 16:19:04,162 INFO basehttp: "GET /register HTTP/1.1" 200 5643
+2024-10-25 16:19:19,746 INFO basehttp: "POST /register HTTP/1.1" 200 5897
+2024-10-25 16:19:32,863 INFO basehttp: "POST /register HTTP/1.1" 302 0
+2024-10-25 16:19:32,885 INFO basehttp: "GET / HTTP/1.1" 200 5100
+2024-10-25 16:20:09,532 INFO basehttp: "GET / HTTP/1.1" 200 4933
+2024-10-25 16:20:11,388 INFO basehttp: "GET /register HTTP/1.1" 200 5643
+2024-10-25 16:20:25,548 INFO basehttp: "POST /register HTTP/1.1" 302 0
+2024-10-25 16:20:25,570 INFO basehttp: "GET / HTTP/1.1" 200 5068
+2024-10-25 16:21:09,495 WARNING log: Not Found: /forgot-password
+2024-10-25 16:21:09,495 WARNING basehttp: "GET /forgot-password HTTP/1.1" 404 3491
+2024-10-25 16:21:12,471 WARNING log: Not Found: /forgot-password
+2024-10-25 16:21:12,477 WARNING basehttp: "GET /forgot-password HTTP/1.1" 404 3491
+2024-10-25 16:23:18,197 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-25 16:23:21,546 INFO autoreload: Watching for file changes with StatReloader
+2024-10-25 16:23:24,878 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-25 16:23:28,177 INFO autoreload: Watching for file changes with StatReloader
+2024-10-25 16:23:38,357 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-25 16:23:40,687 INFO autoreload: Watching for file changes with StatReloader
+2024-10-25 16:23:48,328 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-25 16:23:50,965 INFO autoreload: Watching for file changes with StatReloader
+2024-10-25 16:24:08,202 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\forms.py changed, reloading.
+2024-10-25 16:24:11,439 INFO autoreload: Watching for file changes with StatReloader
+2024-10-25 16:24:14,999 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\forms.py changed, reloading.
+2024-10-25 16:24:18,303 INFO autoreload: Watching for file changes with StatReloader
+2024-10-25 16:24:27,431 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\forms.py changed, reloading.
+2024-10-25 16:24:30,466 INFO autoreload: Watching for file changes with StatReloader
+2024-10-25 16:25:17,620 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-25 16:25:19,741 INFO autoreload: Watching for file changes with StatReloader
+2024-10-25 16:25:27,647 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-25 16:25:29,787 INFO autoreload: Watching for file changes with StatReloader
+2024-10-25 16:25:34,781 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-25 16:25:37,280 INFO autoreload: Watching for file changes with StatReloader
+2024-10-25 16:25:39,937 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-25 16:25:42,346 INFO autoreload: Watching for file changes with StatReloader
+2024-10-25 16:25:44,887 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-25 16:25:47,274 INFO autoreload: Watching for file changes with StatReloader
+2024-10-25 16:25:58,140 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-25 16:26:00,398 INFO autoreload: Watching for file changes with StatReloader
+2024-10-25 16:26:12,281 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\urls.py changed, reloading.
+2024-10-25 16:26:15,068 INFO autoreload: Watching for file changes with StatReloader
+2024-10-25 16:26:18,824 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\urls.py changed, reloading.
+2024-10-25 16:26:23,456 INFO autoreload: Watching for file changes with StatReloader
+2024-10-25 16:26:32,672 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\urls.py changed, reloading.
+2024-10-25 16:26:35,228 INFO autoreload: Watching for file changes with StatReloader
+2024-10-25 16:26:39,935 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\urls.py changed, reloading.
+2024-10-25 16:26:42,225 INFO autoreload: Watching for file changes with StatReloader
+2024-10-25 16:26:45,542 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\urls.py changed, reloading.
+2024-10-25 16:26:47,699 INFO autoreload: Watching for file changes with StatReloader
+2024-10-25 16:26:56,640 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-25 16:27:00,178 INFO autoreload: Watching for file changes with StatReloader
+2024-10-25 16:27:03,270 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-25 16:27:08,487 INFO autoreload: Watching for file changes with StatReloader
+2024-10-25 16:27:13,277 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-25 16:27:15,973 INFO autoreload: Watching for file changes with StatReloader
+2024-10-25 16:27:18,539 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-25 16:27:20,541 INFO autoreload: Watching for file changes with StatReloader
+2024-10-25 17:36:37,921 WARNING log: Not Found: /forgot-password
+2024-10-25 17:36:37,921 WARNING basehttp: "GET /forgot-password HTTP/1.1" 404 3849
+2024-10-25 17:37:18,919 INFO autoreload: Watching for file changes with StatReloader
+2024-10-25 17:37:41,645 WARNING log: Not Found: /forgot-password
+2024-10-25 17:37:41,645 WARNING basehttp: "GET /forgot-password HTTP/1.1" 404 3849
+2024-10-25 17:37:42,411 WARNING log: Not Found: /forgot-password
+2024-10-25 17:37:42,411 WARNING basehttp: "GET /forgot-password HTTP/1.1" 404 3849
+2024-10-25 17:37:45,113 WARNING log: Not Found: /forgot-password
+2024-10-25 17:37:45,133 WARNING basehttp: "GET /forgot-password HTTP/1.1" 404 3849
+2024-10-25 17:37:47,022 WARNING log: Not Found: /forgot-password
+2024-10-25 17:37:47,037 WARNING basehttp: "GET /forgot-password HTTP/1.1" 404 3849
+2024-10-25 17:38:02,369 WARNING log: Not Found: /forgot-password
+2024-10-25 17:38:02,369 WARNING basehttp: "GET /forgot-password HTTP/1.1" 404 3849
+2024-10-25 17:38:03,002 WARNING log: Not Found: /forgot-password
+2024-10-25 17:38:03,002 WARNING basehttp: "GET /forgot-password HTTP/1.1" 404 3849
+2024-10-25 17:38:53,287 ERROR log: Internal Server Error: /forgotten-password
+Traceback (most recent call last):
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\app\views.py", line 132, in forgottenPassword
+    form = ForgottenPasswordForm()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\forms\models.py", line 295, in __init__
+    raise ValueError('ModelForm has no model class specified.')
+ValueError: ModelForm has no model class specified.
+2024-10-25 17:38:53,292 ERROR basehttp: "GET /forgotten-password HTTP/1.1" 500 84908
+2024-10-25 17:40:27,646 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\forms.py changed, reloading.
+2024-10-25 17:40:43,823 INFO autoreload: Watching for file changes with StatReloader
+2024-10-25 17:40:48,784 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\forms.py changed, reloading.
+2024-10-25 17:40:51,613 INFO autoreload: Watching for file changes with StatReloader
+2024-10-25 17:40:52,291 ERROR log: Internal Server Error: /forgotten-password
+Traceback (most recent call last):
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\app\views.py", line 133, in forgottenPassword
+    return render(request, 'authentication/forgotten-password.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: authentication/forgotten-password.html
+2024-10-25 17:40:52,307 ERROR basehttp: "GET /forgotten-password HTTP/1.1" 500 94347
+2024-10-26 01:57:36,051 INFO autoreload: Watching for file changes with StatReloader
+2024-10-26 02:07:06,733 INFO autoreload: Watching for file changes with StatReloader
+2024-10-26 02:11:18,095 ERROR log: Internal Server Error: /forgotten-password
+Traceback (most recent call last):
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\app\views.py", line 133, in forgottenPassword
+    return render(request, 'authentication/forgotten-password.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: authentication/forgotten-password.html
+2024-10-26 02:11:18,104 ERROR basehttp: "GET /forgotten-password HTTP/1.1" 500 94192
+2024-10-26 02:11:22,865 INFO basehttp: "GET / HTTP/1.1" 200 3641
+2024-10-26 02:11:22,918 WARNING log: Not Found: /imgs/image.png
+2024-10-26 02:11:22,920 WARNING basehttp: "GET /imgs/image.png HTTP/1.1" 404 3846
+2024-10-26 02:11:22,958 WARNING log: Not Found: /imgs/wheel.png
+2024-10-26 02:11:22,992 WARNING basehttp: "GET /imgs/wheel.png HTTP/1.1" 404 3846
+2024-10-26 02:18:57,984 INFO basehttp: "GET / HTTP/1.1" 200 3641
+2024-10-26 02:18:58,054 WARNING log: Not Found: /imgs/image.png
+2024-10-26 02:18:58,073 WARNING log: Not Found: /imgs/wheel.png
+2024-10-26 02:18:58,074 WARNING basehttp: "GET /imgs/image.png HTTP/1.1" 404 3846
+2024-10-26 02:18:58,084 WARNING basehttp: "GET /imgs/wheel.png HTTP/1.1" 404 3846
+2024-10-26 02:21:30,988 INFO basehttp: "GET / HTTP/1.1" 200 7052
+2024-10-26 02:21:38,661 INFO basehttp: "GET / HTTP/1.1" 200 7052
+2024-10-26 02:21:38,721 WARNING log: Not Found: /imgs/image.png
+2024-10-26 02:21:38,728 WARNING basehttp: "GET /imgs/image.png HTTP/1.1" 404 3846
+2024-10-26 02:21:38,754 WARNING log: Not Found: /imgs/wheel.png
+2024-10-26 02:21:38,755 WARNING basehttp: "GET /imgs/wheel.png HTTP/1.1" 404 3846
+2024-10-26 02:21:38,870 INFO basehttp: "GET /static/css/appc5a3.css HTTP/1.1" 200 409
+2024-10-26 02:21:38,930 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-26 02:21:38,930 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 3852
+2024-10-26 02:23:13,950 INFO autoreload: Watching for file changes with StatReloader
+2024-10-26 02:23:49,620 INFO basehttp: "GET / HTTP/1.1" 200 7066
+2024-10-26 02:23:50,102 INFO basehttp: "GET /static/img/image.png HTTP/1.1" 200 225852
+2024-10-26 02:24:01,943 WARNING log: Not Found: /login.html
+2024-10-26 02:24:01,943 WARNING basehttp: "GET /login.html HTTP/1.1" 404 3834
+2024-10-26 02:24:19,293 INFO basehttp: "GET / HTTP/1.1" 200 7061
+2024-10-26 02:24:20,543 INFO basehttp: "GET /login HTTP/1.1" 200 4933
+2024-10-26 02:24:24,455 INFO basehttp: "GET / HTTP/1.1" 200 7061
+2024-10-26 02:24:26,823 INFO basehttp: "GET /register HTTP/1.1" 200 5643
+2024-10-26 02:24:28,543 INFO basehttp: "GET / HTTP/1.1" 200 7061
+2024-10-26 02:31:01,512 INFO autoreload: Watching for file changes with StatReloader
+2024-10-26 02:31:14,702 INFO autoreload: Watching for file changes with StatReloader
+2024-10-26 02:35:13,068 ERROR log: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\app\views.py", line 140, in index
+    return render(request, 'index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 193, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader_tags.py", line 278, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader_tags.py", line 216, in do_block
+    nodelist = parser.parse(('endblock',))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\templatetags\static.py", line 159, in do_static
+    return StaticNode.handle_token(parser, token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\templatetags\static.py", line 133, in handle_token
+    path = parser.compile_filter(bits[1])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 662, in __init__
+    raise TemplateSyntaxError("Could not parse the remainder: '%s' "
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '/paymentmethod3.jpg' from 'img/paymentmethod3.jpg'
+2024-10-26 02:35:13,091 ERROR basehttp: "GET / HTTP/1.1" 500 195694
+2024-10-26 02:35:32,933 INFO basehttp: "GET / HTTP/1.1" 200 20820
+2024-10-26 02:35:33,412 INFO basehttp: "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60174
+2024-10-26 02:35:33,438 INFO basehttp: "GET /static/js/jquery.min.js HTTP/1.1" 200 89476
+2024-10-26 02:35:33,440 INFO basehttp: "GET /static/img/paymentmethod4.jpg HTTP/1.1" 200 3191
+2024-10-26 02:35:33,461 INFO basehttp: "GET /static/img/paymentmethod6.jpg HTTP/1.1" 200 1847
+2024-10-26 02:35:33,472 INFO basehttp: "GET /static/js/popper.min.js HTTP/1.1" 200 21004
+2024-10-26 02:35:33,476 INFO basehttp: "GET /static/img/paymentmethod5.jpg HTTP/1.1" 200 4083
+2024-10-26 02:35:33,539 INFO basehttp: "GET /static/img/paymentmethod3.jpg HTTP/1.1" 200 2178
+2024-10-26 02:35:33,540 INFO basehttp: "GET /static/img/paymentmethod7.jpg HTTP/1.1" 200 2294
+2024-10-26 02:35:33,544 WARNING log: Not Found: /cdn-cgi/challenge-platform/h/g/scripts/jsd/f2bbd6738e15/maind41d.js
+2024-10-26 02:35:33,548 WARNING basehttp: "GET /cdn-cgi/challenge-platform/h/g/scripts/jsd/f2bbd6738e15/maind41d.js HTTP/1.1" 404 4005
+2024-10-26 02:35:33,551 INFO basehttp: "GET /static/img/client.png HTTP/1.1" 200 14575
+2024-10-26 02:35:33,555 INFO basehttp: "GET /static/img/paymentmethod2.jpg HTTP/1.1" 200 2612
+2024-10-26 02:35:33,558 INFO basehttp: "GET /static/img/paymentmethod1.jpg HTTP/1.1" 200 3409
+2024-10-26 02:36:03,393 WARNING log: Not Found: /how-to-play
+2024-10-26 02:36:03,395 WARNING basehttp: "GET /how-to-play HTTP/1.1" 404 3837
+2024-10-26 02:40:19,844 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\urls.py changed, reloading.
+2024-10-26 02:40:21,565 INFO autoreload: Watching for file changes with StatReloader
+2024-10-26 02:40:27,714 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\urls.py changed, reloading.
+2024-10-26 02:40:29,349 INFO autoreload: Watching for file changes with StatReloader
+2024-10-26 02:40:31,493 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\urls.py changed, reloading.
+2024-10-26 02:40:32,699 INFO autoreload: Watching for file changes with StatReloader
+2024-10-26 02:40:37,091 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\urls.py changed, reloading.
+2024-10-26 02:40:38,497 INFO autoreload: Watching for file changes with StatReloader
+2024-10-26 02:40:47,520 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\urls.py changed, reloading.
+2024-10-26 02:40:48,784 INFO autoreload: Watching for file changes with StatReloader
+2024-10-26 02:40:55,784 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-26 02:40:58,063 INFO autoreload: Watching for file changes with StatReloader
+2024-10-26 02:41:00,726 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-26 02:41:02,846 INFO autoreload: Watching for file changes with StatReloader
+2024-10-26 02:41:08,128 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-26 02:41:09,840 INFO autoreload: Watching for file changes with StatReloader
+2024-10-26 02:41:51,757 ERROR log: Internal Server Error: /how-to-play
+Traceback (most recent call last):
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\app\views.py", line 143, in howToPlay
+    return render(request, 'how-to-play.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: how-to-.html
+2024-10-26 02:41:51,757 ERROR basehttp: "GET /how-to-play HTTP/1.1" 500 92263
+2024-10-26 02:42:08,327 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-26 02:42:09,974 INFO autoreload: Watching for file changes with StatReloader
+2024-10-26 02:42:10,289 INFO basehttp: "GET /how-to-play HTTP/1.1" 200 8626
+2024-10-26 02:42:10,364 WARNING log: Not Found: /img/steps.png
+2024-10-26 02:42:10,368 WARNING basehttp: "GET /img/steps.png HTTP/1.1" 404 4021
+2024-10-26 02:42:10,388 WARNING log: Not Found: /img/dsws.png
+2024-10-26 02:42:10,394 WARNING basehttp: "GET /img/dsws.png HTTP/1.1" 404 4018
+2024-10-26 02:42:10,428 WARNING log: Not Found: /cdn-cgi/challenge-platform/h/g/scripts/jsd/f2bbd6738e15/maind41d.js
+2024-10-26 02:42:10,430 WARNING basehttp: "GET /cdn-cgi/challenge-platform/h/g/scripts/jsd/f2bbd6738e15/maind41d.js HTTP/1.1" 404 4183
+2024-10-26 02:46:36,742 INFO basehttp: "GET /how-to-play HTTP/1.1" 200 8658
+2024-10-26 02:46:36,812 WARNING log: Not Found: /img/steps.png
+2024-10-26 02:46:36,831 WARNING basehttp: "GET /img/steps.png HTTP/1.1" 404 4021
+2024-10-26 02:46:36,878 WARNING log: Not Found: /img/dsws.png
+2024-10-26 02:46:36,901 WARNING log: Not Found: /cdn-cgi/challenge-platform/h/g/scripts/jsd/f2bbd6738e15/maind41d.js
+2024-10-26 02:46:36,902 WARNING basehttp: "GET /img/dsws.png HTTP/1.1" 404 4018
+2024-10-26 02:46:36,903 WARNING basehttp: "GET /cdn-cgi/challenge-platform/h/g/scripts/jsd/f2bbd6738e15/maind41d.js HTTP/1.1" 404 4183
+2024-10-26 02:46:36,906 WARNING basehttp: "GET /static/img/howitwork-title.svg HTTP/1.1" 404 1832
+2024-10-26 02:46:38,601 INFO basehttp: "GET / HTTP/1.1" 200 20816
+2024-10-26 02:46:38,717 WARNING log: Not Found: /cdn-cgi/challenge-platform/h/g/scripts/jsd/f2bbd6738e15/maind41d.js
+2024-10-26 02:46:38,718 WARNING basehttp: "GET /cdn-cgi/challenge-platform/h/g/scripts/jsd/f2bbd6738e15/maind41d.js HTTP/1.1" 404 4183
+2024-10-26 02:49:25,598 INFO basehttp: "GET /how-to-play HTTP/1.1" 200 8667
+2024-10-26 02:49:25,675 WARNING log: Not Found: /img/steps.png
+2024-10-26 02:49:25,682 WARNING basehttp: "GET /img/steps.png HTTP/1.1" 404 4021
+2024-10-26 02:49:25,714 WARNING basehttp: "GET /static/img/howitwork-title.svg HTTP/1.1" 404 1832
+2024-10-26 02:49:25,733 WARNING log: Not Found: /img/dsws.png
+2024-10-26 02:49:25,736 WARNING basehttp: "GET /img/dsws.png HTTP/1.1" 404 4018
+2024-10-26 02:49:25,771 WARNING log: Not Found: /cdn-cgi/challenge-platform/h/g/scripts/jsd/f2bbd6738e15/maind41d.js
+2024-10-26 02:49:25,772 WARNING basehttp: "GET /cdn-cgi/challenge-platform/h/g/scripts/jsd/f2bbd6738e15/maind41d.js HTTP/1.1" 404 4183
+2024-10-26 02:51:35,072 INFO autoreload: Watching for file changes with StatReloader
+2024-10-26 02:51:42,575 INFO basehttp: "GET /how-to-play HTTP/1.1" 200 8667
+2024-10-26 02:51:42,924 INFO basehttp: "GET /static/css/bootstrap.min.css HTTP/1.1" 200 160403
+2024-10-26 02:51:42,963 INFO basehttp: "GET /static/css/spinner.css HTTP/1.1" 200 7925
+2024-10-26 02:51:42,969 INFO basehttp: "GET /static/css/styles_.css HTTP/1.1" 200 17326
+2024-10-26 02:51:43,003 WARNING log: Not Found: /img/steps.png
+2024-10-26 02:51:43,006 WARNING basehttp: "GET /img/steps.png HTTP/1.1" 404 4021
+2024-10-26 02:51:43,011 INFO basehttp: "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60174
+2024-10-26 02:51:43,013 INFO basehttp: "GET /static/css/appc5a3.css HTTP/1.1" 200 409
+2024-10-26 02:51:43,019 WARNING log: Not Found: /img/dsws.png
+2024-10-26 02:51:43,031 INFO basehttp: "GET /static/js/jquery.min.js HTTP/1.1" 200 89476
+2024-10-26 02:51:43,033 INFO basehttp: "GET /static/img/howitwork-title.svg HTTP/1.1" 200 4896
+2024-10-26 02:51:43,063 INFO basehttp: "GET /static/js/popper.min.js HTTP/1.1" 200 21004
+2024-10-26 02:51:43,065 WARNING basehttp: "GET /img/dsws.png HTTP/1.1" 404 4018
+2024-10-26 02:51:43,102 WARNING log: Not Found: /cdn-cgi/challenge-platform/h/g/scripts/jsd/f2bbd6738e15/maind41d.js
+2024-10-26 02:51:43,103 WARNING basehttp: "GET /cdn-cgi/challenge-platform/h/g/scripts/jsd/f2bbd6738e15/maind41d.js HTTP/1.1" 404 4183
+2024-10-26 02:51:59,913 INFO basehttp: "GET /how-to-play HTTP/1.1" 200 8675
+2024-10-26 02:51:59,973 INFO basehttp: "GET /static/img/steps.png HTTP/1.1" 200 21332
+2024-10-26 02:52:00,062 WARNING log: Not Found: /img/dsws.png
+2024-10-26 02:52:00,071 WARNING basehttp: "GET /img/dsws.png HTTP/1.1" 404 4018
+2024-10-26 02:52:00,102 WARNING log: Not Found: /cdn-cgi/challenge-platform/h/g/scripts/jsd/f2bbd6738e15/maind41d.js
+2024-10-26 02:52:00,103 WARNING basehttp: "GET /cdn-cgi/challenge-platform/h/g/scripts/jsd/f2bbd6738e15/maind41d.js HTTP/1.1" 404 4183
+2024-10-26 02:52:16,392 INFO basehttp: "GET /how-to-play HTTP/1.1" 200 8683
+2024-10-26 02:52:16,467 INFO basehttp: "GET /static/img/dsws.png HTTP/1.1" 200 492781
+2024-10-26 02:52:16,574 WARNING log: Not Found: /cdn-cgi/challenge-platform/h/g/scripts/jsd/f2bbd6738e15/maind41d.js
+2024-10-26 02:52:16,576 WARNING basehttp: "GET /cdn-cgi/challenge-platform/h/g/scripts/jsd/f2bbd6738e15/maind41d.js HTTP/1.1" 404 4183
+2024-10-26 02:52:22,567 INFO basehttp: "GET /register HTTP/1.1" 200 5643
+2024-10-26 02:52:31,224 WARNING log: Not Found: /faq
+2024-10-26 02:52:31,225 WARNING basehttp: "GET /faq HTTP/1.1" 404 3991
+2024-10-26 02:52:40,433 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\urls.py changed, reloading.
+2024-10-26 02:52:42,059 INFO autoreload: Watching for file changes with StatReloader
+2024-10-26 02:52:44,504 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\urls.py changed, reloading.
+2024-10-26 02:52:46,881 INFO autoreload: Watching for file changes with StatReloader
+2024-10-26 02:52:50,992 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-26 02:52:52,840 INFO autoreload: Watching for file changes with StatReloader
+2024-10-26 02:52:56,277 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-26 02:52:57,449 INFO autoreload: Watching for file changes with StatReloader
+2024-10-26 02:53:01,689 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-26 02:53:02,933 INFO autoreload: Watching for file changes with StatReloader
+2024-10-26 02:56:00,711 INFO basehttp: "GET /faq HTTP/1.1" 200 28294
+2024-10-26 02:56:00,880 WARNING log: Not Found: /cdn-cgi/challenge-platform/h/g/scripts/jsd/f2bbd6738e15/maind41d.js
+2024-10-26 02:56:00,888 WARNING basehttp: "GET /cdn-cgi/challenge-platform/h/g/scripts/jsd/f2bbd6738e15/maind41d.js HTTP/1.1" 404 4345
+2024-10-26 02:56:00,938 INFO basehttp: "GET /static/img/faq-title.svg HTTP/1.1" 200 1509
+2024-10-26 02:56:08,411 WARNING log: Not Found: /contact-us
+2024-10-26 02:56:08,411 WARNING basehttp: "GET /contact-us HTTP/1.1" 404 4174
+2024-10-26 02:56:18,566 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\urls.py changed, reloading.
+2024-10-26 02:56:20,856 INFO autoreload: Watching for file changes with StatReloader
+2024-10-26 02:56:23,481 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\urls.py changed, reloading.
+2024-10-26 02:56:25,975 INFO autoreload: Watching for file changes with StatReloader
+2024-10-26 02:56:34,661 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-26 02:56:36,451 INFO autoreload: Watching for file changes with StatReloader
+2024-10-26 02:56:39,734 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-26 02:56:41,161 INFO autoreload: Watching for file changes with StatReloader
+2024-10-26 02:58:39,578 ERROR log: Internal Server Error: /contact-us
+Traceback (most recent call last):
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\app\views.py", line 149, in contactus
+    return render(request, 'contact-us.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: contactus.html
+2024-10-26 02:58:39,594 ERROR basehttp: "GET /contact-us HTTP/1.1" 500 92301
+2024-10-26 02:58:51,663 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-26 02:58:53,759 INFO autoreload: Watching for file changes with StatReloader
+2024-10-26 02:58:54,260 INFO basehttp: "GET /contact-us HTTP/1.1" 200 8956
+2024-10-26 02:58:54,331 WARNING log: Not Found: /imgs/contact-title.svg
+2024-10-26 02:58:54,341 WARNING basehttp: "GET /imgs/contact-title.svg HTTP/1.1" 404 4386
+2024-10-26 02:58:54,397 WARNING log: Not Found: /cdn-cgi/challenge-platform/h/g/scripts/jsd/f2bbd6738e15/maind41d.js
+2024-10-26 02:58:54,399 WARNING basehttp: "GET /cdn-cgi/challenge-platform/h/g/scripts/jsd/f2bbd6738e15/maind41d.js HTTP/1.1" 404 4521
+2024-10-26 02:59:10,097 INFO basehttp: "GET /contact-us HTTP/1.1" 200 8965
+2024-10-26 02:59:10,230 WARNING log: Not Found: /cdn-cgi/challenge-platform/h/g/scripts/jsd/f2bbd6738e15/maind41d.js
+2024-10-26 02:59:10,236 WARNING log: Not Found: /imgs/contact-title.svg
+2024-10-26 02:59:10,237 WARNING basehttp: "GET /cdn-cgi/challenge-platform/h/g/scripts/jsd/f2bbd6738e15/maind41d.js HTTP/1.1" 404 4521
+2024-10-26 02:59:10,238 WARNING basehttp: "GET /imgs/contact-title.svg HTTP/1.1" 404 4386
+2024-10-26 02:59:18,445 WARNING log: Not Found: /terms
+2024-10-26 02:59:18,445 WARNING basehttp: "GET /terms HTTP/1.1" 404 4335
+2024-10-26 02:59:29,802 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\urls.py changed, reloading.
+2024-10-26 02:59:30,971 INFO autoreload: Watching for file changes with StatReloader
+2024-10-26 02:59:38,165 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\urls.py changed, reloading.
+2024-10-26 02:59:40,143 INFO autoreload: Watching for file changes with StatReloader
+2024-10-26 02:59:43,753 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-26 02:59:45,285 INFO autoreload: Watching for file changes with StatReloader
+2024-10-26 02:59:49,281 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-26 02:59:50,567 INFO autoreload: Watching for file changes with StatReloader
+2024-10-26 02:59:54,802 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-26 02:59:56,278 INFO autoreload: Watching for file changes with StatReloader
+2024-10-26 03:02:41,321 INFO autoreload: Watching for file changes with StatReloader
+2024-10-26 03:02:46,066 INFO basehttp: "GET /terms HTTP/1.1" 200 21676
+2024-10-26 03:02:46,225 WARNING log: Not Found: /cdn-cgi/challenge-platform/h/g/scripts/jsd/f2bbd6738e15/maind41d.js
+2024-10-26 03:02:46,228 WARNING basehttp: "GET /cdn-cgi/challenge-platform/h/g/scripts/jsd/f2bbd6738e15/maind41d.js HTTP/1.1" 404 4687
+2024-10-26 03:02:46,305 INFO basehttp: "GET /static/img/terms-title.svg HTTP/1.1" 200 1958
+2024-10-26 03:02:51,407 WARNING log: Not Found: /privacy
+2024-10-26 03:02:51,407 WARNING basehttp: "GET /privacy HTTP/1.1" 404 4507
+2024-10-26 03:02:59,737 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\urls.py changed, reloading.
+2024-10-26 03:03:02,499 INFO autoreload: Watching for file changes with StatReloader
+2024-10-26 03:03:07,041 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-26 03:03:08,871 INFO autoreload: Watching for file changes with StatReloader
+2024-10-26 03:03:11,797 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-26 03:03:13,411 INFO autoreload: Watching for file changes with StatReloader
+2024-10-26 03:03:14,420 INFO basehttp: "GET /privacy HTTP/1.1" 200 21676
+2024-10-26 03:03:14,540 WARNING log: Not Found: /cdn-cgi/challenge-platform/h/g/scripts/jsd/f2bbd6738e15/maind41d.js
+2024-10-26 03:03:14,544 WARNING basehttp: "GET /cdn-cgi/challenge-platform/h/g/scripts/jsd/f2bbd6738e15/maind41d.js HTTP/1.1" 404 4857
+2024-10-26 03:03:28,767 INFO basehttp: "GET /how-to-play HTTP/1.1" 200 8683
+2024-10-26 03:03:28,891 WARNING log: Not Found: /cdn-cgi/challenge-platform/h/g/scripts/jsd/f2bbd6738e15/maind41d.js
+2024-10-26 03:03:28,892 WARNING basehttp: "GET /cdn-cgi/challenge-platform/h/g/scripts/jsd/f2bbd6738e15/maind41d.js HTTP/1.1" 404 4857
+2024-10-26 03:03:31,520 INFO basehttp: "GET /faq HTTP/1.1" 200 28294
+2024-10-26 03:03:31,599 WARNING log: Not Found: /cdn-cgi/challenge-platform/h/g/scripts/jsd/f2bbd6738e15/maind41d.js
+2024-10-26 03:03:31,603 WARNING basehttp: "GET /cdn-cgi/challenge-platform/h/g/scripts/jsd/f2bbd6738e15/maind41d.js HTTP/1.1" 404 4857
+2024-10-26 03:03:34,886 INFO basehttp: "GET /contact-us HTTP/1.1" 200 8965
+2024-10-26 03:03:34,965 WARNING log: Not Found: /cdn-cgi/challenge-platform/h/g/scripts/jsd/f2bbd6738e15/maind41d.js
+2024-10-26 03:03:34,968 WARNING basehttp: "GET /cdn-cgi/challenge-platform/h/g/scripts/jsd/f2bbd6738e15/maind41d.js HTTP/1.1" 404 4857
+2024-10-26 03:03:34,987 WARNING log: Not Found: /imgs/contact-title.svg
+2024-10-26 03:03:34,988 WARNING basehttp: "GET /imgs/contact-title.svg HTTP/1.1" 404 4722
+2024-10-26 03:03:38,624 INFO basehttp: "GET /register HTTP/1.1" 200 5643
+2024-10-26 03:03:41,731 WARNING log: Not Found: /login.html
+2024-10-26 03:03:41,732 WARNING basehttp: "GET /login.html HTTP/1.1" 404 4686
+2024-10-26 03:04:03,980 INFO basehttp: "GET /register HTTP/1.1" 200 5639
+2024-10-26 03:04:05,591 INFO basehttp: "GET /login HTTP/1.1" 200 4933
+2024-10-26 03:04:06,877 WARNING log: Not Found: /forgot-password
+2024-10-26 03:04:06,878 WARNING basehttp: "GET /forgot-password HTTP/1.1" 404 4701
+2024-10-26 03:04:36,800 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\urls.py changed, reloading.
+2024-10-26 03:04:38,031 INFO autoreload: Watching for file changes with StatReloader
+2024-10-26 03:04:39,926 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\urls.py changed, reloading.
+2024-10-26 03:04:41,383 INFO autoreload: Watching for file changes with StatReloader
+2024-10-26 03:04:41,736 ERROR log: Internal Server Error: /forgot-password
+Traceback (most recent call last):
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\app\views.py", line 133, in forgottenPassword
+    return render(request, 'authentication/forgotten-password.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: authentication/forgotten-password.html
+2024-10-26 03:04:41,736 ERROR basehttp: "GET /forgot-password HTTP/1.1" 500 94309
+2024-10-26 03:05:18,021 ERROR log: Internal Server Error: /forgot-password
+Traceback (most recent call last):
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\app\views.py", line 133, in forgottenPassword
+    return render(request, 'authentication/forgot-password.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: authentication/forgotten-password.html
+2024-10-26 03:05:18,036 ERROR basehttp: "GET /forgot-password HTTP/1.1" 500 94300
+2024-10-26 03:05:18,092 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-26 03:05:19,249 INFO autoreload: Watching for file changes with StatReloader
+2024-10-26 03:05:21,233 INFO basehttp: "GET /forgot-password HTTP/1.1" 200 3990
+2024-10-26 03:05:36,098 INFO basehttp: "GET /login HTTP/1.1" 200 4933
+2024-10-26 03:05:38,104 INFO basehttp: "GET /register HTTP/1.1" 200 5639
+2024-10-26 03:05:40,082 INFO basehttp: "GET /login HTTP/1.1" 200 4933
+2024-10-26 03:05:41,212 INFO basehttp: "GET /forgot-password HTTP/1.1" 200 3990
+2024-10-26 03:05:42,330 INFO basehttp: "GET /login HTTP/1.1" 200 4933
+2024-10-26 03:05:53,533 INFO basehttp: "POST /login HTTP/1.1" 302 0
+2024-10-26 03:05:53,553 INFO basehttp: "GET /dashboard HTTP/1.1" 200 20816
+2024-10-26 03:05:53,719 WARNING log: Not Found: /cdn-cgi/challenge-platform/h/g/scripts/jsd/f2bbd6738e15/maind41d.js
+2024-10-26 03:05:53,720 WARNING basehttp: "GET /cdn-cgi/challenge-platform/h/g/scripts/jsd/f2bbd6738e15/maind41d.js HTTP/1.1" 404 4851
+2024-10-26 03:06:11,985 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-26 03:06:13,506 INFO autoreload: Watching for file changes with StatReloader
+2024-10-26 03:06:14,394 INFO basehttp: "GET /dashboard HTTP/1.1" 200 6124
+2024-10-26 03:06:14,450 INFO basehttp: "GET /static/img/logo.svg HTTP/1.1" 304 0
+2024-10-26 03:08:53,657 INFO autoreload: Watching for file changes with StatReloader
+2024-10-26 03:08:55,520 INFO basehttp: "GET /dashboard HTTP/1.1" 200 6124
+2024-10-26 03:08:55,859 INFO basehttp: "GET /static/img/logo.png HTTP/1.1" 200 27607
+2024-10-26 03:09:14,556 INFO views: Draw_new with POST
+2024-10-26 03:09:14,573 ERROR draw: UniqueCode matching query does not exist.
+2024-10-26 03:09:14,584 INFO basehttp: "POST /draw HTTP/1.1" 200 20816
+2024-10-26 03:09:14,723 WARNING log: Not Found: /cdn-cgi/challenge-platform/h/g/scripts/jsd/f2bbd6738e15/maind41d.js
+2024-10-26 03:09:14,723 WARNING basehttp: "GET /cdn-cgi/challenge-platform/h/g/scripts/jsd/f2bbd6738e15/maind41d.js HTTP/1.1" 404 4851
+2024-10-26 03:10:04,833 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-26 03:10:05,968 INFO autoreload: Watching for file changes with StatReloader
+2024-10-26 03:10:13,594 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-26 03:10:15,435 INFO autoreload: Watching for file changes with StatReloader
+2024-10-26 03:10:18,358 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-26 03:10:19,565 INFO autoreload: Watching for file changes with StatReloader
