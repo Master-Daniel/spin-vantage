@@ -1,4 +1,4 @@
 /venv
 version
-/logs*
+*.log
 db.sqlite3
