@@ -1,52 +1,281 @@
-{% extends 'base.html' %}
+{% extends 'layout.html' %}
 {% load static %}
 {% load widget_tweaks %}
+{% load i18n %}
 
-{% block content %}
-  <div style="margin:20px 0 25px 0;">
-    <h1 class="h1 mt-2 mb-5 font-weight-normal" style="color: white; text-transform:uppercase;">Spin and win cash prizes!</h1>
-    {% if error %}
-      <h4 class="h4 mb-5 font-weight-normal" style="color: white;">ERROR: {{ error }}</h4>
-    {% endif %}
-
-    {% if spin %}
-      <h4 class="h4 mb-5 font-weight-normal" style="color: white;">Good luck!</h4>
-    {% else %}
-      <h2 class="float-start mb-5" style="color: white;">Account Balance: ${{ user.userprofile.balance }}</h2>
-
-      <form class="form-signin" action="{% url 'wheel:draw_spin' %}" method="POST"> {% csrf_token %}
-        {% for field in form %}
-          <div class="form-group row">
-            <label style="color: white"
-                   class="col-sm-2 col-form-label col-form-label-lg"
-                   for="{{ field.id_for_label }}">{{ field.label }}</label>
-            <div class="col-sm-10">
-              {{ field|add_class:'form-control form-control-lg' }}
-              {% if field.errors  %}
-                <div class="alert alert-danger mt-3" role="alert">{{ field.errors.0 }}</div>
-              {% endif %}
+{% block head %}
+<div class="inner">
+    <div class="container-fluid h-100">
+        <div class="row h-100 align-items-center justify-content-between">
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 right pr-md-0 order-2 order-lg-1 text-white">
+                <h1 class="text-uppercase d-none d-md-block px-md-3">
+                    Spin and win<br />
+                    cash prizes
+                </h1>
+                <h1 class="text-uppercase d-block d-sm-none text-center text-md-left px-md-3">Spin and win cash
+                    prizes</h1>
+                <p class="d-none d-md-block px-md-3">
+                    <a href="/register" class="text-underline text-white">Register now and </a>make
+                    <br />
+                    your dreams a reality.
+                </p>
+                <div x-show="gameInitialised">
+                    <div class="bg-green spindemo px-3 py-5 text-center text-md-left">
+                        <div class="input-group mb-3">
+                            <div id="radioBtn" class="btn-group">
+                                <a class="btn btn-primary btn-md m-1 active"
+                                    :class="{'disabled': currentStake && currentStake != 1}" wire:key="_opt_btn_1"
+                                    @click.prevent="setStake(1)">&dollar;1</a>
+                                <a class="btn btn-primary btn-md m-1 active"
+                                    :class="{'disabled': currentStake && currentStake != 2}" wire:key="_opt_btn_2"
+                                    @click.prevent="setStake(2)">&dollar;2</a>
+                                <a class="btn btn-primary btn-md m-1 active"
+                                    :class="{'disabled': currentStake && currentStake != 5}" wire:key="_opt_btn_5"
+                                    @click.prevent="setStake(5)">&dollar;5</a>
+                                <a class="btn btn-primary btn-md m-1 active"
+                                    :class="{'disabled': currentStake && currentStake != 10}" wire:key="_opt_btn_10"
+                                    @click.prevent="setStake(10)">&dollar;10</a>
+                                <a class="btn btn-primary btn-md m-1 active"
+                                    :class="{'disabled': currentStake && currentStake != 50}" wire:key="_opt_btn_50"
+                                    @click.prevent="setStake(50)">&dollar;50</a>
+                                <a class="btn btn-primary btn-md m-1 active"
+                                    :class="{'disabled': currentStake && currentStake != 100}" wire:key="_opt_btn_100"
+                                    @click.prevent="setStake(100)">&dollar;100</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        {% endfor %}
-        <div class="mt-5">
-          <button class="mt2 btn btn-lg btn-primary btn-block" type="submit">SPIN!</button>
+            <div class="col-12 col-md-6 col-lg-6 col-xl-8 clearfix order-1 order-lg-2">
+                <div class="row h-100 align-items-center justify-content-between">
+                    <div class="col-12 col-md-4 col-lg-4 h-100 d-none d-xl-block">
+                        <img src="{% static 'img/image.png' %}" class="img-fluid" alt="spin and win game" />
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-8 h-100">
+                        <div class="spinner">
+                            <div class="wheelContainer">
+                                <img src="{% static 'img/wheel.png' %}" class="img-fluid" alt="spin and win game" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </form>
-    {% endif %}
-
-  </div>
+    </div>
+</div>
 {% endblock %}
 
-{% block extra-scripts %}
-  {% if spin %}
-    <script type="text/javascript">
-        console.log("Spin the Wheel!", {{ result }});
-        spin("{% url 'wheel:draw_result' result %}", {{ rotation }});
-    </script>
-  {% else %}
-    <script type="text/javascript">
-    {#introRotation(false);#}
-      </script>
-  {% endif %}
+{% block content %}
+<section class="bg-green text-white py-5 text-center credits">
+    <div class="container-fluid">
+        <div class="container">
+            <p class="mb-0">Welcome to SpinVantage Spin the lucky wheel and win real money.</p>
+        </div>
+    </div>
+</section>
 
+<section class="section bg-white facilities">
+    <div class="container">
+        <h2 class="text-9 text-center text-uppercase font-weight-400">Why choose us?</h2>
+        <p class="lead text-center mb-5">Here’s Top 4 reasons why SpinVantage game is the best.</p>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-sm-6 mb-4">
+                        <div class="featured-box style-3">
+                            <div class="featured-box-icon rounded-circle"><i class="fas fa-hand-pointer"></i></div>
+                            <h3 class="font-weight-400">Easy to play game</h3>
+                            <p>SpinVantage spin the wheel game is the simplest and most straightforward game to
+                                play.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 mb-4">
+                        <div class="featured-box style-3">
+                            <div class="featured-box-icon rounded-circle"><i class="fas fa-share"></i></div>
+                            <h3 class="font-weight-400">Welcome Bonus</h3>
+                            <p>New players receive bonus to spin and win real cash. Enjoy weekly promotional bonuses
+                                for active players.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 mb-4 mb-sm-0">
+                        <div class="featured-box style-3">
+                            <div class="featured-box-icon rounded-circle"><i class="fas fa-dollar-sign"></i></div>
+                            <h3 class="font-weight-400">Unlock New Levels</h3>
+                            <p>New levels guarantee great bonuses for more free spins. Get rewarded real cash for
+                                every new level.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="featured-box style-3">
+                            <div class="featured-box-icon rounded-circle"><i class="fas fa-lock"></i></div>
+                            <h3 class="font-weight-400">100% Secure</h3>
+                            <p>We are licensed and regulated by an independent governing body. They ensue we give
+                                our clients a fair game. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="steps">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-9 text-center text-uppercase font-weight-400">How to Play?</h2>
+                <p class="lead text-center mb-5">
+                    Playing SpinVantage spin game is as easy as 123. Here's how.
+                </p>
+            </div>
+
+            <div class="col-12">
+                <div class="row">
+                    <!-- step -->
+                    <div class="col-12 col-md-4">
+                        <div class="step text-center">
+                            <div class="step-count border-bottom font-weight-bold mb-4">
+                                1
+                            </div>
+                            <h3 class="font-weight-bold">Sign Up Your Account</h3>
+                            <p class="">Sign up for your free account in a few minutes.</p>
+                        </div>
+                    </div>
+                    <!-- ../step -->
+                    <!-- step -->
+                    <div class="col-12 col-md-4">
+                        <div class="step text-center">
+                            <div class="step-count border-bottom font-weight-bold mb-4">
+                                2
+                            </div>
+                            <h3 class="font-weight-bold">Deposit funds into your account</h3>
+                            <p class="">Deposit funds into your account and enjoy various bonuses.</p>
+                        </div>
+                    </div>
+                    <!-- ../step -->
+                    <!-- step -->
+                    <div class="col-12 col-md-4">
+                        <div class="step text-center">
+                            <div class="step-count border-bottom font-weight-bold mb-4">
+                                3
+                            </div>
+                            <h3 class="font-weight-bold">Withdraw Funds</h3>
+                            <p class="">Stake, win and withdraw some or all your winnings.</p>
+                        </div>
+                    </div>
+                    <!-- ../step -->
+                    <div class="col-12 text-center mt-5">
+                        <a href="auth/register" type="button" class="btn btn-primary btn-lg">
+                            Open New Account
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="partners">
+    <div class="container-fluid">
+        <div id="paymentways" class="center">
+            <h2 class="text-9 text-center text-uppercase font-weight-400">GET PAYOUTS IN THE MOST CONVENIENT WAY
+            </h2>
+        </div>
+        <div class="row">
+            <!-- paymanet partner -->
+            <div class="col-12 col-lg-10 offset-lg-1">
+                <div class="partner">
+                    <ul class="list-unstyled list-inline text-center">
+                        <li class="list-inline-item">
+                            <img src="{% static 'img/paymentmethod1.jpg' %}" alt="payment method name" />
+                        </li>
+                        <li class="list-inline-item">
+                            <img src="{% static 'img/paymentmethod2.jpg' %}" alt="payment method name" />
+                        </li>
+                        <li class="list-inline-item">
+                            <img src="{% static 'img/paymentmethod3.jpg' %}" alt="payment method name" />
+                        </li>
+                        <li class="list-inline-item">
+                            <img src="{% static 'img/paymentmethod4.jpg' %}" alt="payment method name" />
+                        </li>
+                        <li class="list-inline-item">
+                            <img src="{% static 'img/paymentmethod5.jpg' %}" alt="payment method name" />
+                        </li>
+                        <li class="list-inline-item">
+                            <img src="{% static 'img/paymentmethod6.jpg' %}" alt="payment method name" />
+                        </li>
+                        <li class="list-inline-item">
+                            <img src="{% static 'img/paymentmethod7.jpg' %}" alt="payment method name" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- ../paymanet partner -->
+            <div class="col-12 text-center mt-5">
+                <a href="/login" type="button" class="btn btn-primary btn-lg">Start now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="reviews text-center">
+    <div class="container px-0">
+        <div class="row">
+            <!-- heading -->
+            <div class="col-12">
+                <p>Testimonials</p>
+                <h2 class="text-9 text-uppercase font-weight-400 mb-5">What our Clients says about us</h2>
+            </div>
+            <!-- //heading -->
+
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="review card p-4 rounded-0 border-0">
+                            <i class="fa fa-quote-left text-yellow"></i>
+                            <p class="my-2">They offer an all-around reliable experience and lightning fast payouts.
+                                SpinVantage has developed a reputation for offering top service.</p>
+                            <div class="icon mx-auto">
+                                <img src="{% static 'img/client.png' %}" class="rounded-circle img-fluid border"
+                                    alt="client name" />
+                            </div>
+                            <p class="name mb-0"><span class="text-black">- William Hill </span></p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="review card p-4 rounded-0 border-0">
+                            <i class="fa fa-quote-left text-yellow"></i>
+                            <p class="my-2">I loved the many bonuses and the free spins that are available.</p>
+                            <div class="icon mx-auto">
+                                <img src="{% static 'img/client.png' %}" class="rounded-circle img-fluid border"
+                                    alt="client name" />
+                            </div>
+                            <p class="name mb-0"><span class="text-black">- Rick Chris </span></p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="review card p-4 rounded-0 border-0">
+                            <i class="fa fa-quote-left text-yellow"></i>
+                            <p class="my-2">The referral program really works for me. I always have extra bonus to
+                                spin for real cash.</p>
+                            <div class="icon mx-auto">
+                                <img src="{% static 'img/client.png' %}" class="rounded-circle img-fluid border"
+                                    alt="client name" />
+                            </div>
+                            <p class="name mb-0"><span class="text-black">- Mercy Nice</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 text-center mt-5">
+                <div class="bottom-desc mx-auto mb-5">
+                    <h4>Register now and make your dreams a reality</h4>
+                    <!-- <p class="text-gray small">Create an account with us and get free spins to try your luck, no deposit required.</p> -->
+                </div>
+                <a href="/register" type="button" class="btn btn-primary btn-lg">Register Now</a>
+            </div>
+        </div>
+    </div>
+</section>
 {% endblock %}

@@ -1,0 +1,340 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% load widget_tweaks %}
+{% load i18n %}
+
+{% block content %}
+<section class="bg-green text-white py-3 text-center page_heading">
+    <div class="container h-100 page_heading_bg" style="background: url('static/img/faq-title.svg');">
+        <div class="row d-flex-align-items-center justify-content-center h-100">
+            <div class="col-12 col-12 align-self-center">
+                <h1 class="title">Frequently Asked Questions</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+        </div>
+    </div>
+</div>
+
+<div class="bg-white container-fluid faqs" id="accordion-style-1">
+    <div class="container">
+        <section>
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="mt-4 font-weight-bold">ACCOUNT QUESTIONS</h3>
+                    <div class="accordion" id="accountquestions">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed btn-block text-left" type="button"
+                                        data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                                        aria-controls="collapseOne">How does SpinVantage Spin game work?</button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseOne" class="collapse fade" aria-labelledby="headingOne"
+                                data-parent="#accountquestions">
+                                <div class="card-body">
+                                    This is a spin and win game where a player buys credits which he/she uses to place
+                                    stakes. On spinning the wheel the stakes are affected by the multipliers. Credits
+                                    are then converted to cash for withdrawal in real time.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed btn-block text-left" type="button"
+                                        data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        Who is eligible to create an account?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse fade" aria-labelledby="headingTwo"
+                                data-parent="#accountquestions">
+                                <div class="card-body">
+                                    Any person who is 18 years old.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed btn-block text-left" type="button"
+                                        data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        How do I register?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse fade" aria-labelledby="headingThree"
+                                data-parent="#accountquestions">
+                                <div class="card-body">
+                                    Registration is done using an email address. Fill in the phone number, and the
+                                    password of your choice. An activation code is sent to your email immediately.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed btn-block text-left" type="button"
+                                        data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        I have not received a registration code.
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseFour" class="collapse fade" aria-labelledby="headingFour"
+                                data-parent="#accountquestions">
+                                <div class="card-body">
+                                    Kindly give it up to 30 mins for the code to arrive. Sometimes due to technical
+                                    issues, the message can take longer than usual to arrive. Alternatively, contact our
+                                    support team to get your account activated or wait for 3 hrs for your account to be
+                                    automatically activated. You will receive a message once this is done.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed btn-block text-left" type="button"
+                                        data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+                                        aria-controls="collapseFive">
+                                        How do I terminate my account?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseFive" class="collapse fade" aria-labelledby="headingFour"
+                                data-parent="#accountquestions">
+                                <div class="card-body">
+                                    Kindly write an email to <a href="cdn-cgi/l/email-protection.html"
+                                        class="__cf_email__"
+                                        data-cfemail="670f020b0b082703060e0b1e14170e0955100e094904080a">[email&#160;protected]</a>
+                                    or call our support team to get your account terminated.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="mt-4 font-weight-bold">BONUS RULES</h3>
+                    <div class="accordion mb-3" id="bonusrules">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed btn-block text-left" type="button"
+                                        data-toggle="collapse" data-target="#collapseOne2" aria-expanded="false"
+                                        aria-controls="collapseOne2">How do I receive a bonus?</button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseOne2" class="collapse fade" aria-labelledby="headingOne"
+                                data-parent="#bonusrules">
+                                <div class="card-body">
+                                    There are three ways to get bonus:
+                                    <ul>
+                                        <li>Welcome bonus, this one is awarded to new users</li>
+                                        <li>Referral Bonus, attained when a new user registers using an existing user
+                                            referral link. Usually a percentage of the first deposit of the new user.
+                                            Point to note this is only awarded on the first deposit of the new user,
+                                            other subsequent deposits do not accrue any rewards.</li>
+                                        <li>Promotional bonus, there is no set amount to this bonus but it varies based
+                                            on the company marketing campaigns. This should always be something to look
+                                            forward to, the company has a reputation of being very generous to existing
+                                            users.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed btn-block text-left" type="button"
+                                        data-toggle="collapse" data-target="#collapseTwo2" aria-expanded="false"
+                                        aria-controls="collapseTwo2">
+                                        Can I withdraw my bonus?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo2" class="collapse fade" aria-labelledby="headingTwo"
+                                data-parent="#bonusrules">
+                                <div class="card-body">
+                                    No, the bonus is used to place stakes on the game. Any winnings from bonus stakes
+                                    are available for withdrawal. Terms of use apply.
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed btn-block text-left" type="button"
+                                            data-toggle="collapse" data-target="#collapseThree2" aria-expanded="false"
+                                            aria-controls="collapseThree2">
+                                            Can I choose to stake with my bonus or cash?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseThree2" class="collapse fade" aria-labelledby="headingThree"
+                                    data-parent="#bonusrules">
+                                    <div class="card-body">
+                                        No, automatically stakes are placed with the available bonus, after depleting
+                                        the bonus, cash is used to place stakes.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="mt-4 font-weight-bold">DEPOSITS</h3>
+                        <div class="accordion" id="otherquestions">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed btn-block text-left" type="button"
+                                            data-toggle="collapse" data-target="#collapseDeposit1" aria-expanded="false"
+                                            aria-controls="collapseDeposit1">How do I deposit?</button>
+                                    </h5>
+                                </div>
+                                <div id="collapseDeposit1" class="collapse fade" aria-labelledby="headingOne"
+                                    data-parent="#otherquestions">
+                                    <div class="card-body">
+                                        There are varies options to top up your account balance. Choose the most
+                                        convenient based on your region.
+                                        Ideally account balance should reflect immediately after receiving a
+                                        confirmation message from SpinVantage.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <h3 class="mt-4 font-weight-bold">WITHDRAWALS</h3>
+                        <div class="accordion" id="otherquestions">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed btn-block text-left" type="button"
+                                            data-toggle="collapse" data-target="#collapseDeposit2" aria-expanded="false"
+                                            aria-controls="collapseDeposit2">What is the minimum/maximum amount that I
+                                            can withdraw?</button>
+                                    </h5>
+                                </div>
+                                <div id="collapseDeposit2" class="collapse fade" aria-labelledby="headingOne"
+                                    data-parent="#otherquestions">
+                                    <div class="card-body">
+                                        The lowest amount withdrawable is USD 10 ( consider withdrawal fees). The
+                                        highest amount is USD 70,000 depending on your level.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed btn-block text-left" type="button"
+                                            data-toggle="collapse" data-target="#collapseDeposit3" aria-expanded="false"
+                                            aria-controls="collapseDeposit3">How many times can I withdraw in a
+                                            day?</button>
+                                    </h5>
+                                </div>
+                                <div id="collapseDeposit3" class="collapse fade" aria-labelledby="headingOne"
+                                    data-parent="#otherquestions">
+                                    <div class="card-body">
+                                        You are allowed to make one withdraw per day.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed btn-block text-left" type="button"
+                                            data-toggle="collapse" data-target="#collapseDeposit4" aria-expanded="false"
+                                            aria-controls="collapseDeposit4">How long does it take for the balance to
+                                            reflect on my wallet?</button>
+                                    </h5>
+                                </div>
+                                <div id="collapseDeposit4" class="collapse fade" aria-labelledby="headingOne"
+                                    data-parent="#otherquestions">
+                                    <div class="card-body">
+                                        Kindly give it 1 - 3 business days to reflect.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed btn-block text-left" type="button"
+                                            data-toggle="collapse" data-target="#collapseDeposit5" aria-expanded="false"
+                                            aria-controls="collapseDeposit5">I am unable to withdraw, what do I
+                                            do?</button>
+                                    </h5>
+                                </div>
+                                <div id="collapseDeposit5" class="collapse fade" aria-labelledby="headingOne"
+                                    data-parent="#otherquestions">
+                                    <div class="card-body">
+                                        Kindly try again after a few minutes.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <h3 class="mt-4 font-weight-bold">STAKES AND LEVELS</h3>
+                        <div class="accordion" id="otherquestions">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed btn-block text-left" type="button"
+                                            data-toggle="collapse" data-target="#collapseDeposit6" aria-expanded="false"
+                                            aria-controls="collapseDeposit6">How much am I allowed to stake
+                                            with?</button>
+                                    </h5>
+                                </div>
+                                <div id="collapseDeposit6" class="collapse fade" aria-labelledby="headingOne"
+                                    data-parent="#otherquestions">
+                                    <div class="card-body">
+                                        A user can only stake with the set amounts: USD 1,2 5, 10, 50 or 100.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed btn-block text-left" type="button"
+                                            data-toggle="collapse" data-target="#collapseDeposit7" aria-expanded="false"
+                                            aria-controls="collapseDeposit7">How are stakes calculated?</button>
+                                    </h5>
+                                </div>
+                                <div id="collapseDeposit7" class="collapse fade" aria-labelledby="headingOne"
+                                    data-parent="#otherquestions">
+                                    <div class="card-body">
+                                        Anytime you choose an amount to spin, that amount is calculated as a stake
+                                        regardless of the spin result.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed btn-block text-left" type="button"
+                                            data-toggle="collapse" data-target="#collapseDeposit8" aria-expanded="false"
+                                            aria-controls="collapseDeposit8">How do levels work?</button>
+                                    </h5>
+                                </div>
+                                <div id="collapseDeposit8" class="collapse fade" aria-labelledby="headingOne"
+                                    data-parent="#otherquestions">
+                                    <div class="card-body">
+                                        Each level has a set number of stakes required to qualify. When you qualify to
+                                        the next level, you get a bonus or cash reward. Levels ensure that you keep
+                                        winning with SpinVantage regardless of the spin result.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </div>
+</div>
+{% endblock %}

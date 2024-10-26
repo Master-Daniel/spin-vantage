@@ -27,7 +27,7 @@
                 <feMergeNode in="SourceGraphic"/>
             </feMerge>
         </filter>
-        <text id="SPIN-VANTAGE" filter="url(#filter2)" xml:space="preserve"><tspan x="43.127432" y="298" font-family="BM Dohyeon" font-size="63.956061" font-weight="700" fill="#ffffff" xml:space="preserve">SPIN</tspan><tspan x="74.849638" y="361.518686" font-family="BM Dohyeon" font-size="63.956061" font-weight="700" fill="#ffffff" xml:space="preserve">VANTAGE</tspan></text>
+        <text id="SPIN-VANTAGE" filter="url(#filter2)" xml:space="preserve"><tspan x="136.127432" y="298" font-family="BM Dohyeon" font-size="63.956061" font-weight="700" fill="#ffffff" xml:space="preserve">SPIN</tspan><tspan x="44.849638" y="361.518686" font-family="BM Dohyeon" font-size="63.956061" font-weight="700" fill="#ffffff" xml:space="preserve">VANTAGE</tspan></text>
         <filter id="filter3" x="0" y="0" width="400" height="400" filterUnits="userSpaceOnUse" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
             <feGaussianBlur stdDeviation="12"/>
             <feOffset dx="-0" dy="6" result="offsetblur"/>

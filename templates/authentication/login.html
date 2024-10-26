@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'authentication/base.html' %}
 {% load static %}
 {% load widget_tweaks %}
 {% load i18n %} {# Load the translation library #}
@@ -19,22 +19,47 @@
 {% endfor %}
 {% endif %}
 
-<div id="content-main">
-    <form action="" method="post" id="register-form">
-        {% csrf_token %}
-        {% for field in form %}
-        <div class="form-group row">
-            <label style="color: white" for="{{ field.id_for_label }}">{{ field.label }}:</label>
-            {{ field|add_class:'form-control form-control-lg' }}
-            {% if field.errors %}
-            <div class="text-danger" role="alert">{{ field.errors.0 }}</div>
-            {% endif %}
-        </div>
-        {% endfor %}
-        <div class="form-group row">
-            <input type="submit" class="btn btn-block" value="{% translate 'Login' %}">
-        </div>
-    </form>
-    <p class="text-white">Don't have an account? <a href="/register">Register</a></p>
+<div class="row">
+    {% block messages %}
+    {% if messages %}
+    <ul class="messagelist">{% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message|capfirst }}</li>
+            {% endfor %}
+    </ul>
+    {% endif %}
+    {% endblock messages %}
+    <div class="col-11 col-lg-9 col-xl-8 mx-auto">
+        <h3 class="font-weight-400 mb-4">Log In</h3>
+        <form id="loginForm" method="POST">
+            {% csrf_token %}
+            {% for field in form %}
+            <div class="form-group">
+                <label for="{{ field.id_for_label }}">{{ field.label }}:</label>
+                {{ field|add_class:'form-control' }}
+                {% if field.errors %}
+                <div class="text-danger" role="alert">{{ field.errors.0 }}</div>
+                {% endif %}
+            </div>
+            {% endfor %}
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-check custom-control custom-checkbox">
+                        <input id="remember-me" name="remember" value="1" class="custom-control-input "
+                            type="checkbox" />
+                        <label class="custom-control-label" for="remember-me">Remember Me</label>
+                    </div>
+                </div>
+                <div class="col-sm text-right">
+                    <a class="text-yellow" href="/forgot-password">Forgot Password?</a>
+                </div>
+            </div>
+            <div class="form-group row">
+                <button class="btn btn-primary btn-lg btn-block my-4" type="submit">Login Now</button>
+            </div>
+        </form>
+        <p class="text-3 text-center text-muted">
+            Don't have an account? <a class="text-yellow" href="/register">Create new here</a>
+        </p>
+    </div>
 </div>
 {% endblock %}

@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'authentication/base.html' %}
 {% load static %}
 {% load widget_tweaks %}
 {% load i18n %} {# Load the translation library #}
@@ -19,22 +19,47 @@
 {% endfor %}
 {% endif %}
 
-<div id="content-main">
-    <form action="" method="post" id="register-form">
-        {% csrf_token %}
-        {% for field in form %}
-        <div class="form-group row">
-            <label style="color: white" for="{{ field.id_for_label }}">{{ field.label }}:</label>
-            {{ field|add_class:'form-control form-control-lg' }}
-            {% if field.errors %}
-            <div class="text-danger" role="alert">{{ field.errors.0 }}</div>
-            {% endif %}
-        </div>
-        {% endfor %}
-        <div class="form-group row">
-            <input type="submit" class="btn btn-block" value="{% translate 'Signup' %}">
-        </div>
-    </form>
-    <p class="text-white">Already have an account? <a href="/">Login</a></p>
+<div class="row">
+    <div class="col-11 col-lg-9 col-xl-8 mx-auto">
+        <h3 class="font-weight-400 mb-4">Sign Up</h3>
+        {% block messages %}
+        {% if messages %}
+        <ul class="messagelist">{% for message in messages %}
+            <li{% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message|capfirst }}</li>
+                {% endfor %}
+        </ul>
+        {% endif %}
+        {% endblock messages %}
+        <form id="loginForm" method="POST">
+            {% csrf_token %}
+            {% for field in form %}
+            <div class="form-group row">
+                <label for="{{ field.id_for_label }}">{{ field.label }}:</label>
+                {{ field|add_class:'form-control' }}
+                {% if field.errors %}
+                <div class="text-danger" role="alert">{{ field.errors.0 }}</div>
+                {% endif %}
+            </div>
+            {% endfor %}
+            <div class="form-check custom-control custom-checkbox">
+                <input id="toc" name="toc" class="custom-control-input " type="checkbox" required />
+                <label class="custom-control-label" for="toc">
+                    I have read and agreed to
+                    <a href="/terms" target="_blank" rel="noopener">terms and conditions.</a>
+                </label>
+            </div>
+            <div class="form-check custom-control custom-checkbox">
+                <input id="responsibility" name="responsibility" class="custom-control-input " type="checkbox"
+                    required />
+                <label class="custom-control-label" for="responsibility">
+                    I confirm I will play SpinVantage game responsibly.
+                </label>
+            </div>
+            <button class="btn btn-primary btn-block btn-lg my-4" type="submit">Register now</button>
+        </form>
+        <p class="text-3 text-center text-muted">
+            Already have an account? <a class="text-yellow" href="/login">Log In</a>
+        </p>
+    </div>
 </div>
 {% endblock %}

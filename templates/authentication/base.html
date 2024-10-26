@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login and play spin and win game on SpinVantage.com - SpinVantage</title>
+    <meta name="description" content="Login and play spin and win game on SpinVantage.com" />
+    <meta property="og:title" content="Login and play spin and win game on SpinVantage.com" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link href="{% static 'css/spinner.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/styles_.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+</head>
+
+{% load i18n %}
+
+<body>
+    <div id="main-wrapper" class="h-100">
+        <div class="container-fluid px-0 h-100">
+            <div class="row no-gutters h-100">
+                <div class="col-md-6">
+
+                    <div class="hero-wrap d-flex align-items-center h-100">
+                        <div class="hero-mask"></div>
+                        <div class="hero-bg hero-bg-scroll" style="background-image: url('static/img/wheel.png');"></div>
+                        <div class="hero-content mx-auto w-100 h-100 d-flex flex-column">
+                            <div class="row no-gutters">
+                                <div class="col-10 col-lg-9 mx-auto">
+                                    <h1 class="logo mt-5 mb-5 mb-md-0">
+                                        <a class="d-flex text-white" href="/" title="SpinVantage.com - Spin and win cash">SpinVantage</a>
+                                    </h1>
+                                </div>
+                            </div>
+                            <div class="row my-auto">
+                                <div class="col-10 col-lg-9 mx-auto">
+                                    <h1 class="text-11 text-white mb-4">Spin and Win Cash Prizes!</h1>
+                                    <p class="text-4 text-white line-height-4 mb-5">Every day, thousands of customers
+                                        play SpinVantage wheel game and win great prizes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="container my-4">
+                        <div class="row">
+                            <div class="col-11 col-lg-9 col-xl-8 mx-auto">
+                            </div>
+                        </div>
+                        {% block content %}{% endblock %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="{% static 'js/master.js' %}"></script>
+
+</html>

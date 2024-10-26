@@ -8,8 +8,15 @@ from . import views
 app_name = 'wheel'
 
 urlpatterns = [
-    path('', views.login, name='login'),
+    path('', views.index, name='index'),
+    path('login', views.login, name='login'),
+    path('forgot-password', views.forgottenPassword, name='forgot-password'),
+    path('how-to-play', views.howToPlay, name='how-to-play'),
     path('logout', views.logout, name='logout'),
+    path('faq', views.faq, name='faq'),
+    path('terms', views.terms, name='terms'),
+    path('privacy', views.terms, name='privacy'),
+    path('contact-us', views.contactus, name='contact-us'),
     path('register', views.register, name='register'),
     path('dashboard', views.dashboard, name='dashboard'),
     path('deposit', views.deposit, name='deposit'),

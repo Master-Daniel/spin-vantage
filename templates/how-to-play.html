@@ -1,0 +1,56 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% load widget_tweaks %}
+{% load i18n %}
+
+{% block content %}
+<section class="bg-green text-white py-3 text-center page_heading">
+    <div class="container h-100 page_heading_bg" style="background: url('static/img/howitwork-title.svg');">
+        <div class="row d-flex-align-items-center justify-content-center h-100">
+            <div class="col-12 col-12 align-self-center">
+                <h1 class="title">How To Play</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+        </div>
+    </div>
+</div>
+
+<section class="bg-white how_to_play pb-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-5 order-lg-3">
+                <h2 class="text-uppercase d-block d-md-none">Easy to play</h2>
+                <img src="{% static 'img/steps.png' %}" class="img-fluid mb-3 mb-lg-o" alt="" />
+            </div>
+            <div class="d-flex col-12 col-md-4 order-lg-1">
+                <div class="align-self-center">
+                    <h2 class="text-uppercase d-none d-md-block">Easy to play</h2>
+                    <ul class="list-unstyled">
+                        <li>
+                            <span>Step 1:</span> Register an account on SpinVantage.
+                        </li>
+                        <li>
+                            <span>Step 2:</span> Buy credits by depositing some funds through your preferred payment method. Click the deposit button and follow the prompts.
+                        </li>
+                        <li><span>Step 3:</span> Choose your stake and click the spin the wheel button to try your luck.
+                        </li>
+                        <li><span>Step 4:</span> Click the withdrawal button to withdraw some or all your earnings.</li>
+                    </ul>
+
+                    <a href="/register" class="btn btn-primary btn-lg my-4 btn_100_mobile">Register now</a>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-3 d-flex order-lg-2">
+                <img src="{% static 'img/dsws.png' %}" class="img-fluid align-self-end d-none d-md-block" alt="" />
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

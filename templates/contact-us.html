@@ -1,0 +1,59 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% load widget_tweaks %}
+{% load i18n %}
+
+{% block content %}
+<section class="bg-green text-white py-3 text-center page_heading">
+    <div class="container h-100 page_heading_bg" style="background: url('imgs/contact-title.svg');">
+        <div class="row d-flex-align-items-center justify-content-center h-100">
+            <div class="col-12 col-12 align-self-center">
+                <h1 class="title">Contact Us</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+        </div>
+    </div>
+</div>
+
+<section class="bg-white contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h2 class="text-uppercase">We'd love to hear from you</h2>
+                <p>Experiencing issues with our website or need any assistance? Fill in this form, and we will get in
+                    touch with you.</p>
+                <ul class="list-unstyled">
+                    <!-- <li><i class="fa fa-envelope mr-4 text-green"></i> <a
+                            href="cdn-cgi/l/email-protection.html#c3aba6afafac83a7a2aaafbab0b3aaadf1b4aaadeda0acae"
+                            class="text-black"><span class="__cf_email__"
+                                data-cfemail="e68e838a8a89a682878f8a9f95968f88d4918f88c885898b">[email&#160;protected]</span></a>
+                    </li> -->
+                </ul>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <form method="POST">
+                    <input type="hidden" name="_token" value="TsbCvAw9zsOzBMVcoRw8IyNCcKA6a4pjx5L6FFBp">
+                    <div class="form-group">
+                        <input type="text" class="form-control " id="name" name="name" value="" placeholder="Name" autocomplete="name" required />
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control " id="email" name="email" value="" placeholder="Email" autocomplete="email" required />
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control " id="message" name="message" placeholder="Write something..." rows="3" maxlength="500" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block btn-lg">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

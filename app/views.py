@@ -1,7 +1,7 @@
 import logging
 
 from app.draw import calc_wheel_rotations, get_prize_result, set_code_used, get_prize
-from app.forms import DrawForm, LoginForm, RegisterForm, DepositForm, WithdrawForm
+from app.forms import DrawForm, LoginForm, RegisterForm, DepositForm, WithdrawForm, ForgottenPasswordForm
 from django.contrib.auth import authenticate, login as auth_login, logout as auth_logout  # Import logout
 from app.models import Draw, Prize, UniqueCode
 from django.shortcuts import render, get_object_or_404, get_list_or_404, redirect
@@ -40,15 +40,14 @@ def draw_spin(request):
 
             set_code_used(code, True)
 
-            return render(request, 'index.html',
-                          {'form': form, 'spin': True, 'result': instance.pk, 'rotation': instance.rotation, 'prizes': prizes})
+            return render(request, 'dashboard.html', {'form': form, 'spin': True, 'result': instance.pk, 'rotation': instance.rotation, 'prizes': prizes})
         else:
             logger.warning(f"invalid form else => {form.is_valid()} {form.errors}")
             form = DrawForm(request.POST)
     else:
         form = DrawForm()
 
-    return render(request, 'index.html', {'form': form, 'prizes': prizes})
+    return render(request, 'dashboard.html', {'form': form, 'prizes': prizes})
 
 def draw_result(request, pk):
     prizes = get_list_or_404(Prize)
@@ -68,7 +67,7 @@ def dashboard(request):
     user = request.user 
 
     prizes = get_list_or_404(Prize)
-    return render(request, 'index.html', {
+    return render(request, 'dashboard.html', {
         'form': form,
         'prizes': prizes,
         'user': user,  # You can pass the user instance directly
@@ -115,10 +114,41 @@ def register(request):
             form.save()
             messages.success(request, "Your account has been created successfully.")
             return redirect('/')
+        return render(request, 'authentication/register.html', {'form': form})
     else:
         form = RegisterForm()
         return render(request, 'authentication/register.html', {'form': form})
 
+def forgottenPassword(request):
+    if request.method == "POST":
+        form = ForgottenPasswordForm(request.POST)
+        if form.is_valid():
+            
+            messages.success(request, "Check email for further instructions")
+            return redirect('/')
+        return render(request, 'authentication/forgot-password.html', {'form': form})
+    else:
+        form = ForgottenPasswordForm()
+        return render(request, 'authentication/forgot-password.html', {'form': form})
+
 def logout(request):
     auth_logout(request)
     return redirect('/')
+
+def index(request):
+    return render(request, 'index.html')
+
+def howToPlay(request):
+    return render(request, 'how-to-play.html')
+    
+def faq(request):
+    return render(request, 'faq.html')
+
+def contactus(request):
+    return render(request, 'contact-us.html')
+
+def terms(request):
+    return render(request, 'terms.html')
+
+def privacy(request):
+    return render(request, 'privacy.html')
