@@ -68,3 +68,27 @@
   -webkit-box-shadow: 3px 3px 6px 6px #555555;
   fill: white;
 }
+
+/* Basic styling for the toast notification */
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #000000 !important;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+/* Show the toast */
+.toast.show {
+  opacity: 1;
+}
+
+/* Hide the toast */
+.hidden {
+  display: none;
+}

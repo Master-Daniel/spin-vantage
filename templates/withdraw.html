@@ -25,12 +25,14 @@
         </div>
         {% endfor %}
         <div class="form-group row" id="crypto">
-            <label style="color: white" class="col-sm-2 col-form-label col-form-label-lg" for="crypto_id">Wallet Address:</label>
+            <label style="color: white" class="col-sm-2 col-form-label col-form-label-lg" for="crypto_id">Wallet
+                Address:</label>
             <div class="col-sm-10">
                 <input type="text" class="form-control form-control-lg" id="crypto_id" name="crypto">
             </div>
         </div>
-        <p id="message" class="d-none text-white">Kindly contact customer support <a href="mailto:support@spinvantage.com">support@spinvantage.com</a> for guidance</p>
+        <p id="message" class="d-none text-white">Kindly contact customer support <a
+                href="mailto:support@spinvantage.com">support@spinvantage.com</a> for guidance</p>
         <div class="mt-5">
             <button class="mt2 btn btn-lg btn-primary btn-block" id="submit_button" type="submit">Submit</button>
         </div>
@@ -53,5 +55,26 @@
             document.getElementById('crypto').classList.add('d-none')
         }
     }
+
+    const names = ["us***35", "us***23", "us***90", "us***30", "us***05", "us***89", "us***03", "us***54", "us***67", "us***22", "us***34", "us***99"];
+
+    function showRandomNameToast() {
+        const randomName = names[Math.floor(Math.random() * names.length)];
+        const toast = document.getElementById("nameToast");
+
+        // Set the toast content and make it visible
+        toast.textContent = `Congratulations! ${randomName} just withdraw $${parseFloat((Math.random() * 500000).toFixed(2)).toLocaleString()}`;
+        toast.classList.add("show");
+        toast.classList.remove("hidden");
+
+        // Hide the toast after 3 seconds
+        setTimeout(() => {
+            toast.classList.remove("show");
+            toast.classList.add("hidden");
+        }, 3000);
+    }
+
+    // Display the toast at random intervals (e.g., every 5 to 10 seconds)
+    setInterval(showRandomNameToast, Math.random() * 5000 + 5000); // 5-10 sec
 </script>
 {% endblock %}
