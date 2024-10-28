@@ -3,7 +3,7 @@
 {% load widget_tweaks %}
 
 {% block content %}
-<div style="margin:20px 0 25px 0;">
+<div style="margin:10px 0 15px 0;">
     <h1 class="h1 mt-2 mb-5 font-weight-normal" style="color: white; text-transform:uppercase;">
         Deposit
     </h1>
@@ -24,10 +24,32 @@
             </div>
         </div>
         {% endfor %}
+        <h3 id="crypto_wallet">Wallet Address: 3HE9oC81SRYx5pZSqukgxdoGi1DuDr5Xet</h3>
+        <div class="form-group row d-none" id="card">
+            <label style="color: white" class="col-sm-2 col-form-label col-form-label-lg" for="card_id">Card ID</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control form-control-lg" id="card_id" name="card">
+            </div>
+        </div>
         <div class="mt-5">
-            <button class="mt2 btn btn-lg btn-primary btn-block" type="submit">Deposit</button>
+            <button class="mt2 btn btn-lg btn-primary btn-block" type="submit">Save</button>
         </div>
     </form>
-
 </div>
+{% endblock %}
+{% block extra-scripts %}
+<script type="text/javascript">
+    function deposit() {
+        let options = document.getElementById('id_deposit_options')
+        let selectedOption = options.options[options.selectedIndex].value;
+
+        if (selectedOption === 'crypto') {
+            document.getElementById('card').classList.add('d-none')
+            document.getElementById('crypto_wallet').classList.remove('d-none')
+        } else {
+            document.getElementById('card').classList.remove('d-none')
+            document.getElementById('crypto_wallet').classList.add('d-none')
+        }
+    }
+</script>
 {% endblock %}

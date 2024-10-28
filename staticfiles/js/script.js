@@ -177,4 +177,3 @@ function rotInitial(to) {
         return "rotate(" + i(t) + ")";
     };
 }
-

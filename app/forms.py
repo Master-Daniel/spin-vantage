@@ -80,14 +80,14 @@ class DepositForm(forms.ModelForm):
     ]
     deposit_options = forms.ChoiceField(
         choices=options,
-        widget=forms.Select,
+        widget=forms.Select(attrs={'onchange': 'deposit()'}),
         label="Method",
         required=True
     )
     
     class Meta:
         model = Deposit
-        fields = ('amount',)  # Ensure this is a tuple with a trailing comma
+        fields = ('amount',)
 
 class WithdrawForm(forms.ModelForm):
     options = [
@@ -98,7 +98,7 @@ class WithdrawForm(forms.ModelForm):
     ]
     withdrawal_options = forms.ChoiceField(
         choices=options,
-        widget=forms.Select,
+        widget=forms.Select(attrs={'onchange': 'withdraw()'}),
         label="Method",
         required=True
     )

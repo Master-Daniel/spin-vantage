@@ -178,3 +178,13 @@ function rotInitial(to) {
     };
 }
 
+function deposit() {
+    let options = document.getElementById('id_deposit_options')
+    let selectedOption = options.options[options.selectedIndex].value;
+
+    if (selectedOption === 'crypto') {
+        document.getElementById('crypto_wallet').style.display = 'block'
+    } else {
+
+    }
+}

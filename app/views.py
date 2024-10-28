@@ -9,10 +9,12 @@ from django.utils import timezone
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.models import User
 from django.contrib import messages
+from decimal import Decimal
 from django.contrib.auth.decorators import login_required
 
 # Get an instance of a logger
 logger = logging.getLogger(__name__)
+
 
 def draw_spin(request):
     logger.info(f"Draw_new with {request.method}")
@@ -20,27 +22,30 @@ def draw_spin(request):
 
     if request.method == "POST":
         form = DrawForm(request.POST)
+        user = request.user
         if form.is_valid():
             code = form.cleaned_data['code']
-            instance = form.save(commit=False)
-            instance.date = timezone.now()
+            if user.userprofile.balance > Decimal(code):
+                instance = form.save(commit=False)
+                instance.date = timezone.now()
 
-            try:
-                ucode = UniqueCode.objects.get(code=code)
-            except Exception:
-                ucode = UniqueCode(code='NO CODE', used=False, prize=None)
+                try:
+                    ucode = UniqueCode.objects.get(code=code)
+                except Exception:
+                    ucode = UniqueCode(code='NO CODE', used=False, prize=None)
 
-            if ucode.prize:
-                instance.rotation = calc_wheel_rotations(ucode.prize.id)
-                instance.prize = ucode.prize
-            else:
-                instance.rotation = calc_wheel_rotations()
-                instance.prize = get_prize(get_prize_result(instance.rotation))
-            instance.save()
+                if ucode.prize:
+                    instance.rotation = calc_wheel_rotations(ucode.prize.id)
+                    instance.prize = ucode.prize
+                else:
+                    instance.rotation = calc_wheel_rotations()
+                    instance.prize = get_prize(get_prize_result(instance.rotation))
+                instance.save()
 
-            set_code_used(code, True)
-
-            return render(request, 'dashboard.html', {'form': form, 'spin': True, 'result': instance.pk, 'rotation': instance.rotation, 'prizes': prizes})
+                set_code_used(code, True)
+                return render(request, 'dashboard.html', {'form': form, 'spin': True, 'result': instance.pk, 'rotation': instance.rotation, 'prizes': prizes})
+            else: 
+                return render(request, 'dashboard.html', {'form': form, "error": "Insufficient fund"})
         else:
             logger.warning(f"invalid form else => {form.is_valid()} {form.errors}")
             form = DrawForm(request.POST)
@@ -48,6 +53,7 @@ def draw_spin(request):
         form = DrawForm()
 
     return render(request, 'dashboard.html', {'form': form, 'prizes': prizes})
+
 
 def draw_result(request, pk):
     prizes = get_list_or_404(Prize)
@@ -59,36 +65,41 @@ def draw_result(request, pk):
         set_code_used(draw.code, False)
     return render(request, 'draw.html', {'prizes': prizes, 'result_draw': draw, 'result_prize': prize})
 
+
 @login_required
 def dashboard(request):
     form = DrawForm()
 
     # Get the user instance directly
-    user = request.user 
+    user = request.user
 
     prizes = get_list_or_404(Prize)
     return render(request, 'dashboard.html', {
         'form': form,
         'prizes': prizes,
-        'user': user,  # You can pass the user instance directly
+        'user': user,
     })
+
 
 @login_required
 def deposit(request):
     form = DepositForm()
     return render(request, 'deposit.html',  {'form': form})
 
+
 @login_required
 def withdraw(request):
     form = WithdrawForm()
     return render(request, 'withdraw.html', {"form": form})
+
 
 def login(request):
     if request.method == 'POST':
         form = LoginForm(request.POST)
         if form.is_valid():
             # Use username instead of email since Django defaults to username
-            username = form.cleaned_data['username']  # Change here to use username
+            # Change here to use username
+            username = form.cleaned_data['username']
             password = form.cleaned_data['password']
 
             # Authenticate using the username
@@ -106,24 +117,27 @@ def login(request):
             return redirect('/dashboard')
         else:
             return render(request, 'authentication/login.html', {'form': form})
-        
+
+
 def register(request):
     if request.method == "POST":
         form = RegisterForm(request.POST)
         if form.is_valid():
             form.save()
-            messages.success(request, "Your account has been created successfully.")
+            messages.success(
+                request, "Your account has been created successfully.")
             return redirect('/')
         return render(request, 'authentication/register.html', {'form': form})
     else:
         form = RegisterForm()
         return render(request, 'authentication/register.html', {'form': form})
 
+
 def forgottenPassword(request):
     if request.method == "POST":
         form = ForgottenPasswordForm(request.POST)
         if form.is_valid():
-            
+
             messages.success(request, "Check email for further instructions")
             return redirect('/')
         return render(request, 'authentication/forgot-password.html', {'form': form})
@@ -131,24 +145,31 @@ def forgottenPassword(request):
         form = ForgottenPasswordForm()
         return render(request, 'authentication/forgot-password.html', {'form': form})
 
+
 def logout(request):
     auth_logout(request)
     return redirect('/')
 
+
 def index(request):
     return render(request, 'index.html')
 
+
 def howToPlay(request):
     return render(request, 'how-to-play.html')
-    
+
+
 def faq(request):
     return render(request, 'faq.html')
+
 
 def contactus(request):
     return render(request, 'contact-us.html')
 
+
 def terms(request):
     return render(request, 'terms.html')
+
 
 def privacy(request):
     return render(request, 'privacy.html')

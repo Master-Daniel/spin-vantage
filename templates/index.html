@@ -4,62 +4,34 @@
 {% load i18n %}
 
 {% block head %}
-<div class="inner">
+<div wire:id="YTcdKfapeIQFVolqIv8W" class="inner" wire:ignore.self="" x-data="demoGame()" x-init="init">
     <div class="container-fluid h-100">
         <div class="row h-100 align-items-center justify-content-between">
             <div class="col-12 col-md-6 col-lg-6 col-xl-4 right pr-md-0 order-2 order-lg-1 text-white">
                 <h1 class="text-uppercase d-none d-md-block px-md-3">
-                    Spin and win<br />
+                    Spin and win<br>
                     cash prizes
                 </h1>
-                <h1 class="text-uppercase d-block d-sm-none text-center text-md-left px-md-3">Spin and win cash
-                    prizes</h1>
+                <h1 class="text-uppercase d-block d-sm-none text-center text-md-left px-md-3">Spin and win cash prizes</h1>
                 <p class="d-none d-md-block px-md-3">
                     <a href="/register" class="text-underline text-white">Register now and </a>make
-                    <br />
+                    <br>
                     your dreams a reality.
                 </p>
-                <div x-show="gameInitialised">
-                    <div class="bg-green spindemo px-3 py-5 text-center text-md-left">
-                        <div class="input-group mb-3">
-                            <div id="radioBtn" class="btn-group">
-                                <a class="btn btn-primary btn-md m-1 active"
-                                    :class="{'disabled': currentStake && currentStake != 1}" wire:key="_opt_btn_1"
-                                    @click.prevent="setStake(1)">&dollar;1</a>
-                                <a class="btn btn-primary btn-md m-1 active"
-                                    :class="{'disabled': currentStake && currentStake != 2}" wire:key="_opt_btn_2"
-                                    @click.prevent="setStake(2)">&dollar;2</a>
-                                <a class="btn btn-primary btn-md m-1 active"
-                                    :class="{'disabled': currentStake && currentStake != 5}" wire:key="_opt_btn_5"
-                                    @click.prevent="setStake(5)">&dollar;5</a>
-                                <a class="btn btn-primary btn-md m-1 active"
-                                    :class="{'disabled': currentStake && currentStake != 10}" wire:key="_opt_btn_10"
-                                    @click.prevent="setStake(10)">&dollar;10</a>
-                                <a class="btn btn-primary btn-md m-1 active"
-                                    :class="{'disabled': currentStake && currentStake != 50}" wire:key="_opt_btn_50"
-                                    @click.prevent="setStake(50)">&dollar;50</a>
-                                <a class="btn btn-primary btn-md m-1 active"
-                                    :class="{'disabled': currentStake && currentStake != 100}" wire:key="_opt_btn_100"
-                                    @click.prevent="setStake(100)">&dollar;100</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
+
+            <!-- spin_wrapper -->
             <div class="col-12 col-md-6 col-lg-6 col-xl-8 clearfix order-1 order-lg-2">
-                <div class="row h-100 align-items-center justify-content-between">
+                <div class="row align-items-center justify-content-between">
                     <div class="col-12 col-md-4 col-lg-4 h-100 d-none d-xl-block">
                         <img src="{% static 'img/image.png' %}" class="img-fluid" alt="spin and win game" />
                     </div>
-                    <div class="col-12 col-md-8 col-lg-8 h-100">
-                        <div class="spinner">
-                            <div class="wheelContainer">
-                                <img src="{% static 'img/wheel.png' %}" class="img-fluid" alt="spin and win game" />
-                            </div>
-                        </div>
+                    <div class="col-12 col-md-8 col-lg-8 spin_wrapper h-100" wire:ignore="">
+                        <img src="{% static 'img/wheel.png' %}" class="img-fluid" alt="spin and win game" style="display: block;"/>
                     </div>
                 </div>
             </div>
+            <!-- spin_wrapper -->
         </div>
     </div>
 </div>
