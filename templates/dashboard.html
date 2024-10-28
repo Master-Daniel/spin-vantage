@@ -37,20 +37,32 @@
 {% endblock %}
 
 {% block extra-scripts %}
+<script>
+  const names = ["us***35", "us***23", "us***90", "us***30", "us***05", "us***89", "us***03", "us***54", "us***67", "us***22", "us***34", "us***99"];
+
+  function showRandomNameToast() {
+    const randomName = names[Math.floor(Math.random() * names.length)];
+    const toast = document.getElementById("nameToast");
+
+    // Set the toast content and make it visible
+    toast.textContent = `${randomName} just won $${parseFloat((Math.random() * 500000).toFixed(2)).toLocaleString()}`;
+    toast.classList.add("show");
+    toast.classList.remove("hidden");
+
+    // Hide the toast after 3 seconds
+    setTimeout(() => {
+      toast.classList.remove("show");
+      toast.classList.add("hidden");
+    }, 3000);
+  }
+
+  // Display the toast at random intervals (e.g., every 5 to 10 seconds)
+  setInterval(showRandomNameToast, Math.random() * 5000 + 5000); // 5-10 sec
+</script>
 {% if spin %}
 <script type="text/javascript">
   console.log("Spin the Wheel!", {{ result }});
   spin("{% url 'wheel:draw_result' result %}", {{ rotation }});
-  function deposit() {
-    let options = document.getElementById('id_deposit_options')
-    let selectedOption = options.options[options.selectedIndex].value;
-
-    if (selectedOption === 'crypto') {
-      document.getElementById('crypto_wallet').style.display = 'block'
-    } else {
-
-    }
-  }
 </script>
 {% else %}
 <script type="text/javascript">
