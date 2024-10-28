@@ -24,10 +24,34 @@
             </div>
         </div>
         {% endfor %}
+        <div class="form-group row" id="crypto">
+            <label style="color: white" class="col-sm-2 col-form-label col-form-label-lg" for="crypto_id">Wallet Address:</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control form-control-lg" id="crypto_id" name="crypto">
+            </div>
+        </div>
+        <p id="message" class="d-none text-white">Kindly contact customer support <a href="mailto:support@spinvantage.com">support@spinvantage.com</a> for guidance</p>
         <div class="mt-5">
-            <button class="mt2 btn btn-lg btn-primary btn-block" type="submit">Deposit</button>
+            <button class="mt2 btn btn-lg btn-primary btn-block" id="submit_button" type="submit">Submit</button>
         </div>
     </form>
-
 </div>
+{% endblock %}
+{% block extra-scripts %}
+<script type="text/javascript">
+    function withdraw() {
+        let options = document.getElementById('id_withdrawal_options')
+        let selectedOption = options.options[options.selectedIndex].value;
+
+        if (selectedOption === 'crypto') {
+            document.getElementById('submit_button').classList.remove('d-none')
+            document.getElementById('message').classList.add('d-none')
+            document.getElementById('crypto').classList.remove('d-none')
+        } else {
+            document.getElementById('submit_button').classList.add('d-none')
+            document.getElementById('message').classList.remove('d-none')
+            document.getElementById('crypto').classList.add('d-none')
+        }
+    }
+</script>
 {% endblock %}

@@ -3,48 +3,59 @@
 {% load widget_tweaks %}
 
 {% block content %}
-  <div style="margin:20px 0 25px 0;">
-    <h1 class="h1 mt-2 mb-5 font-weight-normal" style="color: white; text-transform:uppercase;">Spin and win cash prizes!</h1>
-    {% if error %}
-      <h4 class="h4 mb-5 font-weight-normal" style="color: white;">ERROR: {{ error }}</h4>
-    {% endif %}
+<div style="margin:20px 0 25px 0;">
+  <h1 class="h1 mt-2 mb-5 font-weight-normal" style="color: white; text-transform:uppercase;">Spin and win cash prizes!
+  </h1>
+  {% if error %}
+  <h4 class="h4 mb-5 font-weight-normal" style="color: white;">ERROR: {{ error }}</h4>
+  {% endif %}
 
-    {% if spin %}
-      <h4 class="h4 mb-5 font-weight-normal" style="color: white;">Good luck!</h4>
-    {% else %}
-      <h2 class="float-start mb-5" style="color: white;">Account Balance: ${{ user.userprofile.balance }}</h2>
+  {% if spin %}
+  <h4 class="h4 mb-5 font-weight-normal" style="color: white;">Good luck!</h4>
+  {% else %}
+  <h2 class="float-start mb-5" style="color: white;">Account Balance: ${{ user.userprofile.balance }}</h2>
 
-      <form class="form-signin" action="{% url 'wheel:draw_spin' %}" method="POST"> {% csrf_token %}
-        {% for field in form %}
-          <div class="form-group row">
-            <label style="color: white" class="col-sm-2 col-form-label col-form-label-lg" for="{{ field.id_for_label }}">{{ field.label }}</label>
-            <div class="col-sm-10">
-              {{ field|add_class:'form-control form-control-lg' }}
-              {% if field.errors  %}
-                <div class="alert alert-danger mt-3" role="alert">{{ field.errors.0 }}</div>
-              {% endif %}
-            </div>
-          </div>
-        {% endfor %}
-        <div class="mt-5">
-          <button class="mt2 btn btn-lg btn-primary btn-block" type="submit">SPIN!</button>
-        </div>
-      </form>
-    {% endif %}
+  <form class="form-signin" action="{% url 'wheel:draw_spin' %}" method="POST"> {% csrf_token %}
+    {% for field in form %}
+    <div class="form-group row">
+      <label style="color: white" class="col-sm-2 col-form-label col-form-label-lg" for="{{ field.id_for_label }}">{{ field.label }}</label>
+      <div class="col-sm-10">
+        {{ field|add_class:'form-control form-control-lg' }}
+        {% if field.errors %}
+        <div class="alert alert-danger mt-3" role="alert">{{ field.errors.0 }}</div>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+    <div class="mt-5">
+      <button class="mt2 btn btn-lg btn-primary btn-block" type="submit">SPIN!</button>
+    </div>
+  </form>
+  {% endif %}
 
-  </div>
+</div>
 {% endblock %}
 
 {% block extra-scripts %}
-  {% if spin %}
-    <script type="text/javascript">
-        console.log("Spin the Wheel!", {{ result }});
-        spin("{% url 'wheel:draw_result' result %}", {{ rotation }});
-    </script>
-  {% else %}
-    <script type="text/javascript">
-    {#introRotation(false);#}
-      </script>
-  {% endif %}
+{% if spin %}
+<script type="text/javascript">
+  console.log("Spin the Wheel!", {{ result }});
+  spin("{% url 'wheel:draw_result' result %}", {{ rotation }});
+  function deposit() {
+    let options = document.getElementById('id_deposit_options')
+    let selectedOption = options.options[options.selectedIndex].value;
+
+    if (selectedOption === 'crypto') {
+      document.getElementById('crypto_wallet').style.display = 'block'
+    } else {
+
+    }
+  }
+</script>
+{% else %}
+<script type="text/javascript">
+  { #introRotation(false);# }
+</script>
+{% endif %}
 
 {% endblock %}
