@@ -3,7 +3,7 @@
 {% load widget_tweaks %}
 
 {% block content %}
-<div style="margin:10px 0 15px 0;">
+<div>
     <h1 class="h1 mt-2 mb-5 font-weight-normal" style="color: white; text-transform:uppercase;">
         Deposit
     </h1>
@@ -14,8 +14,7 @@
     <form class="form-signin" action="" method="POST"> {% csrf_token %}
         {% for field in form %}
         <div class="form-group row">
-            <label style="color: white" class="col-sm-2 col-form-label col-form-label-lg"
-                for="{{ field.id_for_label }}">{{ field.label }}</label>
+            <label style="color: white" class="col-sm-2 col-form-label col-form-label-lg" for="{{ field.id_for_label }}">{{ field.label }}</label>
             <div class="col-sm-10">
                 {{ field|add_class:'form-control form-control-lg' }}
                 {% if field.errors %}
@@ -24,7 +23,10 @@
             </div>
         </div>
         {% endfor %}
-        <h3 id="crypto_wallet">Wallet Address: 3HE9oC81SRYx5pZSqukgxdoGi1DuDr5Xet</h3>
+        <p class="text-white" id="crypto_wallet" data-id="3HE9oC81SRYx5pZSqukgxdoGi1DuDr5Xet">Wallet Address: 3HE9oC81SRYx5pZSqukgxdoGi1DuDr5Xet</p>
+        <p id="message" class="d-none text-white">Kindly contact customer support <a
+            href="mailto:support@spinvantage.com">support@spinvantage.com</a> for guidance</p>
+        <button type="button" class="btn btn-sm btn-success" id="crypto_wallet_btn" onclick="copyAddress()">Copy Address</button>
         <div class="form-group row d-none" id="card">
             <label style="color: white" class="col-sm-2 col-form-label col-form-label-lg" for="card_id">Card ID</label>
             <div class="col-sm-10">
@@ -46,10 +48,26 @@
         if (selectedOption === 'crypto') {
             document.getElementById('card').classList.add('d-none')
             document.getElementById('crypto_wallet').classList.remove('d-none')
+            document.getElementById('crypto_wallet_btn').classList.remove('d-none')
+            document.getElementById('message').classList.add('d-none')
+        } else if (selectedOption === 'bank_transfer' || selectedOption === 'paypal') {
+            document.getElementById('message').classList.remove('d-none')
+            document.getElementById('card').classList.add('d-none')
+            document.getElementById('crypto_wallet').classList.add('d-none')
+            document.getElementById('crypto_wallet_btn').classList.add('d-none')
         } else {
+            document.getElementById('message').classList.add('d-none')
             document.getElementById('card').classList.remove('d-none')
             document.getElementById('crypto_wallet').classList.add('d-none')
+            document.getElementById('crypto_wallet_btn').classList.add('d-none')
         }
+    }
+
+    function copyAddress() {
+        var copyText = document.getElementById("crypto_wallet");
+        navigator.clipboard.writeText(copyText.getAttribute('data-id')).then(() => {
+            alert('Wallet address copied to clipboard')
+        });
     }
 </script>
 {% endblock %}

@@ -76,7 +76,9 @@ class LoginForm(forms.Form):
 class DepositForm(forms.ModelForm):
     options = [
         ('crypto', 'Crypto'),
+        ('paypal', 'PayPal'),
         ('gift_card', 'Gift Card'),
+        ('bank_transfer', 'Bank Transfer'),
     ]
     deposit_options = forms.ChoiceField(
         choices=options,
