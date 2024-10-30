@@ -1,43 +1,69 @@
-{% extends 'base.html' %}
+{% extends 'layout.html' %}
 {% load static %}
 {% load widget_tweaks %}
 
 {% block content %}
-<div>
-    <h1 class="h1 mt-2 mb-5 font-weight-normal" style="color: white; text-transform:uppercase;">
-        Deposit
-    </h1>
-    {% if error %}
-    <h4 class="h4 mb-5 font-weight-normal" style="color: white;">ERROR: {{ error }}</h4>
-    {% endif %}
-
-    <form class="form-signin" action="" method="POST"> {% csrf_token %}
-        {% for field in form %}
-        <div class="form-group row">
-            <label style="color: white" class="col-sm-2 col-form-label col-form-label-lg" for="{{ field.id_for_label }}">{{ field.label }}</label>
-            <div class="col-sm-10">
-                {{ field|add_class:'form-control form-control-lg' }}
-                {% if field.errors %}
-                <div class="alert alert-danger mt-3" role="alert">{{ field.errors.0 }}</div>
-                {% endif %}
-            </div>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
         </div>
-        {% endfor %}
-        <p class="text-white" id="crypto_wallet" data-id="3HE9oC81SRYx5pZSqukgxdoGi1DuDr5Xet">Wallet Address: 3HE9oC81SRYx5pZSqukgxdoGi1DuDr5Xet</p>
-        <p id="message" class="d-none text-white">Kindly contact customer support <a
-            href="mailto:support@spinvantage.com">support@spinvantage.com</a> for guidance</p>
-        <button type="button" class="btn btn-sm btn-success" id="crypto_wallet_btn" onclick="copyAddress()">Copy Address</button>
-        <div class="form-group row d-none" id="card">
-            <label style="color: white" class="col-sm-2 col-form-label col-form-label-lg" for="card_id">Card ID</label>
-            <div class="col-sm-10">
-                <input type="text" class="form-control form-control-lg" id="card_id" name="card">
-            </div>
-        </div>
-        <div class="mt-5">
-            <button class="mt2 btn btn-lg btn-primary btn-block" type="submit">Save</button>
-        </div>
-    </form>
+    </div>
 </div>
+
+
+<div class="bg-white">
+    <div class="container d-flex justify-content-center">
+        <ul class="nav secondary-nav alternate">
+            <li class="nav-item"><a class="nav-link" href="/deposit">Deposit</a></li>
+            <li class="nav-item"><a class="nav-link" href="/withdraw">Withdraw</a></li>
+        </ul>
+    </div>
+</div>
+
+<div id="content" class="py-4 bg-lgray">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9 col-lg-7 col-xl-6 mx-auto">
+                <div class="bg-white shadow-sm rounded p-3 pt-sm-5 pb-sm-5 px-sm-5 mb-4">
+                    <div >
+
+                        <div class="alert alert-info" role="alert">
+                            <strong>
+                                Your Deposit limit is between &dollar;5.00 and &dollar;1,000.00
+                            </strong>
+                        </div>
+
+                        <form class="form-signin" method="POST"> {% csrf_token %}
+                            {% for field in form %}
+                            <div class="form-group">
+                                <label class="" for="{{ field.id_for_label }}">{{ field.label }}</label>
+                                {{ field|add_class:'form-control form-control-lg' }}
+                                    {% if field.errors %}
+                                    <div class="alert alert-danger mt-3" role="alert">{{ field.errors.0 }}</div>
+                                    {% endif %}
+                            </div>
+                            {% endfor %}
+                            <h6 id="crypto_wallet" data-id="3HE9oC81SRYx5pZSqukgxdoGi1DuDr5Xet">Wallet Address: 3HE9oC81SRYx5pZSqukgxdoGi1DuDr5Xet</h6>
+                            <p id="message" class="d-none">Kindly contact customer support <ahref="mailto:support@spinvantage.com">support@spinvantage.com</ahref=> for guidance</p>
+                            <button type="button" class="btn btn-sm btn-success text-center align-items-center justify-content-center" id="crypto_wallet_btn" onclick="copyAddress()">Copy Address</button>
+                            <div class="form-group row d-none" id="card">
+                                <label class="col-sm-2 col-form-label col-form-label-lg" for="card_id">Card ID</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control form-control-lg" id="card_id" name="card">
+                                </div>
+                            </div>
+                            <div class="mt-5">
+                                <button class="mt2 btn btn-lg btn-primary btn-block" type="submit">Save</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 {% endblock %}
 {% block extra-scripts %}
 <script type="text/javascript">
