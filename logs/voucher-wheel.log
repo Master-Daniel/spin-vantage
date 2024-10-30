@@ -6838,3 +6838,272 @@ django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 5: 'block'.
 2024-10-28 16:55:13,475 WARNING basehttp: "GET /static/js/popper.min.js.map HTTP/1.1" 404 1819
 2024-10-28 16:55:13,475 WARNING basehttp: "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1828
 2024-10-28 16:55:13,881 WARNING basehttp: "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+2024-10-28 18:08:59,672 INFO autoreload: Watching for file changes with StatReloader
+2024-10-28 18:09:44,243 INFO basehttp: "GET / HTTP/1.1" 200 17442
+2024-10-28 18:09:44,496 INFO basehttp: "GET /static/img/wheel.png HTTP/1.1" 200 407425
+2024-10-28 18:09:45,796 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-28 18:09:45,797 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-28 18:09:45,875 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-28 18:09:45,876 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-28 18:09:49,382 INFO basehttp: "GET /login HTTP/1.1" 302 0
+2024-10-28 18:09:49,427 INFO basehttp: "GET /dashboard HTTP/1.1" 200 6198
+2024-10-28 18:09:49,492 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 200 1411
+2024-10-28 18:09:49,500 INFO basehttp: "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+2024-10-28 18:09:49,506 INFO basehttp: "GET /static/img/logo.png HTTP/1.1" 200 27607
+2024-10-28 18:09:49,977 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 200 5392
+2024-10-28 18:09:49,978 INFO basehttp: "GET /static/js/confetti.js HTTP/1.1" 200 7222
+2024-10-28 18:09:49,978 INFO basehttp: "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+2024-10-28 18:09:50,852 INFO basehttp: "GET /static/img/outwheel.png HTTP/1.1" 200 440976
+2024-10-28 18:09:51,037 WARNING log: Not Found: /favicon.ico
+2024-10-28 18:09:51,042 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-10-28 18:11:01,242 INFO basehttp: "GET /dashboard HTTP/1.1" 200 6198
+2024-10-28 18:11:01,304 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 200 1414
+2024-10-28 18:11:01,304 INFO basehttp: "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+2024-10-28 18:11:01,312 INFO basehttp: "GET /static/img/logo.png HTTP/1.1" 200 27607
+2024-10-28 18:11:01,972 INFO basehttp: "GET /static/js/confetti.js HTTP/1.1" 200 7222
+2024-10-28 18:11:01,977 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 200 5392
+2024-10-28 18:11:01,977 INFO basehttp: "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+2024-10-28 18:11:02,463 INFO basehttp: "GET /static/media/roulette.mp3 HTTP/1.1" 200 95433
+2024-10-28 18:11:02,469 INFO basehttp: "GET /static/img/wheel.png HTTP/1.1" 200 407425
+2024-10-28 18:11:02,470 INFO basehttp: "GET /static/img/outwheel.png HTTP/1.1" 200 440976
+2024-10-28 18:11:02,590 WARNING log: Not Found: /favicon.ico
+2024-10-28 18:11:02,592 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-10-28 18:11:23,262 INFO autoreload: Watching for file changes with StatReloader
+2024-10-28 18:11:26,642 INFO basehttp: "GET /dashboard HTTP/1.1" 200 6198
+2024-10-28 18:11:26,807 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 200 1414
+2024-10-28 18:11:26,812 INFO basehttp: "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+2024-10-28 18:11:26,824 INFO basehttp: "GET /static/img/logo.png HTTP/1.1" 200 27607
+2024-10-28 18:11:27,312 INFO basehttp: "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+2024-10-28 18:11:27,312 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 200 5392
+2024-10-28 18:11:27,312 INFO basehttp: "GET /static/js/confetti.js HTTP/1.1" 200 7222
+2024-10-28 18:11:27,644 INFO basehttp: "GET /static/media/roulette.mp3 HTTP/1.1" 200 95433
+2024-10-28 18:11:27,662 INFO basehttp: "GET /static/img/outwheel.png HTTP/1.1" 200 440976
+2024-10-28 18:11:27,662 INFO basehttp: "GET /static/img/wheel.png HTTP/1.1" 200 407425
+2024-10-28 18:11:27,807 WARNING log: Not Found: /favicon.ico
+2024-10-28 18:11:27,807 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-10-28 18:16:42,771 INFO autoreload: Watching for file changes with StatReloader
+2024-10-28 18:16:45,619 INFO basehttp: "GET /dashboard HTTP/1.1" 200 6198
+2024-10-28 18:16:45,784 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 200 1414
+2024-10-28 18:16:45,791 INFO basehttp: "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+2024-10-28 18:16:45,803 INFO basehttp: "GET /static/img/logo.png HTTP/1.1" 200 27607
+2024-10-28 18:16:46,365 INFO basehttp: "GET /static/js/confetti.js HTTP/1.1" 200 7222
+2024-10-28 18:16:46,365 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 200 4687
+2024-10-28 18:16:46,365 INFO basehttp: "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+2024-10-28 18:16:46,995 INFO basehttp: "GET /static/media/roulette.mp3 HTTP/1.1" 200 95433
+2024-10-28 18:16:47,003 INFO basehttp: "GET /static/img/outwheel.png HTTP/1.1" 200 440976
+2024-10-28 18:16:47,004 INFO basehttp: "GET /static/img/wheel.png HTTP/1.1" 200 407425
+2024-10-28 18:16:47,172 WARNING log: Not Found: /favicon.ico
+2024-10-28 18:16:47,173 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-10-28 18:16:48,128 INFO basehttp: "GET /withdraw HTTP/1.1" 200 7179
+2024-10-28 18:18:00,402 INFO basehttp: "GET /withdraw HTTP/1.1" 200 7182
+2024-10-28 18:18:00,465 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 200 1414
+2024-10-28 18:18:00,473 INFO basehttp: "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+2024-10-28 18:18:00,482 INFO basehttp: "GET /static/img/logo.png HTTP/1.1" 200 27607
+2024-10-28 18:18:01,101 INFO basehttp: "GET /static/js/confetti.js HTTP/1.1" 200 7222
+2024-10-28 18:18:01,101 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 200 4687
+2024-10-28 18:18:01,101 INFO basehttp: "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+2024-10-28 18:18:01,631 INFO basehttp: "GET /static/media/roulette.mp3 HTTP/1.1" 200 95433
+2024-10-28 18:18:01,639 INFO basehttp: "GET /static/img/outwheel.png HTTP/1.1" 200 440976
+2024-10-28 18:18:01,643 INFO basehttp: "GET /static/img/wheel.png HTTP/1.1" 200 407425
+2024-10-28 18:18:01,869 WARNING log: Not Found: /favicon.ico
+2024-10-28 18:18:01,870 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-10-28 18:19:05,606 INFO autoreload: Watching for file changes with StatReloader
+2024-10-28 18:19:09,570 INFO basehttp: "GET /withdraw HTTP/1.1" 200 7182
+2024-10-28 18:19:09,747 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 200 1425
+2024-10-28 18:19:09,753 INFO basehttp: "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+2024-10-28 18:19:09,761 INFO basehttp: "GET /static/img/logo.png HTTP/1.1" 200 27607
+2024-10-28 18:19:10,296 INFO basehttp: "GET /static/js/confetti.js HTTP/1.1" 200 7222
+2024-10-28 18:19:10,296 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 200 4687
+2024-10-28 18:19:10,296 INFO basehttp: "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+2024-10-28 18:19:11,090 INFO basehttp: "GET /static/media/roulette.mp3 HTTP/1.1" 200 95433
+2024-10-28 18:19:11,096 INFO basehttp: "GET /static/img/wheel.png HTTP/1.1" 200 407425
+2024-10-28 18:19:11,097 INFO basehttp: "GET /static/img/outwheel.png HTTP/1.1" 200 440976
+2024-10-28 18:19:11,224 WARNING log: Not Found: /favicon.ico
+2024-10-28 18:19:11,225 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-10-28 18:19:55,423 INFO basehttp: "GET /withdraw HTTP/1.1" 200 7193
+2024-10-28 18:19:55,496 INFO basehttp: "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+2024-10-28 18:19:55,499 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 200 1425
+2024-10-28 18:19:55,503 INFO basehttp: "GET /static/img/logo.png HTTP/1.1" 200 27607
+2024-10-28 18:19:56,181 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 200 4687
+2024-10-28 18:19:56,181 INFO basehttp: "GET /static/js/confetti.js HTTP/1.1" 200 7222
+2024-10-28 18:19:56,181 INFO basehttp: "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+2024-10-28 18:19:56,591 INFO basehttp: "GET /static/media/roulette.mp3 HTTP/1.1" 200 95433
+2024-10-28 18:19:56,599 INFO basehttp: "GET /static/img/wheel.png HTTP/1.1" 200 407425
+2024-10-28 18:19:56,600 INFO basehttp: "GET /static/img/outwheel.png HTTP/1.1" 200 440976
+2024-10-28 18:19:56,756 WARNING log: Not Found: /favicon.ico
+2024-10-28 18:19:56,756 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-10-28 18:21:32,481 INFO basehttp: "GET /withdraw HTTP/1.1" 200 7212
+2024-10-28 18:21:32,570 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 200 1425
+2024-10-28 18:21:32,575 INFO basehttp: "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+2024-10-28 18:21:32,576 INFO basehttp: "GET /static/img/logo.png HTTP/1.1" 200 27607
+2024-10-28 18:21:33,163 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 200 4687
+2024-10-28 18:21:33,163 INFO basehttp: "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+2024-10-28 18:21:33,171 INFO basehttp: "GET /static/js/confetti.js HTTP/1.1" 200 7222
+2024-10-28 18:21:33,665 INFO basehttp: "GET /static/media/roulette.mp3 HTTP/1.1" 200 95433
+2024-10-28 18:21:33,676 INFO basehttp: "GET /static/img/wheel.png HTTP/1.1" 200 407425
+2024-10-28 18:21:33,679 INFO basehttp: "GET /static/img/outwheel.png HTTP/1.1" 200 440976
+2024-10-28 18:21:33,813 WARNING log: Not Found: /favicon.ico
+2024-10-28 18:21:33,814 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-10-28 18:28:13,541 INFO basehttp: "GET /dashboard HTTP/1.1" 200 7097
+2024-10-28 18:28:13,650 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 304 0
+2024-10-28 18:28:14,238 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 304 0
+2024-10-28 18:28:31,281 INFO basehttp: "GET /dashboard HTTP/1.1" 200 7077
+2024-10-28 18:28:31,331 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 200 1425
+2024-10-28 18:28:31,341 INFO basehttp: "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+2024-10-28 18:28:31,349 INFO basehttp: "GET /static/img/logo.png HTTP/1.1" 200 27607
+2024-10-28 18:28:32,243 INFO basehttp: "GET /static/js/confetti.js HTTP/1.1" 200 7222
+2024-10-28 18:28:32,243 INFO basehttp: "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+2024-10-28 18:28:32,252 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 200 4687
+2024-10-28 18:28:32,626 INFO basehttp: "GET /static/img/wheel.png HTTP/1.1" 200 407425
+2024-10-28 18:28:32,629 INFO basehttp: "GET /static/img/outwheel.png HTTP/1.1" 200 440976
+2024-10-28 18:28:32,729 WARNING log: Not Found: /favicon.ico
+2024-10-28 18:28:32,731 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-10-28 18:42:39,984 INFO basehttp: "GET /withdraw HTTP/1.1" 200 7229
+2024-10-28 18:42:40,068 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 304 0
+2024-10-28 18:42:41,087 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 304 0
+2024-10-28 18:42:41,305 WARNING log: Not Found: /favicon.ico
+2024-10-28 18:42:41,306 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-10-28 21:26:57,928 INFO basehttp: "GET /deposit HTTP/1.1" 200 5891
+2024-10-28 21:26:57,992 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 304 0
+2024-10-28 21:26:57,995 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 304 0
+2024-10-28 21:29:45,816 INFO basehttp: "GET /deposit HTTP/1.1" 200 5890
+2024-10-28 21:29:45,946 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 200 1425
+2024-10-28 21:29:45,957 INFO basehttp: "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+2024-10-28 21:29:45,970 INFO basehttp: "GET /static/img/logo.png HTTP/1.1" 200 27607
+2024-10-28 21:29:47,556 INFO basehttp: "GET /static/js/confetti.js HTTP/1.1" 200 7222
+2024-10-28 21:29:47,556 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 200 4687
+2024-10-28 21:29:47,556 INFO basehttp: "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+2024-10-28 21:29:50,135 INFO basehttp: "GET /static/media/roulette.mp3 HTTP/1.1" 200 95433
+2024-10-28 21:29:50,140 INFO basehttp: "GET /static/img/wheel.png HTTP/1.1" 200 407425
+2024-10-28 21:29:50,140 INFO basehttp: "GET /static/img/outwheel.png HTTP/1.1" 200 440976
+2024-10-28 21:29:50,351 WARNING log: Not Found: /favicon.ico
+2024-10-28 21:29:50,352 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-10-28 21:31:29,715 INFO basehttp: "GET /deposit HTTP/1.1" 200 5861
+2024-10-28 21:31:29,845 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 200 1425
+2024-10-28 21:31:29,891 INFO basehttp: "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+2024-10-28 21:31:29,907 INFO basehttp: "GET /static/img/logo.png HTTP/1.1" 200 27607
+2024-10-28 21:31:31,608 INFO basehttp: "GET /static/js/confetti.js HTTP/1.1" 200 7222
+2024-10-28 21:31:31,608 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 200 4687
+2024-10-28 21:31:31,608 INFO basehttp: "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+2024-10-28 21:31:33,615 INFO basehttp: "GET /static/media/roulette.mp3 HTTP/1.1" 200 95433
+2024-10-28 21:31:33,620 INFO basehttp: "GET /static/img/wheel.png HTTP/1.1" 200 407425
+2024-10-28 21:31:33,620 INFO basehttp: "GET /static/img/outwheel.png HTTP/1.1" 200 440976
+2024-10-28 21:31:33,802 WARNING log: Not Found: /favicon.ico
+2024-10-28 21:31:33,804 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-10-28 21:32:23,392 INFO basehttp: "GET /deposit HTTP/1.1" 200 5859
+2024-10-28 21:32:39,788 INFO basehttp: "GET /deposit HTTP/1.1" 200 5859
+2024-10-28 21:34:09,090 INFO basehttp: "GET /deposit HTTP/1.1" 200 5829
+2024-10-28 21:34:21,122 INFO basehttp: "GET /deposit HTTP/1.1" 200 5829
+2024-10-28 21:34:29,862 INFO basehttp: "GET /deposit HTTP/1.1" 200 5829
+2024-10-28 21:34:49,280 INFO basehttp: "GET /deposit HTTP/1.1" 200 5846
+2024-10-28 21:35:33,886 INFO basehttp: "GET /deposit HTTP/1.1" 200 5852
+2024-10-28 21:39:49,522 INFO basehttp: "GET /deposit HTTP/1.1" 200 5852
+2024-10-28 21:42:32,108 INFO basehttp: "GET /deposit HTTP/1.1" 200 5836
+2024-10-28 21:43:36,441 INFO basehttp: "GET /deposit HTTP/1.1" 200 5846
+2024-10-28 21:46:29,988 INFO basehttp: "GET /deposit HTTP/1.1" 200 5929
+2024-10-28 21:51:24,567 INFO basehttp: "GET /deposit HTTP/1.1" 200 6127
+2024-10-28 21:51:24,758 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 304 0
+2024-10-28 21:51:27,407 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 304 0
+2024-10-28 21:51:35,534 INFO basehttp: "GET /deposit HTTP/1.1" 200 6127
+2024-10-28 21:52:51,922 INFO basehttp: "GET /deposit HTTP/1.1" 200 6172
+2024-10-28 21:52:52,077 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 200 1425
+2024-10-28 21:52:52,135 INFO basehttp: "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+2024-10-28 21:52:52,153 INFO basehttp: "GET /static/img/logo.png HTTP/1.1" 200 27607
+2024-10-28 21:52:53,846 INFO basehttp: "GET /static/js/confetti.js HTTP/1.1" 200 7222
+2024-10-28 21:52:53,853 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 200 4687
+2024-10-28 21:52:53,853 INFO basehttp: "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+2024-10-28 21:52:55,156 INFO basehttp: "GET /static/media/roulette.mp3 HTTP/1.1" 200 95433
+2024-10-28 21:52:55,156 INFO basehttp: "GET /static/img/outwheel.png HTTP/1.1" 200 440976
+2024-10-28 21:52:55,167 INFO basehttp: "GET /static/img/wheel.png HTTP/1.1" 200 407425
+2024-10-28 21:52:55,403 WARNING log: Not Found: /favicon.ico
+2024-10-28 21:52:55,403 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-10-28 21:54:36,135 INFO basehttp: "GET /deposit HTTP/1.1" 200 6252
+2024-10-28 21:54:36,274 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 200 1425
+2024-10-28 21:54:36,288 INFO basehttp: "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+2024-10-28 21:54:36,303 INFO basehttp: "GET /static/img/logo.png HTTP/1.1" 200 27607
+2024-10-28 21:54:38,401 INFO basehttp: "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+2024-10-28 21:54:38,405 INFO basehttp: "GET /static/js/confetti.js HTTP/1.1" 200 7222
+2024-10-28 21:54:38,415 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 200 4687
+2024-10-28 21:54:39,861 INFO basehttp: "GET /static/img/wheel.png HTTP/1.1" 200 407425
+2024-10-28 21:54:39,868 INFO basehttp: "GET /static/media/roulette.mp3 HTTP/1.1" 200 95433
+2024-10-28 21:54:39,872 INFO basehttp: "GET /static/img/outwheel.png HTTP/1.1" 200 440976
+2024-10-28 21:54:40,304 WARNING log: Not Found: /favicon.ico
+2024-10-28 21:54:40,311 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-10-28 22:00:19,217 INFO basehttp: "GET /deposit HTTP/1.1" 200 6440
+2024-10-28 22:02:31,110 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\forms.py changed, reloading.
+2024-10-28 22:02:34,025 INFO autoreload: Watching for file changes with StatReloader
+2024-10-28 22:02:39,162 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\forms.py changed, reloading.
+2024-10-28 22:02:40,882 INFO autoreload: Watching for file changes with StatReloader
+2024-10-28 22:02:42,546 INFO basehttp: "GET /deposit HTTP/1.1" 200 6538
+2024-10-28 22:17:18,412 INFO basehttp: "GET /deposit HTTP/1.1" 200 7248
+2024-10-28 22:17:18,856 INFO basehttp: "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+2024-10-28 22:17:18,862 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 200 1425
+2024-10-28 22:17:18,873 INFO basehttp: "GET /static/img/logo.png HTTP/1.1" 200 27607
+2024-10-28 22:17:20,040 INFO basehttp: "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+2024-10-28 22:17:20,041 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 200 4687
+2024-10-28 22:17:20,041 INFO basehttp: "GET /static/js/confetti.js HTTP/1.1" 200 7222
+2024-10-28 22:17:21,349 INFO basehttp: "GET /static/media/roulette.mp3 HTTP/1.1" 200 95433
+2024-10-28 22:17:21,354 INFO basehttp: "GET /static/img/wheel.png HTTP/1.1" 200 407425
+2024-10-28 22:17:21,354 INFO basehttp: "GET /static/img/outwheel.png HTTP/1.1" 200 440976
+2024-10-28 22:17:21,647 WARNING log: Not Found: /favicon.ico
+2024-10-28 22:17:21,647 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-10-30 06:35:35,059 INFO autoreload: Watching for file changes with StatReloader
+2024-10-30 06:35:52,699 INFO basehttp: "GET / HTTP/1.1" 200 17535
+2024-10-30 06:35:53,415 INFO basehttp: "GET /static/css/bootstrap.min.css HTTP/1.1" 200 160403
+2024-10-30 06:35:53,499 INFO basehttp: "GET /static/css/styles_.css HTTP/1.1" 200 17326
+2024-10-30 06:35:53,548 INFO basehttp: "GET /static/css/appc5a3.css HTTP/1.1" 200 409
+2024-10-30 06:35:53,573 INFO basehttp: "GET /static/css/spinner.css HTTP/1.1" 200 7925
+2024-10-30 06:35:53,661 INFO basehttp: "GET /static/img/image.png HTTP/1.1" 200 225852
+2024-10-30 06:35:53,671 INFO basehttp: "GET /static/img/wheel.png HTTP/1.1" 200 407425
+2024-10-30 06:35:55,139 INFO basehttp: "GET /static/img/paymentmethod2.jpg HTTP/1.1" 200 2612
+2024-10-30 06:35:55,196 INFO basehttp: "GET /static/img/paymentmethod3.jpg HTTP/1.1" 200 2178
+2024-10-30 06:35:55,196 INFO basehttp: "GET /static/img/paymentmethod1.jpg HTTP/1.1" 200 3409
+2024-10-30 06:35:55,204 INFO basehttp: "GET /static/js/popper.min.js HTTP/1.1" 200 21004
+2024-10-30 06:35:55,215 INFO basehttp: "GET /static/js/jquery.min.js HTTP/1.1" 200 89476
+2024-10-30 06:35:55,285 INFO basehttp: "GET /static/img/paymentmethod4.jpg HTTP/1.1" 200 3191
+2024-10-30 06:35:55,287 INFO basehttp: "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60174
+2024-10-30 06:35:55,337 INFO basehttp: "GET /static/img/paymentmethod6.jpg HTTP/1.1" 200 1847
+2024-10-30 06:35:55,352 INFO basehttp: "GET /static/img/paymentmethod5.jpg HTTP/1.1" 200 4083
+2024-10-30 06:35:55,438 INFO basehttp: "GET /static/img/paymentmethod7.jpg HTTP/1.1" 200 2294
+2024-10-30 06:35:55,481 INFO basehttp: "GET /static/img/client.png HTTP/1.1" 200 14575
+2024-10-30 06:35:55,891 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 06:35:55,891 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 06:35:56,079 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 06:35:56,080 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 06:36:25,435 INFO basehttp: "GET / HTTP/1.1" 200 17535
+2024-10-30 06:36:31,149 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 06:36:31,149 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 06:36:39,805 WARNING basehttp: "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1828
+2024-10-30 06:36:39,811 WARNING basehttp: "GET /static/js/popper.min.js.map HTTP/1.1" 404 1819
+2024-10-30 06:36:39,854 WARNING basehttp: "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+2024-10-30 06:37:22,774 INFO basehttp: "GET / HTTP/1.1" 200 17546
+2024-10-30 06:37:25,720 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 06:37:25,720 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 06:37:25,739 WARNING basehttp: "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+2024-10-30 06:37:25,865 WARNING basehttp: "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1828
+2024-10-30 06:37:25,865 WARNING basehttp: "GET /static/js/popper.min.js.map HTTP/1.1" 404 1819
+2024-10-30 06:37:39,983 INFO basehttp: "GET / HTTP/1.1" 200 17546
+2024-10-30 06:37:40,303 INFO basehttp: "GET /static/css/spinner.css HTTP/1.1" 200 7925
+2024-10-30 06:37:40,408 INFO basehttp: "GET /static/css/bootstrap.min.css HTTP/1.1" 200 160403
+2024-10-30 06:37:40,423 INFO basehttp: "GET /static/css/appc5a3.css HTTP/1.1" 200 409
+2024-10-30 06:37:40,450 INFO basehttp: "GET /static/css/styles_.css HTTP/1.1" 200 17326
+2024-10-30 06:37:40,591 INFO basehttp: "GET /static/img/image.png HTTP/1.1" 200 225852
+2024-10-30 06:37:40,678 INFO basehttp: "GET /static/img/wheel.png HTTP/1.1" 200 407425
+2024-10-30 06:37:42,354 INFO basehttp: "GET /static/img/paymentmethod2.jpg HTTP/1.1" 200 2612
+2024-10-30 06:37:42,354 INFO basehttp: "GET /static/img/paymentmethod1.jpg HTTP/1.1" 200 3409
+2024-10-30 06:37:42,354 INFO basehttp: "GET /static/img/paymentmethod3.jpg HTTP/1.1" 200 2178
+2024-10-30 06:37:42,355 INFO basehttp: "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60174
+2024-10-30 06:37:42,357 INFO basehttp: "GET /static/js/jquery.min.js HTTP/1.1" 200 89476
+2024-10-30 06:37:42,504 INFO basehttp: "GET /static/js/popper.min.js HTTP/1.1" 200 21004
+2024-10-30 06:37:42,605 INFO basehttp: "GET /static/img/paymentmethod4.jpg HTTP/1.1" 200 3191
+2024-10-30 06:37:42,630 INFO basehttp: "GET /static/img/client.png HTTP/1.1" 200 14575
+2024-10-30 06:37:42,635 INFO basehttp: "GET /static/img/paymentmethod6.jpg HTTP/1.1" 200 1847
+2024-10-30 06:37:42,642 WARNING basehttp: "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+2024-10-30 06:37:42,671 INFO basehttp: "GET /static/img/paymentmethod7.jpg HTTP/1.1" 200 2294
+2024-10-30 06:37:42,671 INFO basehttp: "GET /static/img/paymentmethod5.jpg HTTP/1.1" 200 4083
+2024-10-30 06:37:42,691 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 06:37:42,699 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 06:37:42,715 WARNING basehttp: "GET /static/js/popper.min.js.map HTTP/1.1" 404 1819
+2024-10-30 06:37:42,721 WARNING basehttp: "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1828
+2024-10-30 06:37:42,977 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 06:37:42,984 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
