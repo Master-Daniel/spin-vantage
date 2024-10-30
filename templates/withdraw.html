@@ -1,42 +1,61 @@
-{% extends 'base.html' %}
+{% extends 'layout.html' %}
 {% load static %}
 {% load widget_tweaks %}
 
 {% block content %}
-<div style="margin:20px 0 25px 0;">
-    <h1 class="h1 mt-2 mb-5 font-weight-normal" style="color: white; text-transform:uppercase;">
-        Withdraw
-    </h1>
-    {% if error %}
-    <h4 class="h4 mb-5 font-weight-normal" style="color: white;">ERROR: {{ error }}</h4>
-    {% endif %}
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+        </div>
+    </div>
+</div>
 
-    <form class="form-signin" action="" method="POST"> {% csrf_token %}
-        {% for field in form %}
-        <div class="form-group row">
-            <label style="color: white" class="col-sm-2 col-form-label col-form-label-lg"
-                for="{{ field.id_for_label }}">{{ field.label }}</label>
-            <div class="col-sm-10">
-                {{ field|add_class:'form-control form-control-lg' }}
-                {% if field.errors %}
-                <div class="alert alert-danger mt-3" role="alert">{{ field.errors.0 }}</div>
-                {% endif %}
+
+<div class="bg-white">
+    <div class="container d-flex justify-content-center">
+        <ul class="nav secondary-nav alternate">
+            <li class="nav-item"><a class="nav-link" href="/deposit">Deposit</a></li>
+            <li class="nav-item"><a class="nav-link" href="/withdraw">Withdraw</a></li>
+        </ul>
+    </div>
+</div>
+
+<div id="content" class="py-4 bg-lgray">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9 col-lg-7 col-xl-6 mx-auto">
+                <div class="bg-white shadow-sm rounded p-3 pt-sm-5 pb-sm-5 px-sm-5 mb-4">
+                    <div>
+
+                        <div class="text-center bg-yellow p-4 rounded mb-4">
+                            <h3 class="text-10 text-white font-weight-400">&dollar;{{ user.userprofile.balance }}</h3>
+                            <p class="text-white">Available Balance</p>
+                        </div>
+
+                        <form class="form-signin" action="" method="POST"> {% csrf_token %}
+                            {% for field in form %}
+                            <div class="form-group row">
+                                <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+                                {{ field|add_class:'form-control form-control-lg' }}
+                                {% if field.errors %}
+                                <div class="alert alert-danger mt-3" role="alert">{{ field.errors.0 }}</div>
+                                {% endif %}
+                            </div>
+                            {% endfor %}
+                            <div class="form-group row" id="crypto">
+                                <label for="crypto_id">Wallet Address:</label>
+                                <input type="text" class="form-control form-control-lg" id="crypto_id" name="crypto">
+                            </div>
+                            <p id="message" class="d-none">Kindly contact customer support <a href="mailto:support@spinvantage.com">support@spinvantage.com</a> for guidance</p>
+                            <div class="mt-5">
+                                <button class="mt2 btn btn-lg btn-primary btn-block" id="submit_button" type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
-        {% endfor %}
-        <div class="form-group row" id="crypto">
-            <label style="color: white" class="col-sm-2 col-form-label col-form-label-lg" for="crypto_id">Wallet
-                Address:</label>
-            <div class="col-sm-10">
-                <input type="text" class="form-control form-control-lg" id="crypto_id" name="crypto">
-            </div>
-        </div>
-        <p id="message" class="d-none text-white">Kindly contact customer support <a
-                href="mailto:support@spinvantage.com">support@spinvantage.com</a> for guidance</p>
-        <div class="mt-5">
-            <button class="mt2 btn btn-lg btn-primary btn-block" id="submit_button" type="submit">Submit</button>
-        </div>
-    </form>
+    </div>
 </div>
 {% endblock %}
 {% block extra-scripts %}

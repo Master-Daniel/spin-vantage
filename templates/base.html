@@ -38,12 +38,8 @@
   <div class="col-sm-6 my-auto">
     <div class="row no-gutters no-border rounded overflow-hidden flex-md-row mb-4 ml-4 mr-4 shadow-sm h-md-250 position-relative">
       <div class="d-flex justify-content-between align-items-center w-100">
-        <a href="{% url 'wheel:dashboard' %}" class="btn btn-sm btn-secondary text-white mr-1">Dashboard</a>
+        <a href="{% url 'wheel:index' %}" class="btn btn-sm btn-secondary text-white mr-1">Home</a>
         {% if user.is_authenticated %}
-        <div class="float-start reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU">
-          <a href="{% url 'wheel:deposit' %}" class="btn btn-sm btn-primary text-white">Deposit</a>
-          <a href="{% url 'wheel:withdraw' %}" class="btn btn-sm btn-warning text-white">Withdraw</a>
-        </div>
           <form action="{% url 'wheel:logout' %}" method="POST" class="ml-auto">
             {% csrf_token %}
             <button type="submit" class="btn btn-danger btn-sm">Logout</button>

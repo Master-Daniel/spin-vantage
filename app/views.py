@@ -90,7 +90,8 @@ def deposit(request):
 @login_required
 def withdraw(request):
     form = WithdrawForm()
-    return render(request, 'withdraw.html', {"form": form})
+    user = request.user
+    return render(request, 'withdraw.html', {"form": form, "user": user })
 
 
 def login(request):
@@ -152,7 +153,8 @@ def logout(request):
 
 
 def index(request):
-    return render(request, 'index.html')
+    user = request.user
+    return render(request, 'index.html', { "user": user })
 
 
 def howToPlay(request):
