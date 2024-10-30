@@ -1,4 +1,5 @@
 /venv
 version
-*.log
+/logs
+/app/__pycache__
 db.sqlite3
