@@ -25,36 +25,62 @@
         <div class="row">
             <div class="col-md-9 col-lg-7 col-xl-6 mx-auto">
                 <div class="bg-white shadow-sm rounded p-3 pt-sm-5 pb-sm-5 px-sm-5 mb-4">
-                    <div>
-
-                        <div class="text-center bg-yellow p-4 rounded mb-4">
-                            <h3 class="text-10 text-white font-weight-400">&dollar;{{ user.userprofile.balance }}</h3>
-                            <p class="text-white">Available Balance</p>
-                        </div>
-
-                        <form class="form-signin" action="" method="POST"> {% csrf_token %}
-                            {% for field in form %}
-                            <div class="form-group row">
-                                <label for="{{ field.id_for_label }}">{{ field.label }}</label>
-                                {{ field|add_class:'form-control form-control-lg' }}
-                                {% if field.errors %}
-                                <div class="alert alert-danger mt-3" role="alert">{{ field.errors.0 }}</div>
-                                {% endif %}
-                            </div>
-                            {% endfor %}
-                            <div class="form-group row" id="crypto">
-                                <label for="crypto_id">Wallet Address:</label>
-                                <input type="text" class="form-control form-control-lg" id="crypto_id" name="crypto">
-                            </div>
-                            <p id="message" class="d-none">Kindly contact customer support <a href="mailto:support@spinvantage.com">support@spinvantage.com</a> for guidance</p>
-                            <div class="mt-5">
-                                <button class="mt2 btn btn-lg btn-primary btn-block" id="submit_button" type="submit">Submit</button>
-                            </div>
-                        </form>
+                    <div class="text-center bg-yellow p-4 rounded mb-4">
+                        <h3 class="text-10 text-white font-weight-400">&dollar;{{ user.userprofile.balance }}</h3>
+                        <p class="text-white">Available Balance</p>
                     </div>
+
+                    {% if messages %}
+                    <ul class="messagelist">{% for message in messages %}
+                        <li{% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message|capfirst }}</li>
+                            {% endfor %}
+                    </ul>
+                    {% endif %}
+
+                    <form class="container-fluid form-signin" action="" method="POST"> {% csrf_token %}
+                        {% for field in form %}
+                        <div class="form-group row">
+                            <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+                            {{ field|add_class:'form-control form-control-lg' }}
+                            {% if field.errors %}
+                            <div class="alert alert-danger mt-3" role="alert">{{ field.errors.0 }}</div>
+                            {% endif %}
+                        </div>
+                        {% endfor %}
+                        <div class="form-group row" id="crypto">
+                            <label for="crypto_id">Wallet Address:</label>
+                            <input type="text" class="form-control form-control-lg" id="crypto_id" name="crypto">
+                        </div>
+                        <div class="form-group row d-none" id="paypal">
+                            <label for="paypal_email">PayPal Email:</label>
+                            <input type="text" class="form-control form-control-lg" id="paypal_email" name="paypal" />
+                        </div>
+                        <div id="bank" class="d-none">
+                            <div class="form-group row">
+                                <label for="bank_name">Bank Name:</label>
+                                <input type="text" class="form-control form-control-lg" id="bank_name"
+                                    name="bank_name" />
+                            </div>
+                            <div class="form-group row" id="account_name">
+                                <label for="account_name">Account Name:</label>
+                                <input type="text" class="form-control form-control-lg" id="account_name"
+                                    name="account_name" />
+                            </div>
+                            <div class="form-group row" id="account_number">
+                                <label for="account_number">Account Number:</label>
+                                <input type="text" class="form-control form-control-lg" id="account_number"
+                                    name="account_number" />
+                            </div>
+                        </div>
+                        <p id="message" class="d-none">Kindly contact customer support <a
+                                href="mailto:support@spinvantage.com">support@spinvantage.com</a> for guidance</p>
+                        <button class="btn btn-lg btn-primary btn-block" id="submit_button"
+                            type="submit">Submit</button>
+                    </form>
                 </div>
             </div>
         </div>
+        <div id="nameToast" class=" hidden"></div>
     </div>
 </div>
 {% endblock %}
@@ -67,10 +93,26 @@
         if (selectedOption === 'crypto') {
             document.getElementById('submit_button').classList.remove('d-none')
             document.getElementById('message').classList.add('d-none')
+            document.getElementById('bank').classList.add('d-none')
+            document.getElementById('paypal').classList.add('d-none')
             document.getElementById('crypto').classList.remove('d-none')
+        } else if (selectedOption === 'paypal') {
+            document.getElementById('submit_button').classList.remove('d-none')
+            document.getElementById('message').classList.add('d-none')
+            document.getElementById('paypal').classList.remove('d-none')
+            document.getElementById('crypto').classList.add('d-none')
+            document.getElementById('bank').classList.add('d-none')
+        } else if (selectedOption === 'bank_transfer') {
+            document.getElementById('submit_button').classList.remove('d-none')
+            document.getElementById('message').classList.add('d-none')
+            document.getElementById('paypal').classList.add('d-none')
+            document.getElementById('crypto').classList.add('d-none')
+            document.getElementById('bank').classList.remove('d-none')
         } else {
+            document.getElementById('bank').classList.add('d-none')
             document.getElementById('submit_button').classList.add('d-none')
             document.getElementById('message').classList.remove('d-none')
+            document.getElementById('paypal').classList.add('d-none')
             document.getElementById('crypto').classList.add('d-none')
         }
     }

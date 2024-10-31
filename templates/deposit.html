@@ -25,7 +25,7 @@
         <div class="row">
             <div class="col-md-9 col-lg-7 col-xl-6 mx-auto">
                 <div class="bg-white shadow-sm rounded p-3 pt-sm-5 pb-sm-5 px-sm-5 mb-4">
-                    <div >
+                    <div>
 
                         <div class="alert alert-info" role="alert">
                             <strong>
@@ -36,21 +36,36 @@
                         <form class="form-signin" method="POST"> {% csrf_token %}
                             {% for field in form %}
                             <div class="form-group">
-                                <label class="" for="{{ field.id_for_label }}">{{ field.label }}</label>
+                                <label htmlFor="{{ field.id_for_label }}">{{ field.label }}</label>
                                 {{ field|add_class:'form-control form-control-lg' }}
-                                    {% if field.errors %}
-                                    <div class="alert alert-danger mt-3" role="alert">{{ field.errors.0 }}</div>
-                                    {% endif %}
+                                {% if field.errors %}
+                                <div class="alert alert-danger mt-3" role="alert">{{ field.errors.0 }}</div>
+                                {% endif %}
                             </div>
                             {% endfor %}
-                            <h6 id="crypto_wallet" data-id="3HE9oC81SRYx5pZSqukgxdoGi1DuDr5Xet">Wallet Address: 3HE9oC81SRYx5pZSqukgxdoGi1DuDr5Xet</h6>
-                            <p id="message" class="d-none">Kindly contact customer support <ahref="mailto:support@spinvantage.com">support@spinvantage.com</ahref=> for guidance</p>
-                            <button type="button" class="btn btn-sm btn-success text-center align-items-center justify-content-center" id="crypto_wallet_btn" onclick="copyAddress()">Copy Address</button>
+                            <h6 id="btc_wallet">BTC Address: 3HE9oC81SRYx5pZSqukgxdoGi1DuDr5Xet</h6>
+                            <h6 id="usdt_wallet">USDT Address: TYZKqbMaLgxbS4J6V3wYcxfbqAMKQEvHhT</h6>
+                            <p id="message" class="d-none text-danger">
+                                We are currently experiencing some temporary issues with bank transfer, Paypal,
+                                and Gcash deposit options. To proceed with your deposit, please reach out to our
+                                customer support team for further assistance. they will guide you on an alternative
+                                way to deposit your funds securely. Once your deposit is confirmed, the amount will
+                                automatically reflect in your account balance.<br /> We apologize for any inconvenience
+                                and appreciate your patience as we work to resolve this issue.
+                            </p>
+                            <div class="d-flex gap-2">
+                                <button type="button"
+                                    class="btn btn-sm btn-success text-center mr-2 align-items-center justify-content-center crypto_wallet_btn"
+                                    onclick="copyAddress('3HE9oC81SRYx5pZSqukgxdoGi1DuDr5Xet')">Copy BTC
+                                    Address</button>
+                                <button type="button"
+                                    class="btn btn-sm btn-success text-center align-items-center justify-content-center crypto_wallet_btn"
+                                    onclick="copyAddress('TYZKqbMaLgxbS4J6V3wYcxfbqAMKQEvHhT')">Copy USDT
+                                    Address</button>
+                            </div>
                             <div class="form-group row d-none" id="card">
-                                <label class="col-sm-2 col-form-label col-form-label-lg" for="card_id">Card ID</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control form-control-lg" id="card_id" name="card">
-                                </div>
+                                <label htmlFor="card_id">Card ID</label>
+                                <input type="text" class="form-control form-control-lg" id="card_id" name="card" />
                             </div>
                             <div class="mt-5">
                                 <button class="mt2 btn btn-lg btn-primary btn-block" type="submit">Save</button>
@@ -73,25 +88,31 @@
 
         if (selectedOption === 'crypto') {
             document.getElementById('card').classList.add('d-none')
-            document.getElementById('crypto_wallet').classList.remove('d-none')
-            document.getElementById('crypto_wallet_btn').classList.remove('d-none')
+            document.getElementById('usdt_wallet').classList.remove('d-none')
+            document.getElementById('btc_wallet').classList.remove('d-none')
+            document.querySelector('.crypto_wallet_btn').classList.remove('d-none')
             document.getElementById('message').classList.add('d-none')
         } else if (selectedOption === 'bank_transfer' || selectedOption === 'paypal') {
             document.getElementById('message').classList.remove('d-none')
             document.getElementById('card').classList.add('d-none')
-            document.getElementById('crypto_wallet').classList.add('d-none')
-            document.getElementById('crypto_wallet_btn').classList.add('d-none')
+            document.getElementById('usdt_wallet').classList.add('d-none')
+            document.getElementById('btc_wallet').classList.add('d-none')
+            document.querySelectorAll('.crypto_wallet_btn').forEach((element) => {
+                element.classList.add('d-none');
+            });
         } else {
             document.getElementById('message').classList.add('d-none')
             document.getElementById('card').classList.remove('d-none')
-            document.getElementById('crypto_wallet').classList.add('d-none')
-            document.getElementById('crypto_wallet_btn').classList.add('d-none')
+            document.getElementById('usdt_wallet').classList.add('d-none')
+            document.getElementById('btc_wallet').classList.add('d-none')
+            document.querySelectorAll('.crypto_wallet_btn').forEach((element) => {
+                element.classList.add('d-none');
+            });
         }
     }
 
-    function copyAddress() {
-        var copyText = document.getElementById("crypto_wallet");
-        navigator.clipboard.writeText(copyText.getAttribute('data-id')).then(() => {
+    function copyAddress(text) {
+        navigator.clipboard.writeText(text).then(() => {
             alert('Wallet address copied to clipboard')
         });
     }
