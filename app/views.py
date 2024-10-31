@@ -91,6 +91,8 @@ def deposit(request):
 def withdraw(request):
     form = WithdrawForm()
     user = request.user
+    if request.method == 'POST':
+        messages.success(request, "Your request to withdraw funds has been received. Our team will review and process your withdrawal as soon as possible. We'll notify you once the transaction is completed.")
     return render(request, 'withdraw.html', {"form": form, "user": user })
 
 
