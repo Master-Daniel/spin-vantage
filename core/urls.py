@@ -22,5 +22,5 @@ urlpatterns = [
 ]
 
 # Setting Admin page titles
-admin.AdminSite.site_header = 'Spin Vantage Administration'
+admin.AdminSite.site_header = 'Spin Vantage Administrator'
 admin.AdminSite.site_title = 'Spin Vantage'
