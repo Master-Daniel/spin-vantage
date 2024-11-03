@@ -71,12 +71,13 @@
 
 /* Basic styling for the toast notification */
 .toast {
+  position: fixed;
   bottom: 20px;
   right: 20px;
   background-color: #000000 !important;
-  color: #fff !important;
+  color: #fff;
   padding: 10px 20px;
-  height: 100px !important;
+  border-radius: 5px;
   font-size: 16px;
   opacity: 0;
   transition: opacity 0.5s;

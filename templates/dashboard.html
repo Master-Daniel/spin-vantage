@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load l10n %}
+{% load humanize %}
 {% load widget_tweaks %}
 
 {% block content %}
@@ -13,7 +15,7 @@
   {% if spin %}
   <h4 class="h4 mb-5 font-weight-normal" style="color: white;">Good luck!</h4>
   {% else %}
-  <h2 class="float-start mb-5" style="color: white;">Account Balance: ${{ user.userprofile.balance }}</h2>
+  <h2 class="float-start mb-5" style="color: white;">Account Balance: ${{ user.userprofile.balance|floatformat:2|intcomma }} </h2>
 
   <form class="form-signin" action="{% url 'wheel:draw_spin' %}" method="POST"> {% csrf_token %}
     {% for field in form %}
