@@ -9,7 +9,7 @@ from django.utils import timezone
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.models import User
 from django.contrib import messages
-from decimal import Decimal
+from decimal import Decimal, InvalidOperation
 from django.contrib.auth.decorators import login_required
 
 # Get an instance of a logger
@@ -23,15 +23,31 @@ def draw_spin(request):
     if request.method == "POST":
         form = DrawForm(request.POST)
         user = request.user
+
         if form.is_valid():
             code = form.cleaned_data['code']
-            if user.userprofile.balance > Decimal(code):
+            
+            # Convert code to a decimal and validate it as a number
+            try:
+                code = Decimal(code)
+                if code <= 0:
+                    raise ValueError("Amount must be positive.")
+            except (InvalidOperation, ValueError):
+                return render(request, 'dashboard.html', {'form': form, "error": "Please enter a valid number greater than zero."})
+
+            # Check if balance is sufficient
+            if user.userprofile.balance >= code:
+                # Deduct the amount from user's balance
+                user.userprofile.balance -= code
+                user.userprofile.save()
+
+                # Process the spin
                 instance = form.save(commit=False)
                 instance.date = timezone.now()
 
                 try:
                     ucode = UniqueCode.objects.get(code=code)
-                except Exception:
+                except UniqueCode.DoesNotExist:
                     ucode = UniqueCode(code='NO CODE', used=False, prize=None)
 
                 if ucode.prize:
@@ -40,14 +56,21 @@ def draw_spin(request):
                 else:
                     instance.rotation = calc_wheel_rotations()
                     instance.prize = get_prize(get_prize_result(instance.rotation))
+                
                 instance.save()
-
                 set_code_used(code, True)
-                return render(request, 'dashboard.html', {'form': form, 'spin': True, 'result': instance.pk, 'rotation': instance.rotation, 'prizes': prizes})
-            else: 
-                return render(request, 'dashboard.html', {'form': form, "error": "Insufficient fund"})
+                
+                return render(request, 'dashboard.html', {
+                    'form': form,
+                    'spin': True,
+                    'result': instance.pk,
+                    'rotation': instance.rotation,
+                    'prizes': prizes
+                })
+            else:
+                return render(request, 'dashboard.html', {'form': form, "error": "Insufficient funds."})
         else:
-            logger.warning(f"invalid form else => {form.is_valid()} {form.errors}")
+            logger.warning(f"Invalid form submission: {form.errors}")
             form = DrawForm(request.POST)
     else:
         form = DrawForm()
