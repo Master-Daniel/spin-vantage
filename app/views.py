@@ -15,26 +15,46 @@ from django.contrib.auth.decorators import login_required
 # Get an instance of a logger
 logger = logging.getLogger(__name__)
 
-
 def draw_spin(request):
-    logger.info(f"Draw_new with {request.method}")
+    logger.info(f"Draw_spin invoked with {request.method}")
     prizes = get_list_or_404(Prize)
-
+    
     if request.method == "POST":
         form = DrawForm(request.POST)
         user = request.user
+
         if form.is_valid():
             code = form.cleaned_data['code']
-            if user.userprofile.balance > Decimal(code):
+            
+            # Validate code as a positive decimal
+            try:
+                code = Decimal(code)
+                if code <= 0:
+                    raise ValueError("Amount must be positive.")
+            except (InvalidOperation, ValueError):
+                return render(request, 'dashboard.html', {
+                    'form': form,
+                    "error": "Please enter a valid number greater than zero."
+                })
+
+            # Check if user has sufficient balance
+            if user.userprofile.balance >= code:
+                # Deduct the amount from user's balance
+                user.userprofile.balance -= code
+                user.userprofile.save()
+
+                # Create the draw instance
                 instance = form.save(commit=False)
                 instance.date = timezone.now()
-                instance.requested_by = user  # Set the requested_by field
+                instance.requested_by = user
 
+                # Retrieve or initialize a UniqueCode object
                 try:
                     ucode = UniqueCode.objects.get(code=code)
                 except UniqueCode.DoesNotExist:
                     ucode = UniqueCode(code='NO CODE', used=False, prize=None)
 
+                # Assign prize and calculate rotation
                 if ucode.prize:
                     instance.rotation = calc_wheel_rotations(ucode.prize.id)
                     instance.prize = ucode.prize
@@ -42,19 +62,31 @@ def draw_spin(request):
                     instance.rotation = calc_wheel_rotations()
                     instance.prize = get_prize(get_prize_result(instance.rotation))
 
-                instance.save()  # Now it saves with requested_by set
-
+                instance.save()
                 set_code_used(code, True)
-                return render(request, 'dashboard.html', {'form': form, 'spin': True, 'result': instance.pk, 'rotation': instance.rotation, 'prizes': prizes})
-            else: 
-                return render(request, 'dashboard.html', {'form': form, "error": "Insufficient fund"})
+                
+                return render(request, 'dashboard.html', {
+                    'form': form,
+                    'spin': True,
+                    'result': instance.pk,
+                    'rotation': instance.rotation,
+                    'prizes': prizes
+                })
+            else:
+                return render(request, 'dashboard.html', {
+                    'form': form,
+                    "error": "Insufficient funds."
+                })
         else:
-            logger.warning(f"invalid form else => {form.is_valid()} {form.errors}")
+            logger.warning(f"Invalid form submission: {form.errors}")
             form = DrawForm(request.POST)
     else:
         form = DrawForm()
 
-    return render(request, 'dashboard.html', {'form': form, 'prizes': prizes})
+    return render(request, 'dashboard.html', {
+        'form': form,
+        'prizes': prizes
+    })
 
 def draw_result(request, pk):
     prizes = get_list_or_404(Prize)
