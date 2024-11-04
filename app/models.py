@@ -28,6 +28,7 @@ class Draw(models.Model):
     """
     Class to represent each valid draw that happened in the system.
     """
+    requested_by = models.ForeignKey(User, on_delete=models.CASCADE, related_name="draws", null=True, blank=True)
     email = models.EmailField(blank=False)
     code = models.CharField(max_length=8)
     sent = models.BooleanField(default=False)

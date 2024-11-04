@@ -78,7 +78,7 @@
                                 </div>
                             </div>
                             <div class="mt-5">
-                                <button class="mt2 btn btn-lg btn-primary btn-block" type="submit">Continue</button>
+                                <button class="mt2 btn btn-lg btn-primary btn-block" id="submit" type="submit">Continue</button>
                             </div>
                         </form>
                     </div>
@@ -96,20 +96,25 @@
         let selectedOption = options.options[options.selectedIndex].value;
 
         if (selectedOption === 'crypto') {
+            document.getElementById('submit').classList.remove('d-none')
             document.getElementById('card').classList.add('d-none')
             document.getElementById('usdt_wallet').classList.remove('d-none')
             document.getElementById('btc_wallet').classList.remove('d-none')
-            document.querySelector('.crypto_wallet_btn').classList.remove('d-none')
+            document.querySelectorAll('.crypto_wallet_btn').forEach((element) => {
+                element.classList.remove('d-none');
+            });
             document.getElementById('message').classList.add('d-none')
-        } else if (selectedOption === 'bank_transfer' || selectedOption === 'paypal') {
+        } else if (selectedOption === 'bank_transfer' || selectedOption === 'paypal' || selectedOption === 'gcash' || selectedOption === 'zelle' || selectedOption === 'cash_app') {
             document.getElementById('message').classList.remove('d-none')
             document.getElementById('card').classList.add('d-none')
             document.getElementById('usdt_wallet').classList.add('d-none')
             document.getElementById('btc_wallet').classList.add('d-none')
+            document.getElementById('submit').classList.add('d-none')
             document.querySelectorAll('.crypto_wallet_btn').forEach((element) => {
                 element.classList.add('d-none');
             });
         } else {
+            document.getElementById('submit').classList.remove('d-none')
             document.getElementById('message').classList.add('d-none')
             document.getElementById('card').classList.remove('d-none')
             document.getElementById('usdt_wallet').classList.add('d-none')
