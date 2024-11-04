@@ -47,7 +47,7 @@
                 {% endif %}
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto centered">
-                        {% if user.is_authenticated %}
+                        {% if not user.is_authenticated %}
                         <li class="nav-item active">
                             <a class="nav-link" href="/how-to-play">How to Play</a>
                         </li>
@@ -105,9 +105,11 @@
                         <li class="list-inline-item">
                             <a href="/about" class="responsible-link">About</a>
                         </li>
+                        {% if not user.is_authenticated %}
                         <li class="list-inline-item">
                             <a href="/how-to-play" class="responsible-link">How To Play</a>
                         </li>
+                        {% endif %}
                         <li class="list-inline-item">
                             <a href="/faq" class="responsible-link">FAQs</a>
                         </li>
