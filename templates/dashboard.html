@@ -6,6 +6,10 @@
 
 {% block content %}
 <div style="margin:20px 0 25px 0;">
+  <h5 class="text-center">
+    <span class="active-dot"></span>
+    Active Players: <span id="activePlayers">465</span>
+  </h5>
   <h1 class="h1 mt-2 mb-5 font-weight-normal" style="color: white; text-transform:uppercase;">Spin and win cash prizes!
   </h1>
   {% if error %}
@@ -60,6 +64,28 @@
 
   // Display the toast at random intervals (e.g., every 5 to 10 seconds)
   setInterval(showRandomNameToast, Math.random() * 5000 + 5000); // 5-10 sec
+
+  // Initial number of active players
+  let activePlayers = 100;
+  const minPlayers = 50;
+  const maxPlayers = 9999999999;
+  const fluctuationRange = 20;
+
+  // Function to update the number of active players randomly
+  function updateActivePlayers() {
+      const change = Math.floor(Math.random() * fluctuationRange * 20) - fluctuationRange;
+      activePlayers += change;
+      activePlayers = Math.max(minPlayers, Math.min(maxPlayers, activePlayers));
+
+      // Display the updated number of active players
+      document.getElementById("activePlayers").textContent = activePlayers;
+  }
+
+  // Update every 10 minutes (600000 ms)
+  setInterval(updateActivePlayers, 600000);
+
+  // Initial display
+  updateActivePlayers();
 </script>
 {% if spin %}
 <script type="text/javascript">
