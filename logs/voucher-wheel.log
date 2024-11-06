@@ -7107,3 +7107,2331 @@ django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 5: 'block'.
 2024-10-30 06:37:42,721 WARNING basehttp: "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1828
 2024-10-30 06:37:42,977 WARNING log: Not Found: /imgs/favicon.ico
 2024-10-30 06:37:42,984 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 06:51:37,377 INFO basehttp: "GET / HTTP/1.1" 200 17518
+2024-10-30 06:51:37,683 INFO basehttp: "GET /static/css/bootstrap.min.css HTTP/1.1" 200 160403
+2024-10-30 06:51:37,697 INFO basehttp: "GET /static/css/fontawesome.css HTTP/1.1" 200 53592
+2024-10-30 06:51:37,720 INFO basehttp: "GET /static/css/spinner.css HTTP/1.1" 200 7925
+2024-10-30 06:51:37,730 INFO basehttp: "GET /static/css/styles_.css HTTP/1.1" 200 17326
+2024-10-30 06:51:37,737 INFO basehttp: "GET /static/css/appc5a3.css HTTP/1.1" 200 409
+2024-10-30 06:51:37,762 INFO basehttp: "GET /static/img/image.png HTTP/1.1" 200 225852
+2024-10-30 06:51:37,768 INFO basehttp: "GET /static/img/wheel.png HTTP/1.1" 200 407425
+2024-10-30 06:51:39,463 INFO basehttp: "GET /static/img/paymentmethod1.jpg HTTP/1.1" 200 3409
+2024-10-30 06:51:39,474 INFO basehttp: "GET /static/img/paymentmethod2.jpg HTTP/1.1" 200 2612
+2024-10-30 06:51:39,476 INFO basehttp: "GET /static/img/paymentmethod3.jpg HTTP/1.1" 200 2178
+2024-10-30 06:51:39,480 INFO basehttp: "GET /static/js/popper.min.js HTTP/1.1" 200 21004
+2024-10-30 06:51:39,482 INFO basehttp: "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60174
+2024-10-30 06:51:39,483 INFO basehttp: "GET /static/js/jquery.min.js HTTP/1.1" 200 89476
+2024-10-30 06:51:39,535 INFO basehttp: "GET /static/img/paymentmethod4.jpg HTTP/1.1" 200 3191
+2024-10-30 06:51:39,545 INFO basehttp: "GET /static/img/paymentmethod5.jpg HTTP/1.1" 200 4083
+2024-10-30 06:51:39,560 INFO basehttp: "GET /static/img/paymentmethod6.jpg HTTP/1.1" 200 1847
+2024-10-30 06:51:39,564 INFO basehttp: "GET /static/img/client.png HTTP/1.1" 200 14575
+2024-10-30 06:51:39,564 INFO basehttp: "GET /static/img/paymentmethod7.jpg HTTP/1.1" 200 2294
+2024-10-30 06:51:39,609 WARNING basehttp: "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+2024-10-30 06:51:39,692 WARNING basehttp: "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 404 1840
+2024-10-30 06:51:39,732 WARNING basehttp: "GET /static/webfonts/fa-solid-900.woff HTTP/1.1" 404 1837
+2024-10-30 06:51:39,773 WARNING basehttp: "GET /static/js/popper.min.js.map HTTP/1.1" 404 1819
+2024-10-30 06:51:39,773 WARNING basehttp: "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1828
+2024-10-30 06:51:39,780 WARNING basehttp: "GET /static/webfonts/fa-solid-900.ttf HTTP/1.1" 404 1834
+2024-10-30 06:51:40,137 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 06:51:40,149 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 06:51:40,277 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 06:51:40,279 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 06:57:00,592 INFO basehttp: "GET / HTTP/1.1" 200 17540
+2024-10-30 06:57:00,856 WARNING basehttp: "GET /static/css/font-awesome/css/font-awesome.min.css HTTP/1.1" 404 1882
+2024-10-30 06:57:00,856 INFO basehttp: "GET /static/css/bootstrap.min.css HTTP/1.1" 200 160403
+2024-10-30 06:57:00,865 INFO basehttp: "GET /static/css/spinner.css HTTP/1.1" 200 7925
+2024-10-30 06:57:00,872 INFO basehttp: "GET /static/css/styles_.css HTTP/1.1" 200 17326
+2024-10-30 06:57:00,888 INFO basehttp: "GET /static/css/appc5a3.css HTTP/1.1" 200 409
+2024-10-30 06:57:00,913 INFO basehttp: "GET /static/img/image.png HTTP/1.1" 200 225852
+2024-10-30 06:57:00,929 INFO basehttp: "GET /static/img/wheel.png HTTP/1.1" 200 407425
+2024-10-30 06:57:02,614 INFO basehttp: "GET /static/img/paymentmethod1.jpg HTTP/1.1" 200 3409
+2024-10-30 06:57:02,620 INFO basehttp: "GET /static/img/paymentmethod2.jpg HTTP/1.1" 200 2612
+2024-10-30 06:57:02,624 INFO basehttp: "GET /static/img/paymentmethod3.jpg HTTP/1.1" 200 2178
+2024-10-30 06:57:02,638 INFO basehttp: "GET /static/js/popper.min.js HTTP/1.1" 200 21004
+2024-10-30 06:57:02,640 INFO basehttp: "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60174
+2024-10-30 06:57:02,640 INFO basehttp: "GET /static/js/jquery.min.js HTTP/1.1" 200 89476
+2024-10-30 06:57:02,734 WARNING basehttp: "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+2024-10-30 06:57:02,742 INFO basehttp: "GET /static/img/client.png HTTP/1.1" 200 14575
+2024-10-30 06:57:02,808 INFO basehttp: "GET /static/img/paymentmethod4.jpg HTTP/1.1" 200 3191
+2024-10-30 06:57:02,808 INFO basehttp: "GET /static/img/paymentmethod5.jpg HTTP/1.1" 200 4083
+2024-10-30 06:57:02,891 INFO basehttp: "GET /static/img/paymentmethod6.jpg HTTP/1.1" 200 1847
+2024-10-30 06:57:02,894 WARNING basehttp: "GET /static/js/popper.min.js.map HTTP/1.1" 404 1819
+2024-10-30 06:57:02,906 WARNING basehttp: "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1828
+2024-10-30 06:57:02,906 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 06:57:02,913 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 06:57:02,907 INFO basehttp: "GET /static/img/paymentmethod7.jpg HTTP/1.1" 200 2294
+2024-10-30 06:57:03,094 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 06:57:03,094 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 06:57:10,550 INFO basehttp: "GET / HTTP/1.1" 200 17540
+2024-10-30 06:57:10,783 WARNING basehttp: "GET /static/css/font-awesome/css/font-awesome.min.css HTTP/1.1" 404 1882
+2024-10-30 06:57:12,863 WARNING basehttp: "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+2024-10-30 06:57:12,984 WARNING basehttp: "GET /static/js/popper.min.js.map HTTP/1.1" 404 1819
+2024-10-30 06:57:12,984 WARNING basehttp: "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1828
+2024-10-30 06:57:13,304 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 06:57:13,312 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 06:57:19,702 INFO basehttp: "GET / HTTP/1.1" 200 17540
+2024-10-30 06:57:19,800 WARNING basehttp: "GET /static/css/font-awesome/css/font-awesome.min.css HTTP/1.1" 404 1882
+2024-10-30 06:57:21,999 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 06:57:21,999 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 06:57:22,039 WARNING basehttp: "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+2024-10-30 06:57:22,144 WARNING basehttp: "GET /static/js/popper.min.js.map HTTP/1.1" 404 1819
+2024-10-30 06:57:22,160 WARNING basehttp: "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1828
+2024-10-30 06:59:12,268 INFO basehttp: "GET / HTTP/1.1" 200 17540
+2024-10-30 06:59:12,377 INFO basehttp: "GET /static/css/bootstrap.min.css HTTP/1.1" 200 160403
+2024-10-30 06:59:12,399 WARNING basehttp: "GET /static/css/font-awesome/css/font-awesome.min.css HTTP/1.1" 404 1882
+2024-10-30 06:59:12,535 INFO basehttp: "GET /static/css/spinner.css HTTP/1.1" 200 7925
+2024-10-30 06:59:12,544 INFO basehttp: "GET /static/css/styles_.css HTTP/1.1" 200 17326
+2024-10-30 06:59:12,562 INFO basehttp: "GET /static/css/appc5a3.css HTTP/1.1" 200 409
+2024-10-30 06:59:12,574 INFO basehttp: "GET /static/img/image.png HTTP/1.1" 200 225852
+2024-10-30 06:59:12,593 INFO basehttp: "GET /static/img/wheel.png HTTP/1.1" 200 407425
+2024-10-30 06:59:14,829 INFO basehttp: "GET /static/img/paymentmethod1.jpg HTTP/1.1" 200 3409
+2024-10-30 06:59:14,834 INFO basehttp: "GET /static/img/paymentmethod3.jpg HTTP/1.1" 200 2178
+2024-10-30 06:59:14,834 INFO basehttp: "GET /static/img/paymentmethod2.jpg HTTP/1.1" 200 2612
+2024-10-30 06:59:14,834 INFO basehttp: "GET /static/js/popper.min.js HTTP/1.1" 200 21004
+2024-10-30 06:59:14,834 INFO basehttp: "GET /static/img/paymentmethod4.jpg HTTP/1.1" 200 3191
+2024-10-30 06:59:14,834 INFO basehttp: "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60174
+2024-10-30 06:59:14,848 INFO basehttp: "GET /static/js/jquery.min.js HTTP/1.1" 200 89476
+2024-10-30 06:59:14,920 INFO basehttp: "GET /static/img/paymentmethod5.jpg HTTP/1.1" 200 4083
+2024-10-30 06:59:14,936 INFO basehttp: "GET /static/img/paymentmethod7.jpg HTTP/1.1" 200 2294
+2024-10-30 06:59:14,958 INFO basehttp: "GET /static/img/paymentmethod6.jpg HTTP/1.1" 200 1847
+2024-10-30 06:59:14,961 INFO basehttp: "GET /static/img/client.png HTTP/1.1" 200 14575
+2024-10-30 06:59:14,975 WARNING basehttp: "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+2024-10-30 06:59:15,047 WARNING basehttp: "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1828
+2024-10-30 06:59:15,047 WARNING basehttp: "GET /static/js/popper.min.js.map HTTP/1.1" 404 1819
+2024-10-30 06:59:15,087 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 06:59:15,087 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 06:59:15,253 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 06:59:15,255 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 06:59:26,944 WARNING basehttp: "GET /static/css/font-awesome/css/font-awesome.min.css HTTP/1.1" 404 1882
+2024-10-30 06:59:28,990 WARNING log: Not Found: /favicon.ico
+2024-10-30 06:59:28,993 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-10-30 07:00:01,934 INFO basehttp: "GET / HTTP/1.1" 200 17536
+2024-10-30 07:00:02,212 INFO basehttp: "GET /static/css/bootstrap.min.css HTTP/1.1" 200 160403
+2024-10-30 07:00:02,212 INFO basehttp: "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 31023
+2024-10-30 07:00:02,236 INFO basehttp: "GET /static/css/spinner.css HTTP/1.1" 200 7925
+2024-10-30 07:00:02,255 INFO basehttp: "GET /static/css/styles_.css HTTP/1.1" 200 17326
+2024-10-30 07:00:02,268 INFO basehttp: "GET /static/css/appc5a3.css HTTP/1.1" 200 409
+2024-10-30 07:00:02,290 INFO basehttp: "GET /static/img/image.png HTTP/1.1" 200 225852
+2024-10-30 07:00:02,298 INFO basehttp: "GET /static/img/wheel.png HTTP/1.1" 200 407425
+2024-10-30 07:00:03,988 INFO basehttp: "GET /static/img/paymentmethod1.jpg HTTP/1.1" 200 3409
+2024-10-30 07:00:04,001 INFO basehttp: "GET /static/img/paymentmethod3.jpg HTTP/1.1" 200 2178
+2024-10-30 07:00:04,002 INFO basehttp: "GET /static/js/popper.min.js HTTP/1.1" 200 21004
+2024-10-30 07:00:04,002 INFO basehttp: "GET /static/img/paymentmethod2.jpg HTTP/1.1" 200 2612
+2024-10-30 07:00:04,004 INFO basehttp: "GET /static/js/jquery.min.js HTTP/1.1" 200 89476
+2024-10-30 07:00:04,010 INFO basehttp: "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60174
+2024-10-30 07:00:04,070 INFO basehttp: "GET /static/img/paymentmethod4.jpg HTTP/1.1" 200 3191
+2024-10-30 07:00:04,147 INFO basehttp: "GET /static/img/paymentmethod5.jpg HTTP/1.1" 200 4083
+2024-10-30 07:00:04,166 INFO basehttp: "GET /static/img/paymentmethod7.jpg HTTP/1.1" 200 2294
+2024-10-30 07:00:04,168 INFO basehttp: "GET /static/img/paymentmethod6.jpg HTTP/1.1" 200 1847
+2024-10-30 07:00:04,219 INFO basehttp: "GET /static/img/client.png HTTP/1.1" 200 14575
+2024-10-30 07:00:04,253 WARNING basehttp: "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+2024-10-30 07:00:04,348 INFO basehttp: "GET /static/font-awesome/fonts/fontawesome-webfont3e6e.woff2?v=4.7.0 HTTP/1.1" 200 77160
+2024-10-30 07:00:04,415 WARNING basehttp: "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1828
+2024-10-30 07:00:04,416 WARNING basehttp: "GET /static/js/popper.min.js.map HTTP/1.1" 404 1819
+2024-10-30 07:00:04,484 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 07:00:04,486 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 07:00:04,665 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 07:00:04,667 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 07:08:05,222 ERROR log: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\smartif.py", line 175, in translate_token
+    op = OPERATORS[token]
+         ~~~~~~~~~^^^^^^^
+KeyError: '!user.is_authenticated'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\app\views.py", line 155, in index
+    return render(request, 'index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader_tags.py", line 103, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 193, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\defaulttags.py", line 964, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\defaulttags.py", line 897, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\smartif.py", line 166, in __init__
+    mapped_tokens.append(self.translate_token(token))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\smartif.py", line 177, in translate_token
+    return self.create_var(token)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\defaulttags.py", line 900, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 662, in __init__
+    raise TemplateSyntaxError("Could not parse the remainder: '%s' "
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '!user.is_authenticated' from '!user.is_authenticated'
+2024-10-30 07:08:05,282 ERROR basehttp: "GET / HTTP/1.1" 500 205286
+2024-10-30 07:08:07,718 WARNING log: Not Found: /favicon.ico
+2024-10-30 07:08:07,720 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-10-30 07:08:34,263 INFO basehttp: "GET / HTTP/1.1" 200 17360
+2024-10-30 07:08:36,456 WARNING basehttp: "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+2024-10-30 07:08:36,570 WARNING basehttp: "GET /static/js/popper.min.js.map HTTP/1.1" 404 1819
+2024-10-30 07:08:36,877 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 07:08:36,891 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 07:08:36,938 WARNING basehttp: "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1828
+2024-10-30 07:08:39,792 INFO basehttp: "GET /login HTTP/1.1" 302 0
+2024-10-30 07:08:39,912 INFO basehttp: "GET /dashboard HTTP/1.1" 200 6964
+2024-10-30 07:08:40,230 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 200 1425
+2024-10-30 07:08:40,276 INFO basehttp: "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+2024-10-30 07:08:40,299 INFO basehttp: "GET /static/img/logo.png HTTP/1.1" 200 27607
+2024-10-30 07:08:42,186 INFO basehttp: "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+2024-10-30 07:08:42,186 INFO basehttp: "GET /static/js/confetti.js HTTP/1.1" 200 7222
+2024-10-30 07:08:42,222 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 200 4687
+2024-10-30 07:08:42,811 INFO basehttp: "GET /static/img/outwheel.png HTTP/1.1" 200 440976
+2024-10-30 07:08:42,841 INFO basehttp: "GET /static/media/roulette.mp3 HTTP/1.1" 200 95433
+2024-10-30 07:08:47,150 WARNING basehttp: "GET /static/js/popper.min.js.map HTTP/1.1" 404 1819
+2024-10-30 07:08:47,183 WARNING basehttp: "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+2024-10-30 07:08:47,178 WARNING basehttp: "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1828
+2024-10-30 07:08:47,408 WARNING basehttp: "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+2024-10-30 07:08:58,062 INFO basehttp: "GET / HTTP/1.1" 200 17360
+2024-10-30 07:09:00,304 WARNING basehttp: "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+2024-10-30 07:09:00,403 WARNING basehttp: "GET /static/js/popper.min.js.map HTTP/1.1" 404 1819
+2024-10-30 07:09:00,739 WARNING basehttp: "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1828
+2024-10-30 07:09:00,760 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 07:09:00,763 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 07:10:14,832 INFO basehttp: "GET / HTTP/1.1" 200 17360
+2024-10-30 07:10:16,799 WARNING basehttp: "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+2024-10-30 07:10:16,879 WARNING basehttp: "GET /static/js/popper.min.js.map HTTP/1.1" 404 1819
+2024-10-30 07:10:17,212 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 07:10:17,212 WARNING basehttp: "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1828
+2024-10-30 07:10:17,212 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 07:10:20,085 INFO basehttp: "GET / HTTP/1.1" 200 17360
+2024-10-30 07:10:22,014 WARNING basehttp: "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+2024-10-30 07:10:22,472 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 07:10:22,489 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 07:10:22,553 WARNING basehttp: "GET /static/js/popper.min.js.map HTTP/1.1" 404 1819
+2024-10-30 07:10:22,584 WARNING basehttp: "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1828
+2024-10-30 07:11:01,236 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-30 07:11:03,781 INFO autoreload: Watching for file changes with StatReloader
+2024-10-30 07:11:10,783 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-30 07:11:14,105 INFO autoreload: Watching for file changes with StatReloader
+2024-10-30 07:11:19,855 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-30 07:11:23,121 INFO autoreload: Watching for file changes with StatReloader
+2024-10-30 07:11:26,790 INFO basehttp: "GET / HTTP/1.1" 200 17360
+2024-10-30 07:11:28,961 WARNING basehttp: "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+2024-10-30 07:11:29,027 WARNING basehttp: "GET /static/js/popper.min.js.map HTTP/1.1" 404 1819
+2024-10-30 07:11:29,353 WARNING basehttp: "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1828
+2024-10-30 07:11:29,359 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 07:11:29,364 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 07:11:32,123 INFO basehttp: "GET / HTTP/1.1" 200 17360
+2024-10-30 07:11:33,057 INFO basehttp: "GET /static/css/styles_.css HTTP/1.1" 200 17326
+2024-10-30 07:11:33,115 INFO basehttp: "GET /static/css/bootstrap.min.css HTTP/1.1" 200 160403
+2024-10-30 07:11:33,121 INFO basehttp: "GET /static/css/appc5a3.css HTTP/1.1" 200 409
+2024-10-30 07:11:33,123 INFO basehttp: "GET /static/css/spinner.css HTTP/1.1" 200 7925
+2024-10-30 07:11:33,136 INFO basehttp: "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 31023
+2024-10-30 07:11:33,201 INFO basehttp: "GET /static/img/image.png HTTP/1.1" 200 225852
+2024-10-30 07:11:33,208 INFO basehttp: "GET /static/img/wheel.png HTTP/1.1" 200 407425
+2024-10-30 07:11:34,164 INFO basehttp: "GET /static/img/paymentmethod1.jpg HTTP/1.1" 200 3409
+2024-10-30 07:11:34,165 INFO basehttp: "GET /static/img/paymentmethod2.jpg HTTP/1.1" 200 2612
+2024-10-30 07:11:34,171 INFO basehttp: "GET /static/img/paymentmethod3.jpg HTTP/1.1" 200 2178
+2024-10-30 07:11:34,172 INFO basehttp: "GET /static/js/popper.min.js HTTP/1.1" 200 21004
+2024-10-30 07:11:34,174 INFO basehttp: "GET /static/js/jquery.min.js HTTP/1.1" 200 89476
+2024-10-30 07:11:34,174 INFO basehttp: "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60174
+2024-10-30 07:11:34,253 INFO basehttp: "GET /static/img/paymentmethod6.jpg HTTP/1.1" 200 1847
+2024-10-30 07:11:34,254 INFO basehttp: "GET /static/img/paymentmethod5.jpg HTTP/1.1" 200 4083
+2024-10-30 07:11:34,254 INFO basehttp: "GET /static/img/paymentmethod4.jpg HTTP/1.1" 200 3191
+2024-10-30 07:11:34,254 INFO basehttp: "GET /static/img/paymentmethod7.jpg HTTP/1.1" 200 2294
+2024-10-30 07:11:34,256 INFO basehttp: "GET /static/img/client.png HTTP/1.1" 200 14575
+2024-10-30 07:11:34,297 WARNING basehttp: "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+2024-10-30 07:11:34,369 INFO basehttp: "GET /static/font-awesome/fonts/fontawesome-webfont3e6e.woff2?v=4.7.0 HTTP/1.1" 200 77160
+2024-10-30 07:11:34,458 WARNING basehttp: "GET /static/js/popper.min.js.map HTTP/1.1" 404 1819
+2024-10-30 07:11:34,458 WARNING basehttp: "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1828
+2024-10-30 07:11:34,489 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 07:11:34,489 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 07:11:34,649 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 07:11:34,652 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 07:12:05,466 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-30 07:12:08,904 INFO autoreload: Watching for file changes with StatReloader
+2024-10-30 07:12:13,651 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-30 07:12:15,912 INFO autoreload: Watching for file changes with StatReloader
+2024-10-30 07:12:18,382 INFO basehttp: "GET / HTTP/1.1" 200 17360
+2024-10-30 07:12:20,742 WARNING basehttp: "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+2024-10-30 07:12:20,868 WARNING basehttp: "GET /static/js/popper.min.js.map HTTP/1.1" 404 1819
+2024-10-30 07:12:21,216 WARNING basehttp: "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1828
+2024-10-30 07:12:21,227 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 07:12:21,240 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 07:12:34,199 INFO autoreload: Watching for file changes with StatReloader
+2024-10-30 07:12:37,686 INFO basehttp: "GET / HTTP/1.1" 200 17360
+2024-10-30 07:12:39,951 WARNING basehttp: "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+2024-10-30 07:12:40,043 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 07:12:40,045 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 07:12:40,062 WARNING basehttp: "GET /static/js/popper.min.js.map HTTP/1.1" 404 1819
+2024-10-30 07:12:40,364 WARNING basehttp: "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1828
+2024-10-30 07:12:44,786 INFO basehttp: "GET / HTTP/1.1" 200 17360
+2024-10-30 07:12:46,792 WARNING basehttp: "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+2024-10-30 07:12:46,877 WARNING basehttp: "GET /static/js/popper.min.js.map HTTP/1.1" 404 1819
+2024-10-30 07:12:47,204 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 07:12:47,204 WARNING basehttp: "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1828
+2024-10-30 07:12:47,204 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 07:16:25,030 INFO basehttp: "GET / HTTP/1.1" 200 17621
+2024-10-30 07:16:27,342 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 07:16:27,342 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 07:17:17,892 INFO basehttp: "GET / HTTP/1.1" 200 17621
+2024-10-30 07:17:18,909 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 07:17:18,913 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 07:17:22,578 INFO basehttp: "GET / HTTP/1.1" 200 17621
+2024-10-30 07:17:23,883 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 07:17:23,892 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 07:17:28,528 WARNING basehttp: "GET /static/js/popper.min.js.map HTTP/1.1" 404 1819
+2024-10-30 07:17:28,530 WARNING basehttp: "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1828
+2024-10-30 07:17:29,172 WARNING basehttp: "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+2024-10-30 07:17:54,743 INFO basehttp: "GET / HTTP/1.1" 200 17601
+2024-10-30 07:17:56,762 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 07:17:56,765 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 07:18:00,888 INFO basehttp: "GET /logout HTTP/1.1" 302 0
+2024-10-30 07:18:00,910 INFO basehttp: "GET / HTTP/1.1" 200 17637
+2024-10-30 07:18:01,859 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 07:18:01,859 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 07:18:04,765 INFO basehttp: "GET /login HTTP/1.1" 200 4933
+2024-10-30 07:18:05,128 INFO basehttp: "GET /static/js/master.js HTTP/1.1" 200 119
+2024-10-30 07:18:05,783 WARNING log: Not Found: /favicon.ico
+2024-10-30 07:18:05,783 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-10-30 07:18:15,291 INFO basehttp: "POST /login HTTP/1.1" 302 0
+2024-10-30 07:18:15,346 INFO basehttp: "GET /dashboard HTTP/1.1" 200 6964
+2024-10-30 07:23:35,068 INFO basehttp: "GET /dashboard HTTP/1.1" 200 6689
+2024-10-30 07:23:41,524 INFO basehttp: "GET / HTTP/1.1" 200 18087
+2024-10-30 07:23:42,570 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 07:23:42,575 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 07:23:51,576 INFO basehttp: "GET /dashboard HTTP/1.1" 200 6689
+2024-10-30 07:23:55,686 INFO basehttp: "GET / HTTP/1.1" 200 18087
+2024-10-30 07:23:56,577 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 07:23:56,578 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 07:23:58,832 INFO basehttp: "GET /deposit HTTP/1.1" 200 17555
+2024-10-30 07:23:59,784 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 07:23:59,784 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 07:37:19,342 INFO basehttp: "GET /deposit HTTP/1.1" 200 9755
+2024-10-30 07:37:21,393 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 07:37:21,393 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 07:38:25,330 INFO basehttp: "GET /deposit HTTP/1.1" 200 10088
+2024-10-30 07:38:26,448 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 07:38:26,457 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 07:39:27,598 INFO basehttp: "GET /deposit HTTP/1.1" 200 10579
+2024-10-30 07:39:28,770 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 07:39:28,770 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 07:40:15,277 INFO basehttp: "GET /deposit HTTP/1.1" 200 10455
+2024-10-30 07:40:16,469 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 07:40:16,469 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 07:40:56,152 INFO basehttp: "GET /deposit HTTP/1.1" 200 10376
+2024-10-30 07:40:57,385 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 07:40:57,403 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 07:41:29,320 INFO basehttp: "GET /deposit HTTP/1.1" 200 10378
+2024-10-30 07:41:30,546 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 07:41:30,546 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 07:41:53,265 INFO basehttp: "GET /deposit HTTP/1.1" 200 10390
+2024-10-30 07:41:54,364 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 07:41:54,375 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 07:42:23,940 INFO basehttp: "GET /deposit HTTP/1.1" 200 10409
+2024-10-30 07:42:24,844 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 07:42:24,844 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 07:42:40,464 INFO basehttp: "GET /deposit HTTP/1.1" 200 10432
+2024-10-30 07:42:41,422 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 07:42:41,423 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 07:43:11,865 WARNING basehttp: "GET /static/js/popper.min.js.map HTTP/1.1" 404 1819
+2024-10-30 07:43:12,187 WARNING basehttp: "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1828
+2024-10-30 07:43:12,263 WARNING basehttp: "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+2024-10-30 07:44:22,288 INFO basehttp: "GET /deposit HTTP/1.1" 200 11971
+2024-10-30 07:44:24,398 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 07:44:24,406 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 07:44:45,719 WARNING basehttp: "GET /static/js/popper.min.js.map HTTP/1.1" 404 1819
+2024-10-30 07:44:45,719 WARNING basehttp: "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1828
+2024-10-30 07:44:46,173 WARNING basehttp: "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+2024-10-30 07:45:53,731 INFO basehttp: "GET /deposit HTTP/1.1" 200 11163
+2024-10-30 07:45:56,106 WARNING basehttp: "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+2024-10-30 07:45:56,175 WARNING basehttp: "GET /static/js/popper.min.js.map HTTP/1.1" 404 1819
+2024-10-30 07:45:56,488 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 07:45:56,491 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 07:45:56,507 WARNING basehttp: "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1828
+2024-10-30 07:46:24,051 INFO basehttp: "GET /deposit HTTP/1.1" 200 10965
+2024-10-30 07:46:26,083 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 07:46:26,083 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 07:46:33,697 WARNING basehttp: "GET /static/js/popper.min.js.map HTTP/1.1" 404 1819
+2024-10-30 07:46:34,029 WARNING basehttp: "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1828
+2024-10-30 07:46:34,212 WARNING basehttp: "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+2024-10-30 07:51:49,102 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 07:51:49,104 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 07:51:50,180 INFO basehttp: "GET /deposit HTTP/1.1" 200 10833
+2024-10-30 07:51:51,140 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 07:51:51,140 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 07:51:53,910 INFO basehttp: "GET /withdraw HTTP/1.1" 200 7897
+2024-10-30 07:52:15,161 INFO basehttp: "GET /withdraw HTTP/1.1" 200 10639
+2024-10-30 07:52:16,406 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 07:52:16,406 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 07:53:03,270 INFO basehttp: "GET /withdraw HTTP/1.1" 200 10643
+2024-10-30 07:53:04,470 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 07:53:04,470 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 07:53:25,367 INFO basehttp: "GET /withdraw HTTP/1.1" 200 10593
+2024-10-30 07:53:26,443 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 07:53:26,443 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 07:53:45,301 INFO basehttp: "GET /withdraw HTTP/1.1" 200 10494
+2024-10-30 07:53:46,307 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 07:53:46,309 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 07:54:28,068 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-30 07:54:30,901 INFO autoreload: Watching for file changes with StatReloader
+2024-10-30 07:54:33,925 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-30 07:54:37,589 INFO autoreload: Watching for file changes with StatReloader
+2024-10-30 07:54:42,518 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-30 07:54:47,527 INFO autoreload: Watching for file changes with StatReloader
+2024-10-30 07:55:13,425 ERROR log: Internal Server Error: /withdraw
+Traceback (most recent call last):
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 470, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'user.userprofile.balance'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\app\views.py", line 94, in withdraw
+    return render(request, 'withdraw.html', {"form": form, "user": user })
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 193, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader_tags.py", line 278, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader_tags.py", line 216, in do_block
+    nodelist = parser.parse(('endblock',))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 522, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 31: 'user.userprofile.balance', expected 'endblock'. Did you forget to register or load this tag?
+2024-10-30 07:55:13,469 ERROR basehttp: "GET /withdraw HTTP/1.1" 500 188788
+2024-10-30 07:55:48,494 INFO basehttp: "GET /withdraw HTTP/1.1" 200 10495
+2024-10-30 07:55:49,846 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 07:55:49,854 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 07:55:59,422 INFO basehttp: "GET /withdraw HTTP/1.1" 200 10494
+2024-10-30 07:56:00,446 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 07:56:00,446 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 07:56:05,650 INFO basehttp: "GET /withdraw HTTP/1.1" 200 10493
+2024-10-30 07:56:06,665 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 07:56:06,665 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 07:56:13,459 INFO basehttp: "GET /withdraw HTTP/1.1" 200 10493
+2024-10-30 07:56:14,439 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 07:56:14,446 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 07:56:17,758 INFO basehttp: "GET /deposit HTTP/1.1" 200 10833
+2024-10-30 07:56:18,645 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 07:56:18,645 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 07:56:22,921 INFO basehttp: "GET /dashboard HTTP/1.1" 200 6689
+2024-10-30 07:56:28,067 INFO basehttp: "GET / HTTP/1.1" 200 18093
+2024-10-30 07:56:29,115 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 07:56:29,115 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-30 07:56:35,160 INFO basehttp: "GET /withdraw HTTP/1.1" 200 10493
+2024-10-30 07:56:36,084 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-30 07:56:36,087 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 11:14:34,705 INFO autoreload: Watching for file changes with StatReloader
+2024-10-31 11:14:49,343 INFO basehttp: "GET / HTTP/1.1" 200 18093
+2024-10-31 11:14:52,395 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 11:14:52,397 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 11:14:52,513 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 11:14:52,513 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 11:14:57,612 INFO basehttp: "GET /withdraw HTTP/1.1" 200 10565
+2024-10-31 11:14:59,061 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 11:14:59,062 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 11:15:00,176 INFO basehttp: "GET /deposit HTTP/1.1" 200 12171
+2024-10-31 11:15:00,968 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 11:15:00,969 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 11:16:56,927 INFO basehttp: "GET /deposit HTTP/1.1" 200 12177
+2024-10-31 11:16:57,613 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 11:16:57,613 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 11:19:58,754 INFO basehttp: "GET /deposit HTTP/1.1" 200 12182
+2024-10-31 11:19:59,632 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 11:19:59,633 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 11:22:40,044 INFO basehttp: "GET /deposit HTTP/1.1" 200 12172
+2024-10-31 11:22:40,761 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 11:22:40,761 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 11:24:35,926 INFO basehttp: "GET /deposit HTTP/1.1" 200 11990
+2024-10-31 11:24:36,749 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 11:24:36,766 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 11:38:51,677 INFO basehttp: "GET /deposit HTTP/1.1" 200 12333
+2024-10-31 11:38:54,147 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 11:38:54,147 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 11:39:35,146 INFO basehttp: "GET /deposit HTTP/1.1" 200 12330
+2024-10-31 11:39:36,039 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 11:39:36,042 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 11:40:38,472 INFO basehttp: "GET /deposit HTTP/1.1" 200 12187
+2024-10-31 11:40:39,243 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 11:40:39,243 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 11:50:36,156 INFO basehttp: "GET /withdraw HTTP/1.1" 200 10565
+2024-10-31 11:50:38,181 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 11:50:38,182 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 12:01:55,400 INFO basehttp: "GET /withdraw HTTP/1.1" 200 11331
+2024-10-31 12:01:57,150 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 12:01:57,150 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 12:02:26,634 INFO basehttp: "GET /withdraw HTTP/1.1" 200 11252
+2024-10-31 12:02:27,549 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 12:02:27,552 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 12:03:05,100 INFO basehttp: "GET /withdraw HTTP/1.1" 200 11255
+2024-10-31 12:03:06,205 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 12:03:06,205 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 12:03:39,860 INFO basehttp: "GET /withdraw HTTP/1.1" 200 11259
+2024-10-31 12:03:40,886 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 12:03:40,888 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 12:04:07,572 INFO basehttp: "GET /withdraw HTTP/1.1" 200 11263
+2024-10-31 12:04:09,993 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 12:04:09,993 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 12:08:41,462 INFO basehttp: "GET /withdraw HTTP/1.1" 200 11263
+2024-10-31 12:08:42,489 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 12:08:42,490 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 12:08:51,926 INFO basehttp: "GET /withdraw HTTP/1.1" 200 11263
+2024-10-31 12:08:52,883 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 12:08:52,885 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 12:09:06,423 INFO basehttp: "GET /withdraw HTTP/1.1" 200 11267
+2024-10-31 12:09:07,356 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 12:09:07,363 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 12:09:34,993 INFO basehttp: "GET /withdraw HTTP/1.1" 200 11251
+2024-10-31 12:09:35,994 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 12:09:36,000 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 12:19:24,218 INFO basehttp: "GET /withdraw HTTP/1.1" 200 11251
+2024-10-31 12:19:25,823 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 12:19:25,824 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 12:23:26,014 INFO basehttp: "GET /withdraw HTTP/1.1" 200 11251
+2024-10-31 12:23:26,345 INFO basehttp: "GET /static/css/bootstrap.min.css HTTP/1.1" 200 160403
+2024-10-31 12:23:26,361 INFO basehttp: "GET /static/css/spinner.css HTTP/1.1" 200 7925
+2024-10-31 12:23:26,378 INFO basehttp: "GET /static/css/styles_.css HTTP/1.1" 200 17326
+2024-10-31 12:23:26,384 INFO basehttp: "GET /static/css/appc5a3.css HTTP/1.1" 200 409
+2024-10-31 12:23:26,397 INFO basehttp: "GET /static/js/jquery.min.js HTTP/1.1" 200 89476
+2024-10-31 12:23:26,440 INFO basehttp: "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60174
+2024-10-31 12:23:26,451 INFO basehttp: "GET /static/js/popper.min.js HTTP/1.1" 200 21004
+2024-10-31 12:23:26,501 INFO basehttp: "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 31023
+2024-10-31 12:23:26,922 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 12:23:26,923 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 12:23:26,985 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 12:23:26,987 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 12:24:29,417 INFO basehttp: "GET /withdraw HTTP/1.1" 200 11251
+2024-10-31 12:24:29,495 INFO basehttp: "GET /static/css/bootstrap.min.css HTTP/1.1" 200 160403
+2024-10-31 12:24:29,501 INFO basehttp: "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 31023
+2024-10-31 12:24:29,506 INFO basehttp: "GET /static/css/spinner.css HTTP/1.1" 200 7925
+2024-10-31 12:24:29,517 INFO basehttp: "GET /static/css/styles_.css HTTP/1.1" 200 17326
+2024-10-31 12:24:29,522 INFO basehttp: "GET /static/css/appc5a3.css HTTP/1.1" 200 409
+2024-10-31 12:24:29,531 INFO basehttp: "GET /static/js/jquery.min.js HTTP/1.1" 200 89476
+2024-10-31 12:24:29,537 INFO basehttp: "GET /static/js/popper.min.js HTTP/1.1" 200 21004
+2024-10-31 12:24:29,549 INFO basehttp: "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60174
+2024-10-31 12:24:30,331 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 12:24:30,332 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 12:24:30,397 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 12:24:30,398 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 13:58:24,745 INFO basehttp: "GET /withdraw HTTP/1.1" 200 11251
+2024-10-31 13:58:24,959 INFO basehttp: "GET /static/css/bootstrap.min.css HTTP/1.1" 200 160403
+2024-10-31 13:58:24,959 INFO basehttp: "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 31023
+2024-10-31 13:58:24,977 INFO basehttp: "GET /static/css/spinner.css HTTP/1.1" 200 7925
+2024-10-31 13:58:24,978 INFO basehttp: "GET /static/css/styles_.css HTTP/1.1" 200 17326
+2024-10-31 13:58:24,994 INFO basehttp: "GET /static/css/appc5a3.css HTTP/1.1" 200 409
+2024-10-31 13:58:25,004 INFO basehttp: "GET /static/js/jquery.min.js HTTP/1.1" 200 89476
+2024-10-31 13:58:25,014 INFO basehttp: "GET /static/js/popper.min.js HTTP/1.1" 200 21004
+2024-10-31 13:58:25,029 INFO basehttp: "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60174
+2024-10-31 13:58:26,393 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 13:58:26,394 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 13:58:26,483 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 13:58:26,484 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 14:08:48,705 INFO basehttp: "GET /withdraw HTTP/1.1" 200 11101
+2024-10-31 14:08:48,805 INFO basehttp: "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 31023
+2024-10-31 14:08:48,807 INFO basehttp: "GET /static/css/bootstrap.min.css HTTP/1.1" 200 160403
+2024-10-31 14:08:48,820 INFO basehttp: "GET /static/css/spinner.css HTTP/1.1" 200 7925
+2024-10-31 14:08:48,822 INFO basehttp: "GET /static/css/styles_.css HTTP/1.1" 200 17326
+2024-10-31 14:08:48,828 INFO basehttp: "GET /static/css/appc5a3.css HTTP/1.1" 200 409
+2024-10-31 14:08:48,840 INFO basehttp: "GET /static/js/jquery.min.js HTTP/1.1" 200 89476
+2024-10-31 14:08:48,847 INFO basehttp: "GET /static/js/popper.min.js HTTP/1.1" 200 21004
+2024-10-31 14:08:48,857 INFO basehttp: "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60174
+2024-10-31 14:08:49,772 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 14:08:49,773 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 14:08:49,843 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 14:08:49,843 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 14:09:15,729 INFO basehttp: "GET /static/font-awesome/fonts/fontawesome-webfont3e6e.woff2?v=4.7.0 HTTP/1.1" 200 77160
+2024-10-31 14:09:17,085 WARNING basehttp: "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1828
+2024-10-31 14:09:17,100 WARNING basehttp: "GET /static/js/popper.min.js.map HTTP/1.1" 404 1819
+2024-10-31 14:09:17,486 WARNING basehttp: "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+2024-10-31 14:10:08,806 INFO basehttp: "GET /withdraw HTTP/1.1" 200 11101
+2024-10-31 14:10:09,059 INFO basehttp: "GET /static/css/bootstrap.min.css HTTP/1.1" 200 160403
+2024-10-31 14:10:09,095 INFO basehttp: "GET /static/css/spinner.css HTTP/1.1" 200 7925
+2024-10-31 14:10:09,112 INFO basehttp: "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 31023
+2024-10-31 14:10:09,113 INFO basehttp: "GET /static/css/styles_.css HTTP/1.1" 200 17326
+2024-10-31 14:10:09,127 INFO basehttp: "GET /static/css/appc5a3.css HTTP/1.1" 200 409
+2024-10-31 14:10:09,145 INFO basehttp: "GET /static/js/jquery.min.js HTTP/1.1" 200 89476
+2024-10-31 14:10:09,164 INFO basehttp: "GET /static/js/popper.min.js HTTP/1.1" 200 21004
+2024-10-31 14:10:09,168 INFO basehttp: "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60174
+2024-10-31 14:10:11,001 WARNING basehttp: "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+2024-10-31 14:10:11,095 INFO basehttp: "GET /static/font-awesome/fonts/fontawesome-webfont3e6e.woff2?v=4.7.0 HTTP/1.1" 200 77160
+2024-10-31 14:10:11,223 WARNING basehttp: "GET /static/js/popper.min.js.map HTTP/1.1" 404 1819
+2024-10-31 14:10:11,269 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 14:10:11,379 WARNING basehttp: "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1828
+2024-10-31 14:10:11,380 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 14:10:11,746 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 14:10:11,747 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 14:12:19,376 INFO basehttp: "GET /withdraw HTTP/1.1" 200 11101
+2024-10-31 14:12:21,919 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 14:12:22,124 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 14:12:22,134 WARNING basehttp: "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+2024-10-31 14:12:22,164 WARNING basehttp: "GET /static/js/popper.min.js.map HTTP/1.1" 404 1819
+2024-10-31 14:12:22,189 WARNING basehttp: "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1828
+2024-10-31 14:13:11,766 INFO basehttp: "GET /withdraw HTTP/1.1" 200 11117
+2024-10-31 14:13:13,801 WARNING basehttp: "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+2024-10-31 14:13:13,947 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 14:13:13,949 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 14:13:13,980 WARNING basehttp: "GET /static/js/popper.min.js.map HTTP/1.1" 404 1819
+2024-10-31 14:13:14,327 WARNING basehttp: "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1828
+2024-10-31 14:13:16,334 INFO basehttp: "GET /withdraw HTTP/1.1" 200 11117
+2024-10-31 14:13:18,320 WARNING basehttp: "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+2024-10-31 14:13:18,983 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 14:13:18,987 WARNING basehttp: "GET /static/js/popper.min.js.map HTTP/1.1" 404 1819
+2024-10-31 14:13:18,989 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 14:13:19,000 WARNING basehttp: "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1828
+2024-10-31 14:16:03,667 INFO basehttp: "GET /withdraw HTTP/1.1" 200 11121
+2024-10-31 14:16:05,494 WARNING basehttp: "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+2024-10-31 14:16:05,650 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 14:16:05,651 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 14:16:05,679 WARNING basehttp: "GET /static/js/popper.min.js.map HTTP/1.1" 404 1819
+2024-10-31 14:16:06,057 WARNING basehttp: "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1828
+2024-10-31 14:17:16,494 INFO basehttp: "GET /withdraw HTTP/1.1" 200 11121
+2024-10-31 14:17:18,188 WARNING basehttp: "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+2024-10-31 14:17:18,357 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 14:17:18,357 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 14:17:18,391 WARNING basehttp: "GET /static/js/popper.min.js.map HTTP/1.1" 404 1819
+2024-10-31 14:17:18,675 WARNING basehttp: "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1828
+2024-10-31 14:18:10,650 INFO basehttp: "GET /withdraw HTTP/1.1" 200 11121
+2024-10-31 14:18:10,804 INFO basehttp: "GET /static/css/bootstrap.min.css HTTP/1.1" 200 160403
+2024-10-31 14:18:10,884 INFO basehttp: "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 31023
+2024-10-31 14:18:10,897 INFO basehttp: "GET /static/css/styles_.css HTTP/1.1" 200 17326
+2024-10-31 14:18:10,897 INFO basehttp: "GET /static/css/spinner.css HTTP/1.1" 200 7925
+2024-10-31 14:18:10,909 INFO basehttp: "GET /static/css/appc5a3.css HTTP/1.1" 200 409
+2024-10-31 14:18:10,911 INFO basehttp: "GET /static/js/jquery.min.js HTTP/1.1" 200 89476
+2024-10-31 14:18:10,924 INFO basehttp: "GET /static/js/popper.min.js HTTP/1.1" 200 21004
+2024-10-31 14:18:10,934 INFO basehttp: "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60174
+2024-10-31 14:18:12,572 WARNING basehttp: "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+2024-10-31 14:18:12,716 WARNING basehttp: "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1828
+2024-10-31 14:18:12,734 WARNING basehttp: "GET /static/js/popper.min.js.map HTTP/1.1" 404 1819
+2024-10-31 14:18:12,743 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 14:18:12,746 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 14:18:12,750 INFO basehttp: "GET /static/font-awesome/fonts/fontawesome-webfont3e6e.woff2?v=4.7.0 HTTP/1.1" 200 77160
+2024-10-31 14:18:12,982 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 14:18:12,984 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 14:19:50,945 INFO basehttp: "GET /withdraw HTTP/1.1" 200 11099
+2024-10-31 14:19:52,767 WARNING basehttp: "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+2024-10-31 14:19:53,120 WARNING basehttp: "GET /static/js/popper.min.js.map HTTP/1.1" 404 1819
+2024-10-31 14:19:53,457 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 14:19:53,458 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 14:19:53,479 WARNING basehttp: "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1828
+2024-10-31 14:20:51,507 INFO basehttp: "GET /withdraw HTTP/1.1" 200 11094
+2024-10-31 14:20:51,673 INFO basehttp: "GET /static/css/bootstrap.min.css HTTP/1.1" 200 160403
+2024-10-31 14:20:51,686 INFO basehttp: "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 31023
+2024-10-31 14:20:51,695 INFO basehttp: "GET /static/css/spinner.css HTTP/1.1" 200 7925
+2024-10-31 14:20:51,700 INFO basehttp: "GET /static/css/styles_.css HTTP/1.1" 200 17326
+2024-10-31 14:20:51,706 INFO basehttp: "GET /static/css/appc5a3.css HTTP/1.1" 200 409
+2024-10-31 14:20:51,712 INFO basehttp: "GET /static/js/jquery.min.js HTTP/1.1" 200 89476
+2024-10-31 14:20:51,720 INFO basehttp: "GET /static/js/popper.min.js HTTP/1.1" 200 21004
+2024-10-31 14:20:51,730 INFO basehttp: "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60174
+2024-10-31 14:20:53,294 WARNING basehttp: "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+2024-10-31 14:20:53,361 INFO basehttp: "GET /static/font-awesome/fonts/fontawesome-webfont3e6e.woff2?v=4.7.0 HTTP/1.1" 200 77160
+2024-10-31 14:20:53,553 WARNING basehttp: "GET /static/js/popper.min.js.map HTTP/1.1" 404 1819
+2024-10-31 14:20:53,564 WARNING basehttp: "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1828
+2024-10-31 14:20:53,585 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 14:20:53,586 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 14:20:53,712 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 14:20:53,713 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 14:21:21,788 INFO basehttp: "GET /withdraw HTTP/1.1" 200 11098
+2024-10-31 14:21:23,325 WARNING basehttp: "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+2024-10-31 14:21:23,549 WARNING basehttp: "GET /static/js/popper.min.js.map HTTP/1.1" 404 1819
+2024-10-31 14:21:23,560 WARNING basehttp: "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1828
+2024-10-31 14:21:23,862 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 14:21:23,862 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 14:21:43,418 INFO basehttp: "GET /withdraw HTTP/1.1" 200 11102
+2024-10-31 14:21:44,861 WARNING basehttp: "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+2024-10-31 14:21:44,989 WARNING basehttp: "GET /static/js/popper.min.js.map HTTP/1.1" 404 1819
+2024-10-31 14:21:45,306 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 14:21:45,307 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 14:21:45,313 WARNING basehttp: "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1828
+2024-10-31 14:22:22,131 INFO basehttp: "GET /withdraw HTTP/1.1" 200 11106
+2024-10-31 14:22:23,669 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 14:22:23,670 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 14:22:36,332 INFO basehttp: "GET /withdraw HTTP/1.1" 200 11102
+2024-10-31 14:22:36,947 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 14:22:36,949 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 14:26:19,180 INFO basehttp: "GET /withdraw HTTP/1.1" 200 12748
+2024-10-31 14:26:19,888 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 14:26:19,889 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 14:27:00,185 INFO basehttp: "GET /withdraw HTTP/1.1" 200 12744
+2024-10-31 14:27:00,833 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 14:27:00,835 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 14:27:09,872 INFO basehttp: "GET /deposit HTTP/1.1" 200 12177
+2024-10-31 14:27:10,716 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 14:27:10,717 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 14:27:17,023 INFO basehttp: "GET /withdraw HTTP/1.1" 200 12744
+2024-10-31 14:27:17,773 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 14:27:17,773 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-10-31 14:29:56,876 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-31 14:30:00,112 INFO autoreload: Watching for file changes with StatReloader
+2024-10-31 14:30:02,745 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-31 14:30:05,381 INFO autoreload: Watching for file changes with StatReloader
+2024-10-31 14:30:07,333 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-31 14:30:09,029 INFO autoreload: Watching for file changes with StatReloader
+2024-10-31 14:30:11,056 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-31 14:30:12,289 INFO autoreload: Watching for file changes with StatReloader
+2024-10-31 14:30:47,774 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-31 14:30:50,688 INFO autoreload: Watching for file changes with StatReloader
+2024-10-31 14:30:56,358 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-31 14:30:57,702 INFO autoreload: Watching for file changes with StatReloader
+2024-10-31 14:31:02,773 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-31 14:31:05,876 INFO autoreload: Watching for file changes with StatReloader
+2024-10-31 14:31:08,891 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-31 14:31:11,419 INFO autoreload: Watching for file changes with StatReloader
+2024-10-31 14:31:14,608 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-31 14:31:16,069 INFO autoreload: Watching for file changes with StatReloader
+2024-10-31 14:31:19,183 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-31 14:31:22,739 INFO autoreload: Watching for file changes with StatReloader
+2024-10-31 14:31:31,538 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-31 14:31:32,914 INFO autoreload: Watching for file changes with StatReloader
+2024-10-31 14:31:41,225 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-31 14:31:42,635 INFO autoreload: Watching for file changes with StatReloader
+2024-10-31 14:31:56,850 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-31 14:31:58,628 INFO autoreload: Watching for file changes with StatReloader
+2024-10-31 14:32:00,554 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-10-31 14:32:01,608 INFO autoreload: Watching for file changes with StatReloader
+2024-10-31 14:32:07,091 INFO basehttp: "POST /withdraw HTTP/1.1" 200 13282
+2024-10-31 14:32:09,052 WARNING log: Not Found: /imgs/favicon.ico
+2024-10-31 14:32:09,053 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-01 17:15:26,113 INFO autoreload: Watching for file changes with StatReloader
+2024-11-01 17:16:13,550 INFO basehttp: "GET / HTTP/1.1" 200 18093
+2024-11-01 17:16:13,986 INFO basehttp: "GET /static/img/image.png HTTP/1.1" 200 225852
+2024-11-01 17:16:14,003 INFO basehttp: "GET /static/img/wheel.png HTTP/1.1" 200 407425
+2024-11-01 17:16:15,340 INFO basehttp: "GET /static/img/paymentmethod1.jpg HTTP/1.1" 200 3409
+2024-11-01 17:16:15,341 INFO basehttp: "GET /static/img/paymentmethod3.jpg HTTP/1.1" 200 2178
+2024-11-01 17:16:15,341 INFO basehttp: "GET /static/img/paymentmethod2.jpg HTTP/1.1" 200 2612
+2024-11-01 17:16:15,370 INFO basehttp: "GET /static/img/paymentmethod5.jpg HTTP/1.1" 200 4083
+2024-11-01 17:16:15,370 INFO basehttp: "GET /static/img/paymentmethod4.jpg HTTP/1.1" 200 3191
+2024-11-01 17:16:15,371 INFO basehttp: "GET /static/img/paymentmethod6.jpg HTTP/1.1" 200 1847
+2024-11-01 17:16:15,395 INFO basehttp: "GET /static/img/client.png HTTP/1.1" 200 14575
+2024-11-01 17:16:15,396 INFO basehttp: "GET /static/img/paymentmethod7.jpg HTTP/1.1" 200 2294
+2024-11-01 17:16:15,677 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-01 17:16:15,678 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-01 17:16:15,784 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-01 17:16:15,785 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-01 17:16:28,429 INFO basehttp: "GET /deposit HTTP/1.1" 200 12177
+2024-11-01 17:16:29,401 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-01 17:16:29,402 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-01 17:18:11,126 INFO basehttp: "GET /withdraw HTTP/1.1" 200 12935
+2024-11-01 17:18:12,682 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-01 17:18:12,683 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-01 17:18:16,034 INFO basehttp: "GET /deposit HTTP/1.1" 200 12182
+2024-11-01 17:18:16,803 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-01 17:18:16,804 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-01 17:18:56,308 INFO basehttp: "GET /withdraw HTTP/1.1" 200 12914
+2024-11-01 17:18:57,063 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-01 17:18:57,064 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-01 17:19:00,413 INFO basehttp: "GET /deposit HTTP/1.1" 200 12182
+2024-11-01 17:19:01,240 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-01 17:19:01,293 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-01 17:19:02,861 INFO basehttp: "GET /withdraw HTTP/1.1" 200 12914
+2024-11-01 17:19:03,631 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-01 17:19:03,636 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-01 17:19:13,959 INFO basehttp: "GET /deposit HTTP/1.1" 200 12182
+2024-11-01 17:19:15,087 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-01 17:19:15,092 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-01 17:19:38,044 INFO basehttp: "GET /withdraw HTTP/1.1" 200 12914
+2024-11-01 17:19:39,217 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-01 17:19:39,219 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-01 17:19:42,287 INFO basehttp: "GET /deposit HTTP/1.1" 200 12182
+2024-11-01 17:19:43,152 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-01 17:19:43,152 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-01 17:22:55,406 INFO basehttp: "GET /deposit HTTP/1.1" 200 12858
+2024-11-01 17:22:56,809 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-01 17:22:56,810 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-01 17:23:34,482 INFO basehttp: "GET /deposit HTTP/1.1" 200 12846
+2024-11-01 17:23:35,212 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-01 17:23:35,220 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-01 17:26:08,388 INFO basehttp: "GET /deposit HTTP/1.1" 200 12846
+2024-11-01 17:26:09,180 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-01 17:26:09,181 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-01 17:26:10,697 INFO basehttp: "GET /withdraw HTTP/1.1" 200 12914
+2024-11-01 17:26:11,379 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-01 17:26:11,380 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-03 21:25:47,962 INFO autoreload: Watching for file changes with StatReloader
+2024-11-03 21:26:06,409 INFO basehttp: "GET /admin HTTP/1.1" 301 0
+2024-11-03 21:26:06,474 INFO basehttp: "GET /admin/ HTTP/1.1" 302 0
+2024-11-03 21:26:06,569 INFO basehttp: "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2369
+2024-11-03 21:26:07,009 INFO basehttp: "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2271
+2024-11-03 21:26:07,072 INFO basehttp: "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+2024-11-03 21:26:07,169 INFO basehttp: "GET /static/admin/css/login.css HTTP/1.1" 200 939
+2024-11-03 21:26:07,252 INFO basehttp: "GET /static/admin/css/responsive.css HTTP/1.1" 200 18545
+2024-11-03 21:26:08,898 INFO basehttp: "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+2024-11-03 21:26:08,899 INFO basehttp: "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+2024-11-03 21:26:09,983 INFO basehttp: "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+2024-11-03 21:26:09,989 INFO basehttp: "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+2024-11-03 21:26:09,990 INFO basehttp: "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+2024-11-03 21:26:13,025 WARNING log: Not Found: /favicon.ico
+2024-11-03 21:26:13,027 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-11-03 21:26:20,757 INFO basehttp: "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+2024-11-03 21:26:20,803 INFO basehttp: "GET /admin/ HTTP/1.1" 200 7432
+2024-11-03 21:26:20,863 INFO basehttp: "GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+2024-11-03 21:26:21,697 INFO basehttp: "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+2024-11-03 21:26:21,697 INFO basehttp: "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+2024-11-03 21:26:21,699 INFO basehttp: "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+2024-11-03 21:26:30,418 INFO basehttp: "GET /admin/auth/user/ HTTP/1.1" 200 11796
+2024-11-03 21:26:30,483 INFO basehttp: "GET /static/admin/css/changelists.css HTTP/1.1" 200 6874
+2024-11-03 21:26:30,501 INFO basehttp: "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+2024-11-03 21:26:30,505 INFO basehttp: "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2024-11-03 21:26:30,516 INFO basehttp: "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+2024-11-03 21:26:30,516 INFO basehttp: "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 5984
+2024-11-03 21:26:30,517 INFO basehttp: "GET /static/admin/js/core.js HTTP/1.1" 200 5698
+2024-11-03 21:26:30,570 INFO basehttp: "GET /static/admin/js/actions.js HTTP/1.1" 200 7664
+2024-11-03 21:26:30,589 INFO basehttp: "GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+2024-11-03 21:26:30,592 INFO basehttp: "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+2024-11-03 21:26:30,598 INFO basehttp: "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+2024-11-03 21:26:30,607 INFO basehttp: "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+2024-11-03 21:26:30,610 INFO basehttp: "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+2024-11-03 21:26:31,298 INFO basehttp: "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+2024-11-03 21:26:31,956 INFO basehttp: "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+2024-11-03 21:26:32,356 INFO basehttp: "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+2024-11-03 21:26:57,706 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\admin.py changed, reloading.
+2024-11-03 21:27:02,369 INFO autoreload: Watching for file changes with StatReloader
+2024-11-03 21:27:36,561 INFO autoreload: Watching for file changes with StatReloader
+2024-11-03 21:27:41,361 INFO basehttp: "GET /admin/auth/user/ HTTP/1.1" 200 12219
+2024-11-03 21:27:41,510 INFO basehttp: "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2024-11-03 21:27:57,486 INFO basehttp: "GET /admin/auth/user/8/change/ HTTP/1.1" 200 20490
+2024-11-03 21:27:57,696 INFO basehttp: "GET /static/admin/css/forms.css HTTP/1.1" 200 8804
+2024-11-03 21:27:57,707 INFO basehttp: "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19634
+2024-11-03 21:27:57,724 INFO basehttp: "GET /static/admin/js/inlines.js HTTP/1.1" 200 15225
+2024-11-03 21:27:57,735 INFO basehttp: "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4360
+2024-11-03 21:27:57,743 INFO basehttp: "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 12350
+2024-11-03 21:27:57,761 INFO basehttp: "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2024-11-03 21:27:57,770 INFO basehttp: "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 492
+2024-11-03 21:27:57,810 INFO basehttp: "GET /static/admin/js/calendar.js HTTP/1.1" 200 8466
+2024-11-03 21:27:58,159 INFO basehttp: "GET /static/admin/css/widgets.css HTTP/1.1" 200 11097
+2024-11-03 21:27:58,161 INFO basehttp: "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+2024-11-03 21:27:58,287 INFO basehttp: "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+2024-11-03 21:27:58,289 INFO basehttp: "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+2024-11-03 21:27:58,290 INFO basehttp: "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+2024-11-03 21:27:58,290 INFO basehttp: "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
+2024-11-03 21:27:58,290 INFO basehttp: "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+2024-11-03 21:29:13,420 INFO basehttp: "POST /admin/auth/user/8/change/ HTTP/1.1" 302 0
+2024-11-03 21:29:13,571 INFO basehttp: "GET /admin/auth/user/ HTTP/1.1" 200 12424
+2024-11-03 21:29:13,682 INFO basehttp: "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2024-11-03 21:29:31,537 INFO basehttp: "GET /admin/logout/ HTTP/1.1" 200 1529
+2024-11-03 21:29:36,344 INFO basehttp: "GET / HTTP/1.1" 200 17643
+2024-11-03 21:29:36,421 INFO basehttp: "GET /static/img/image.png HTTP/1.1" 200 225852
+2024-11-03 21:29:36,463 INFO basehttp: "GET /static/img/wheel.png HTTP/1.1" 200 407425
+2024-11-03 21:29:36,471 INFO basehttp: "GET /static/img/paymentmethod1.jpg HTTP/1.1" 200 3409
+2024-11-03 21:29:37,105 INFO basehttp: "GET /static/img/paymentmethod2.jpg HTTP/1.1" 200 2612
+2024-11-03 21:29:37,106 INFO basehttp: "GET /static/img/paymentmethod4.jpg HTTP/1.1" 200 3191
+2024-11-03 21:29:37,106 INFO basehttp: "GET /static/img/paymentmethod3.jpg HTTP/1.1" 200 2178
+2024-11-03 21:29:37,152 INFO basehttp: "GET /static/img/paymentmethod6.jpg HTTP/1.1" 200 1847
+2024-11-03 21:29:37,152 INFO basehttp: "GET /static/img/paymentmethod5.jpg HTTP/1.1" 200 4083
+2024-11-03 21:29:37,170 INFO basehttp: "GET /static/img/paymentmethod7.jpg HTTP/1.1" 200 2294
+2024-11-03 21:29:37,182 INFO basehttp: "GET /static/img/client.png HTTP/1.1" 200 14575
+2024-11-03 21:29:37,389 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-03 21:29:37,392 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-03 21:29:37,455 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-03 21:29:37,457 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-03 21:29:39,005 INFO basehttp: "GET /login HTTP/1.1" 200 4933
+2024-11-03 21:29:39,107 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 200 1423
+2024-11-03 21:29:39,122 INFO basehttp: "GET /static/js/master.js HTTP/1.1" 200 119
+2024-11-03 21:29:46,770 INFO basehttp: "POST /login HTTP/1.1" 302 0
+2024-11-03 21:29:46,806 INFO basehttp: "GET /dashboard HTTP/1.1" 200 6587
+2024-11-03 21:29:46,911 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 200 4687
+2024-11-03 21:29:46,912 INFO basehttp: "GET /static/js/confetti.js HTTP/1.1" 200 7222
+2024-11-03 21:29:54,056 INFO basehttp: "GET /static/img/outwheel.png HTTP/1.1" 200 440976
+2024-11-03 21:29:54,063 INFO basehttp: "GET /static/media/roulette.mp3 HTTP/1.1" 200 95433
+2024-11-03 21:31:58,525 INFO basehttp: "GET /dashboard HTTP/1.1" 200 6587
+2024-11-03 21:31:58,612 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 200 1424
+2024-11-03 21:31:58,625 INFO basehttp: "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+2024-11-03 21:31:58,631 INFO basehttp: "GET /static/js/confetti.js HTTP/1.1" 200 7222
+2024-11-03 21:31:58,643 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 200 4687
+2024-11-03 21:31:59,188 INFO basehttp: "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+2024-11-03 21:32:00,020 INFO basehttp: "GET /static/media/roulette.mp3 HTTP/1.1" 200 95433
+2024-11-03 21:32:00,228 INFO basehttp: "GET /static/img/wheel.png HTTP/1.1" 200 407425
+2024-11-03 21:32:00,229 INFO basehttp: "GET /static/img/outwheel.png HTTP/1.1" 200 440976
+2024-11-03 21:32:00,468 WARNING log: Not Found: /favicon.ico
+2024-11-03 21:32:00,469 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-11-03 21:34:31,210 ERROR log: Internal Server Error: /dashboard
+Traceback (most recent call last):
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\app\views.py", line 77, in dashboard
+    return render(request, 'dashboard.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 193, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader_tags.py", line 278, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader_tags.py", line 216, in do_block
+    nodelist = parser.parse(('endblock',))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\defaulttags.py", line 979, in do_if
+    nodelist = parser.parse(('endif',))
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 449, in parse
+    raise self.error(token, e)
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 447, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 657, in __init__
+    filter_func = parser.find_filter(filter_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 569, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'intcomma'
+2024-11-03 21:34:31,238 ERROR basehttp: "GET /dashboard HTTP/1.1" 500 212704
+2024-11-03 21:34:58,929 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\core\settings.py changed, reloading.
+2024-11-03 21:35:02,550 INFO autoreload: Watching for file changes with StatReloader
+2024-11-03 21:35:30,181 ERROR log: Internal Server Error: /dashboard
+Traceback (most recent call last):
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\app\views.py", line 77, in dashboard
+    return render(request, 'dashboard.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 193, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader_tags.py", line 278, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader_tags.py", line 216, in do_block
+    nodelist = parser.parse(('endblock',))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\defaulttags.py", line 979, in do_if
+    nodelist = parser.parse(('endif',))
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 449, in parse
+    raise self.error(token, e)
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 447, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 657, in __init__
+    filter_func = parser.find_filter(filter_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 569, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'intcomma'
+2024-11-03 21:35:30,207 ERROR basehttp: "GET /dashboard HTTP/1.1" 500 213122
+2024-11-03 21:40:03,315 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\core\settings.py changed, reloading.
+2024-11-03 21:40:05,994 INFO autoreload: Watching for file changes with StatReloader
+2024-11-03 21:40:15,523 INFO autoreload: Watching for file changes with StatReloader
+2024-11-03 21:40:23,193 INFO basehttp: "GET /dashboard HTTP/1.1" 200 6589
+2024-11-03 21:40:23,294 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 304 0
+2024-11-03 21:49:31,892 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-11-03 21:49:35,838 INFO autoreload: Watching for file changes with StatReloader
+2024-11-03 21:49:55,436 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-11-03 21:50:08,147 INFO autoreload: Watching for file changes with StatReloader
+2024-11-03 21:50:20,358 INFO basehttp: "GET /dashboard HTTP/1.1" 200 6589
+2024-11-03 21:50:20,517 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 304 0
+2024-11-03 21:50:38,342 INFO views: Draw_new with POST
+2024-11-03 21:50:38,390 INFO basehttp: "POST /draw HTTP/1.1" 200 4975
+2024-11-03 21:50:49,294 INFO views: Draw_new with POST
+2024-11-03 21:50:52,226 ERROR draw: UniqueCode matching query does not exist.
+2024-11-03 21:50:52,233 INFO basehttp: "POST /draw HTTP/1.1" 200 5966
+2024-11-03 21:50:53,033 WARNING log: Not Found: /favicon.ico
+2024-11-03 21:50:53,035 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-11-03 21:51:02,198 INFO views: Draw with GET for id 26
+2024-11-03 21:51:02,200 INFO views: Prize 11, 25% OFF, True
+2024-11-03 21:51:02,212 INFO basehttp: "GET /26 HTTP/1.1" 200 5995
+2024-11-03 21:51:07,597 INFO basehttp: "GET /dashboard?csrfmiddlewaretoken=EledmkYUtIHVnjGCn4PdAL5RudQBd2RBXSj6vPKiCJyPh95ZFmriH8boXUGpUCyP HTTP/1.1" 200 6589
+2024-11-04 09:29:20,299 INFO autoreload: Watching for file changes with StatReloader
+2024-11-04 09:29:26,602 INFO basehttp: "GET / HTTP/1.1" 200 18143
+2024-11-04 09:29:30,822 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 09:29:30,832 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 09:29:30,904 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 09:29:30,907 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 09:29:36,520 INFO basehttp: "GET /dashboard HTTP/1.1" 200 6589
+2024-11-04 09:29:37,145 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 304 0
+2024-11-04 09:29:43,243 INFO basehttp: "GET /how-to-play HTTP/1.1" 200 8045
+2024-11-04 09:29:43,632 INFO basehttp: "GET /static/img/steps.png HTTP/1.1" 200 21332
+2024-11-04 09:29:43,669 INFO basehttp: "GET /static/img/dsws.png HTTP/1.1" 200 492781
+2024-11-04 09:29:44,252 INFO basehttp: "GET /static/img/howitwork-title.svg HTTP/1.1" 200 4896
+2024-11-04 09:29:44,322 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 09:29:44,323 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 09:30:32,400 INFO basehttp: "GET / HTTP/1.1" 200 17951
+2024-11-04 09:30:34,152 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 09:30:34,155 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 09:31:12,712 INFO basehttp: "GET /withdraw HTTP/1.1" 200 12626
+2024-11-04 09:31:14,056 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 09:31:14,057 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 09:31:21,895 INFO basehttp: "GET /deposit HTTP/1.1" 200 12553
+2024-11-04 09:31:23,476 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 09:31:23,478 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 09:31:38,514 INFO basehttp: "GET /withdraw HTTP/1.1" 200 12626
+2024-11-04 09:31:39,524 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 09:31:39,531 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 09:40:23,670 INFO basehttp: "GET /withdraw HTTP/1.1" 200 14107
+2024-11-04 09:40:25,581 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 09:40:25,583 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 09:43:25,694 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\forms.py changed, reloading.
+2024-11-04 09:43:31,291 INFO autoreload: Watching for file changes with StatReloader
+2024-11-04 09:43:36,857 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\forms.py changed, reloading.
+2024-11-04 09:43:41,530 INFO autoreload: Watching for file changes with StatReloader
+2024-11-04 09:43:49,306 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\forms.py changed, reloading.
+2024-11-04 09:43:53,164 INFO autoreload: Watching for file changes with StatReloader
+2024-11-04 09:43:56,926 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\forms.py changed, reloading.
+2024-11-04 09:44:01,184 INFO autoreload: Watching for file changes with StatReloader
+2024-11-04 09:44:07,842 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\forms.py changed, reloading.
+2024-11-04 09:44:11,990 INFO autoreload: Watching for file changes with StatReloader
+2024-11-04 09:44:53,540 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\forms.py changed, reloading.
+2024-11-04 09:44:58,339 INFO autoreload: Watching for file changes with StatReloader
+2024-11-04 09:45:08,438 INFO basehttp: "GET /deposit HTTP/1.1" 200 12679
+2024-11-04 09:45:09,872 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 09:45:09,873 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 09:56:11,926 INFO basehttp: "GET /deposit HTTP/1.1" 200 12771
+2024-11-04 09:56:14,143 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 09:56:14,145 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 09:56:44,402 INFO basehttp: "GET /deposit HTTP/1.1" 200 12772
+2024-11-04 09:56:45,795 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 09:56:45,796 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 09:58:59,488 INFO basehttp: "GET /deposit HTTP/1.1" 200 13000
+2024-11-04 09:59:01,142 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 09:59:01,180 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 10:00:25,778 INFO basehttp: "GET /deposit HTTP/1.1" 200 13067
+2024-11-04 10:00:26,849 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 10:00:26,851 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 10:01:21,403 WARNING basehttp: "GET /static/js/popper.min.js.map HTTP/1.1" 404 1819
+2024-11-04 10:01:21,414 WARNING basehttp: "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1828
+2024-11-04 10:01:21,539 WARNING basehttp: "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+2024-11-04 10:03:42,246 INFO basehttp: "POST /logout HTTP/1.1" 302 0
+2024-11-04 10:03:42,286 INFO basehttp: "GET / HTTP/1.1" 200 17743
+2024-11-04 10:03:44,842 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 10:03:44,844 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 10:03:49,071 INFO basehttp: "GET /admin/ HTTP/1.1" 302 0
+2024-11-04 10:03:49,429 INFO basehttp: "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2214
+2024-11-04 10:03:58,033 INFO basehttp: "POST /admin/login/?next=/admin/ HTTP/1.1" 200 2383
+2024-11-04 10:04:14,497 INFO basehttp: "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+2024-11-04 10:04:14,584 INFO basehttp: "GET /admin/ HTTP/1.1" 200 7453
+2024-11-04 10:04:17,585 INFO basehttp: "GET /admin/app/draw/ HTTP/1.1" 200 16244
+2024-11-04 10:04:17,742 INFO basehttp: "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2024-11-04 10:04:25,969 INFO basehttp: "GET /admin/app/draw/26/change/ HTTP/1.1" 200 10545
+2024-11-04 10:04:26,128 INFO basehttp: "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2024-11-04 10:05:00,067 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\admin.py changed, reloading.
+2024-11-04 10:05:11,345 INFO autoreload: Watching for file changes with StatReloader
+2024-11-04 10:05:17,041 INFO basehttp: "GET /admin/app/draw/26/change/ HTTP/1.1" 200 10545
+2024-11-04 10:05:17,180 INFO basehttp: "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2024-11-04 10:05:24,426 INFO basehttp: "GET /admin/app/draw/26/change/ HTTP/1.1" 200 10545
+2024-11-04 10:05:24,544 INFO basehttp: "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2024-11-04 10:05:58,216 INFO basehttp: "GET /admin/app/draw/ HTTP/1.1" 200 16244
+2024-11-04 10:05:58,376 INFO basehttp: "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2024-11-04 10:06:08,868 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\admin.py changed, reloading.
+2024-11-04 10:06:11,897 INFO autoreload: Watching for file changes with StatReloader
+2024-11-04 10:06:19,842 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\admin.py changed, reloading.
+2024-11-04 10:06:25,869 INFO autoreload: Watching for file changes with StatReloader
+2024-11-04 10:08:39,908 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\models.py changed, reloading.
+2024-11-04 10:08:47,486 INFO autoreload: Watching for file changes with StatReloader
+2024-11-04 10:09:21,452 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\admin.py changed, reloading.
+2024-11-04 10:09:34,708 INFO autoreload: Watching for file changes with StatReloader
+2024-11-04 10:10:29,248 ERROR log: Internal Server Error: /admin/app/draw/
+Traceback (most recent call last):
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: app_draw.requested_by_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\admin\sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\admin\options.py", line 1815, in changelist_view
+    'selection_note': _('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+                                                           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\db\models\query.py", line 262, in __len__
+    self._fetch_all()
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\db\models\query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\db\models\query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: app_draw.requested_by_id
+2024-11-04 10:10:29,324 ERROR basehttp: "GET /admin/app/draw/ HTTP/1.1" 500 183435
+2024-11-04 10:18:16,349 INFO basehttp: "GET /admin/app/draw/ HTTP/1.1" 200 8367
+2024-11-04 10:18:16,641 INFO basehttp: "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2024-11-04 10:18:23,783 INFO basehttp: "GET /admin/app/draw/ HTTP/1.1" 200 8367
+2024-11-04 10:18:23,868 INFO basehttp: "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2024-11-04 10:18:39,281 INFO basehttp: "GET /admin/app/draw/26/change/ HTTP/1.1" 200 11990
+2024-11-04 10:18:48,422 INFO basehttp: "GET /admin/app/draw/ HTTP/1.1" 200 8367
+2024-11-04 10:18:50,376 INFO basehttp: "GET /admin/ HTTP/1.1" 200 7453
+2024-11-04 10:18:53,385 INFO basehttp: "GET /admin/app/draw/ HTTP/1.1" 200 8367
+2024-11-04 10:18:53,522 INFO basehttp: "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2024-11-04 10:19:06,836 INFO basehttp: "GET /admin/logout/ HTTP/1.1" 200 1529
+2024-11-04 10:19:12,284 INFO basehttp: "GET / HTTP/1.1" 200 17743
+2024-11-04 10:19:13,516 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 10:19:13,518 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 10:19:14,967 INFO basehttp: "GET /login HTTP/1.1" 200 4933
+2024-11-04 10:19:26,471 INFO basehttp: "POST /login HTTP/1.1" 302 0
+2024-11-04 10:19:26,577 INFO basehttp: "GET /dashboard HTTP/1.1" 200 6589
+2024-11-04 10:19:34,145 INFO views: Draw_new with POST
+2024-11-04 10:19:34,955 ERROR draw: UniqueCode matching query does not exist.
+2024-11-04 10:19:34,976 INFO basehttp: "POST /draw HTTP/1.1" 200 5965
+2024-11-04 10:19:36,398 WARNING log: Not Found: /favicon.ico
+2024-11-04 10:19:36,399 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-11-04 10:19:45,479 INFO views: Draw with GET for id 27
+2024-11-04 10:19:45,490 INFO views: Prize 6, BAD LUCK ..., False
+2024-11-04 10:19:45,552 INFO basehttp: "GET /27 HTTP/1.1" 200 5468
+2024-11-04 10:19:48,577 INFO basehttp: "GET /dashboard?csrfmiddlewaretoken=gCDfkNANTM7Azv1hviuTeNqnxfvtXNB2DDbq2kVZgYFoaE3hJiCPeTZ9Pz7fEVOA HTTP/1.1" 200 6589
+2024-11-04 10:19:54,347 INFO basehttp: "POST /logout HTTP/1.1" 302 0
+2024-11-04 10:19:54,391 INFO basehttp: "GET / HTTP/1.1" 200 17743
+2024-11-04 10:19:55,322 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 10:19:55,324 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 10:20:00,080 INFO basehttp: "GET /admin/ HTTP/1.1" 302 0
+2024-11-04 10:20:00,144 INFO basehttp: "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2214
+2024-11-04 10:20:09,911 INFO basehttp: "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+2024-11-04 10:20:09,986 INFO basehttp: "GET /admin/ HTTP/1.1" 200 7453
+2024-11-04 10:20:12,729 INFO basehttp: "GET /admin/app/draw/ HTTP/1.1" 200 8367
+2024-11-04 10:20:12,825 INFO basehttp: "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2024-11-04 10:21:30,431 INFO autoreload: Watching for file changes with StatReloader
+2024-11-04 10:21:35,934 INFO basehttp: "GET /admin/app/draw/ HTTP/1.1" 200 8367
+2024-11-04 10:21:36,076 INFO basehttp: "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2024-11-04 10:21:49,411 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\migrations\0006_draw_requested_by.py changed, reloading.
+2024-11-04 10:21:53,654 INFO autoreload: Watching for file changes with StatReloader
+2024-11-04 10:29:51,965 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\migrations\0006_draw_requested_by.py changed, reloading.
+2024-11-04 10:30:02,953 INFO autoreload: Watching for file changes with StatReloader
+2024-11-04 10:32:08,875 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\models.py changed, reloading.
+2024-11-04 10:32:12,704 INFO autoreload: Watching for file changes with StatReloader
+2024-11-04 10:32:21,265 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\models.py changed, reloading.
+2024-11-04 10:32:25,024 INFO autoreload: Watching for file changes with StatReloader
+2024-11-04 10:33:17,176 ERROR log: Internal Server Error: /admin/app/draw/
+Traceback (most recent call last):
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\db\models\options.py", line 608, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'requested_by_name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\admin\utils.py", line 265, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\admin\utils.py", line 296, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\db\models\options.py", line 610, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: Draw has no field named 'requested_by_name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 33, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\library.py", line 214, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 308, in result_list
+    'results': list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 284, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 275, in __init__
+    super().__init__(*items)
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 200, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\admin\utils.py", line 274, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\app\admin.py", line 23, in requested_by_name
+    return obj.requested_by.get_full_name() or obj.requested_by.username
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get_full_name'
+2024-11-04 10:33:17,235 ERROR basehttp: "GET /admin/app/draw/ HTTP/1.1" 500 333824
+2024-11-04 10:33:44,972 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\admin.py changed, reloading.
+2024-11-04 10:33:48,098 INFO autoreload: Watching for file changes with StatReloader
+2024-11-04 10:33:48,697 ERROR log: Internal Server Error: /admin/app/draw/
+Traceback (most recent call last):
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\db\models\options.py", line 608, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'requested_by_name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\admin\utils.py", line 265, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\admin\utils.py", line 296, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\db\models\options.py", line 610, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: Draw has no field named 'requested_by_name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 33, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\library.py", line 214, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 308, in result_list
+    'results': list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 284, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 275, in __init__
+    super().__init__(*items)
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 200, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\admin\utils.py", line 274, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\app\admin.py", line 23, in requested_by_name
+    return obj.requested_by.username
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'username'
+2024-11-04 10:33:48,755 ERROR basehttp: "GET /admin/app/draw/ HTTP/1.1" 500 333722
+2024-11-04 10:33:57,567 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\admin.py changed, reloading.
+2024-11-04 10:34:00,025 INFO autoreload: Watching for file changes with StatReloader
+2024-11-04 10:34:00,904 ERROR log: Internal Server Error: /admin/app/draw/
+Traceback (most recent call last):
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\db\models\options.py", line 608, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'requested_by_name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\admin\utils.py", line 265, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\admin\utils.py", line 296, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\db\models\options.py", line 610, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: Draw has no field named 'requested_by_name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 33, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\library.py", line 214, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 308, in result_list
+    'results': list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 284, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 275, in __init__
+    super().__init__(*items)
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 200, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\admin\utils.py", line 274, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\app\admin.py", line 23, in requested_by_name
+    return obj.requested_by.name
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'name'
+2024-11-04 10:34:00,956 ERROR basehttp: "GET /admin/app/draw/ HTTP/1.1" 500 333690
+2024-11-04 10:34:15,147 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\admin.py changed, reloading.
+2024-11-04 10:34:18,229 INFO autoreload: Watching for file changes with StatReloader
+2024-11-04 10:34:30,844 ERROR log: Internal Server Error: /admin/app/draw/
+Traceback (most recent call last):
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\db\models\options.py", line 608, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'requested_by_name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\admin\utils.py", line 265, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\admin\utils.py", line 296, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\db\models\options.py", line 610, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: Draw has no field named 'requested_by_name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 33, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\library.py", line 214, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 308, in result_list
+    'results': list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 284, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 275, in __init__
+    super().__init__(*items)
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 200, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\admin\utils.py", line 274, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\app\admin.py", line 24, in requested_by_name
+    return obj.requested_by.name
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'name'
+2024-11-04 10:34:30,880 ERROR basehttp: "GET /admin/app/draw/ HTTP/1.1" 500 333690
+2024-11-04 10:34:39,234 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\admin.py changed, reloading.
+2024-11-04 10:34:44,976 INFO autoreload: Watching for file changes with StatReloader
+2024-11-04 10:34:48,841 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\admin.py changed, reloading.
+2024-11-04 10:34:52,548 INFO autoreload: Watching for file changes with StatReloader
+2024-11-04 10:34:53,179 ERROR log: Internal Server Error: /admin/app/draw/
+Traceback (most recent call last):
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\db\models\options.py", line 608, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'requested_by_name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\admin\utils.py", line 265, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\admin\utils.py", line 296, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\db\models\options.py", line 610, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: Draw has no field named 'requested_by_name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 33, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\template\library.py", line 214, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 308, in result_list
+    'results': list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 284, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 275, in __init__
+    super().__init__(*items)
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 200, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\venv\Lib\site-packages\django\contrib\admin\utils.py", line 274, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "C:\Users\engrd\OneDrive\Documents\wheel\app\admin.py", line 23, in requested_by_name
+    return obj.requested_by.username or 'Null'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'username'
+2024-11-04 10:34:53,230 ERROR basehttp: "GET /admin/app/draw/ HTTP/1.1" 500 333762
+2024-11-04 10:35:54,174 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\admin.py changed, reloading.
+2024-11-04 10:35:58,260 INFO autoreload: Watching for file changes with StatReloader
+2024-11-04 10:36:01,818 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\admin.py changed, reloading.
+2024-11-04 10:36:04,868 INFO autoreload: Watching for file changes with StatReloader
+2024-11-04 10:36:09,624 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\admin.py changed, reloading.
+2024-11-04 10:36:14,208 INFO autoreload: Watching for file changes with StatReloader
+2024-11-04 10:36:17,945 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\admin.py changed, reloading.
+2024-11-04 10:36:22,161 INFO autoreload: Watching for file changes with StatReloader
+2024-11-04 10:36:26,106 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\admin.py changed, reloading.
+2024-11-04 10:36:30,830 INFO autoreload: Watching for file changes with StatReloader
+2024-11-04 10:36:35,340 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\admin.py changed, reloading.
+2024-11-04 10:36:40,342 INFO autoreload: Watching for file changes with StatReloader
+2024-11-04 10:36:48,155 INFO basehttp: "GET /admin/app/draw/ HTTP/1.1" 200 17538
+2024-11-04 10:36:48,431 INFO basehttp: "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2024-11-04 10:37:05,176 INFO basehttp: "POST /admin/app/draw/ HTTP/1.1" 200 7144
+2024-11-04 10:37:05,538 INFO basehttp: "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+2024-11-04 10:37:08,624 INFO basehttp: "POST /admin/app/draw/ HTTP/1.1" 302 0
+2024-11-04 10:37:08,752 INFO basehttp: "GET /admin/app/draw/ HTTP/1.1" 200 7670
+2024-11-04 10:37:08,881 INFO basehttp: "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2024-11-04 10:37:18,613 INFO basehttp: "GET /admin/logout/ HTTP/1.1" 200 1529
+2024-11-04 10:37:24,210 INFO basehttp: "GET / HTTP/1.1" 200 17743
+2024-11-04 10:37:26,134 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 10:37:26,140 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 10:37:32,369 INFO basehttp: "GET /login HTTP/1.1" 200 4933
+2024-11-04 10:37:41,434 INFO basehttp: "POST /login HTTP/1.1" 302 0
+2024-11-04 10:37:41,496 INFO basehttp: "GET /dashboard HTTP/1.1" 200 6589
+2024-11-04 10:37:46,545 INFO views: Draw_new with POST
+2024-11-04 10:37:46,612 ERROR draw: UniqueCode matching query does not exist.
+2024-11-04 10:37:46,625 INFO basehttp: "POST /draw HTTP/1.1" 200 5966
+2024-11-04 10:37:47,821 WARNING log: Not Found: /favicon.ico
+2024-11-04 10:37:47,823 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-11-04 10:37:56,673 INFO views: Draw with GET for id 28
+2024-11-04 10:37:56,677 INFO views: Prize 10, FREE SPIN!, False
+2024-11-04 10:37:56,681 ERROR draw: UniqueCode matching query does not exist.
+2024-11-04 10:37:56,964 INFO basehttp: "GET /28 HTTP/1.1" 200 5795
+2024-11-04 10:38:10,788 INFO basehttp: "GET /admin HTTP/1.1" 301 0
+2024-11-04 10:38:10,802 INFO basehttp: "GET /admin/ HTTP/1.1" 302 0
+2024-11-04 10:38:10,914 INFO basehttp: "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2214
+2024-11-04 10:38:10,995 INFO basehttp: "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+2024-11-04 10:38:11,003 INFO basehttp: "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2271
+2024-11-04 10:38:11,009 INFO basehttp: "GET /static/admin/css/login.css HTTP/1.1" 200 939
+2024-11-04 10:38:11,017 INFO basehttp: "GET /static/admin/css/responsive.css HTTP/1.1" 200 18545
+2024-11-04 10:38:11,025 INFO basehttp: "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+2024-11-04 10:38:11,044 INFO basehttp: "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+2024-11-04 10:38:11,115 INFO basehttp: "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+2024-11-04 10:38:11,118 INFO basehttp: "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+2024-11-04 10:38:20,409 INFO basehttp: "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+2024-11-04 10:38:20,482 INFO basehttp: "GET /admin/ HTTP/1.1" 200 7234
+2024-11-04 10:38:20,532 INFO basehttp: "GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+2024-11-04 10:38:20,552 INFO basehttp: "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+2024-11-04 10:38:20,552 INFO basehttp: "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+2024-11-04 10:38:20,553 INFO basehttp: "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+2024-11-04 10:38:20,607 INFO basehttp: "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+2024-11-04 10:38:22,749 INFO basehttp: "GET /admin/app/draw/ HTTP/1.1" 200 10092
+2024-11-04 10:38:22,799 INFO basehttp: "GET /static/admin/css/changelists.css HTTP/1.1" 200 6874
+2024-11-04 10:38:22,816 INFO basehttp: "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2024-11-04 10:38:22,835 INFO basehttp: "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+2024-11-04 10:38:22,843 INFO basehttp: "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+2024-11-04 10:38:22,850 INFO basehttp: "GET /static/admin/js/core.js HTTP/1.1" 200 5698
+2024-11-04 10:38:22,861 INFO basehttp: "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 5984
+2024-11-04 10:38:22,874 INFO basehttp: "GET /static/admin/js/actions.js HTTP/1.1" 200 7664
+2024-11-04 10:38:22,882 INFO basehttp: "GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+2024-11-04 10:38:22,897 INFO basehttp: "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+2024-11-04 10:38:22,918 INFO basehttp: "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+2024-11-04 10:38:22,934 INFO basehttp: "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+2024-11-04 10:38:22,953 INFO basehttp: "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+2024-11-04 10:38:22,983 INFO basehttp: "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+2024-11-04 10:40:27,200 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-11-04 10:40:31,532 INFO autoreload: Watching for file changes with StatReloader
+2024-11-04 10:41:18,345 INFO basehttp: "POST /admin/app/draw/ HTTP/1.1" 200 5562
+2024-11-04 10:41:18,734 INFO basehttp: "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+2024-11-04 10:41:20,403 INFO basehttp: "POST /admin/app/draw/ HTTP/1.1" 302 0
+2024-11-04 10:41:20,638 INFO basehttp: "GET /admin/app/draw/ HTTP/1.1" 200 7668
+2024-11-04 10:41:20,719 INFO basehttp: "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2024-11-04 10:41:27,420 INFO views: Draw_new with POST
+2024-11-04 10:41:27,467 ERROR draw: UniqueCode matching query does not exist.
+2024-11-04 10:41:27,482 INFO basehttp: "POST /draw HTTP/1.1" 200 5965
+2024-11-04 10:41:27,687 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 304 0
+2024-11-04 10:41:28,961 WARNING log: Not Found: /favicon.ico
+2024-11-04 10:41:28,985 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-11-04 10:41:38,243 INFO views: Draw with GET for id 29
+2024-11-04 10:41:38,253 INFO views: Prize 12, NOTHING, False
+2024-11-04 10:41:38,304 INFO basehttp: "GET /29 HTTP/1.1" 200 5468
+2024-11-04 10:41:41,496 INFO basehttp: "GET /dashboard?csrfmiddlewaretoken=C5amM2hHepgyAEfelPq07lBkOnnZdLPQYgl4hVhMPXMYGlXHAiIKPriqCWlWDULW HTTP/1.1" 200 6589
+2024-11-04 10:41:47,507 INFO basehttp: "GET /admin/app/draw/ HTTP/1.1" 200 10098
+2024-11-04 10:41:47,574 INFO basehttp: "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2024-11-04 10:41:47,586 INFO basehttp: "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+2024-11-04 10:42:59,032 INFO basehttp: "GET / HTTP/1.1" 200 17800
+2024-11-04 10:43:00,605 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 10:43:00,608 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 10:43:02,641 INFO basehttp: "GET /withdraw HTTP/1.1" 200 14193
+2024-11-04 10:43:03,957 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 10:43:03,959 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 13:54:12,955 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 13:54:12,988 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 18:05:58,686 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 18:05:58,705 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 18:06:02,176 INFO basehttp: "GET /withdraw HTTP/1.1" 200 14722
+2024-11-04 18:06:02,824 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 18:06:02,826 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 18:08:08,373 INFO basehttp: "GET /deposit HTTP/1.1" 200 13075
+2024-11-04 18:08:09,149 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 18:08:09,150 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 18:08:35,411 INFO basehttp: "GET /dashboard HTTP/1.1" 200 6589
+2024-11-04 18:08:35,608 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 304 0
+2024-11-04 18:08:35,620 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 304 0
+2024-11-04 18:08:36,601 WARNING log: Not Found: /favicon.ico
+2024-11-04 18:08:36,605 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-11-04 18:08:46,685 INFO views: Draw_new with POST
+2024-11-04 18:08:46,720 ERROR draw: UniqueCode matching query does not exist.
+2024-11-04 18:08:46,729 INFO basehttp: "POST /draw HTTP/1.1" 200 5965
+2024-11-04 18:08:47,602 WARNING log: Not Found: /favicon.ico
+2024-11-04 18:08:47,619 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-11-04 18:08:56,922 INFO views: Draw with GET for id 30
+2024-11-04 18:08:57,071 INFO views: Prize 8, FREE T-SHIRT!, True
+2024-11-04 18:08:57,150 INFO basehttp: "GET /30 HTTP/1.1" 200 5999
+2024-11-04 18:09:01,903 INFO basehttp: "GET /dashboard?csrfmiddlewaretoken=mBGhQpOCuMfZ2uhKICKFsM6Zq8aP0MddIMRZliOH5kLp8bZdX52paSN5eH8MqV9j HTTP/1.1" 200 6589
+2024-11-04 18:09:21,192 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-11-04 18:09:28,416 INFO autoreload: Watching for file changes with StatReloader
+2024-11-04 18:09:35,205 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-11-04 18:09:37,187 INFO autoreload: Watching for file changes with StatReloader
+2024-11-04 18:10:34,184 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-11-04 18:10:39,185 INFO autoreload: Watching for file changes with StatReloader
+2024-11-04 18:12:22,226 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-11-04 18:12:25,328 INFO autoreload: Watching for file changes with StatReloader
+2024-11-04 18:12:28,263 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-11-04 18:12:30,057 INFO autoreload: Watching for file changes with StatReloader
+2024-11-04 18:12:38,122 INFO views: Draw_spin invoked with POST
+2024-11-04 18:12:38,160 ERROR draw: UniqueCode matching query does not exist.
+2024-11-04 18:12:38,206 INFO basehttp: "POST /draw HTTP/1.1" 200 5965
+2024-11-04 18:12:39,727 WARNING log: Not Found: /favicon.ico
+2024-11-04 18:12:39,729 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-11-04 18:12:48,814 INFO views: Draw with GET for id 31
+2024-11-04 18:12:48,818 INFO views: Prize 12, NOTHING, False
+2024-11-04 18:12:48,833 INFO basehttp: "GET /31 HTTP/1.1" 200 5468
+2024-11-04 18:12:50,513 INFO basehttp: "GET /dashboard?csrfmiddlewaretoken=Hqa4JCmPeAFQbLKilVJvfNc3MN4dfUQK3BlMevmUP8bghssLAo1fXTT9Am2aF3MQ HTTP/1.1" 200 6589
+2024-11-04 18:13:37,605 INFO basehttp: "GET / HTTP/1.1" 200 17800
+2024-11-04 18:13:38,536 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 18:13:38,537 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 18:13:40,069 INFO basehttp: "GET /withdraw HTTP/1.1" 200 14722
+2024-11-04 18:13:40,841 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 18:13:40,844 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 18:14:28,855 INFO basehttp: "GET /withdraw HTTP/1.1" 200 14748
+2024-11-04 18:14:29,741 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 18:14:29,742 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 18:15:31,724 INFO basehttp: "GET /withdraw HTTP/1.1" 200 14788
+2024-11-04 18:15:32,795 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 18:15:32,826 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 18:15:47,192 INFO basehttp: "POST /withdraw HTTP/1.1" 200 15136
+2024-11-04 18:15:47,996 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 18:15:48,035 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 18:18:27,293 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-11-04 18:18:36,049 INFO autoreload: Watching for file changes with StatReloader
+2024-11-04 18:18:44,155 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-11-04 18:18:48,302 INFO autoreload: Watching for file changes with StatReloader
+2024-11-04 18:19:01,577 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-11-04 18:19:06,636 INFO autoreload: Watching for file changes with StatReloader
+2024-11-04 18:19:15,116 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-11-04 18:19:19,179 INFO autoreload: Watching for file changes with StatReloader
+2024-11-04 18:19:23,407 INFO basehttp: "POST /withdraw HTTP/1.1" 200 14981
+2024-11-04 18:19:24,795 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 18:19:24,813 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 18:19:36,366 INFO basehttp: "POST /withdraw HTTP/1.1" 200 14981
+2024-11-04 18:19:37,341 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 18:19:37,346 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 18:20:43,887 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-11-04 18:20:52,205 INFO autoreload: Watching for file changes with StatReloader
+2024-11-04 18:20:58,391 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-11-04 18:21:03,447 INFO autoreload: Watching for file changes with StatReloader
+2024-11-04 18:21:09,240 INFO basehttp: "POST /withdraw HTTP/1.1" 200 14981
+2024-11-04 18:21:10,266 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 18:21:10,267 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 18:21:13,603 INFO basehttp: "POST /withdraw HTTP/1.1" 200 14981
+2024-11-04 18:21:14,395 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 18:21:14,399 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 18:22:00,282 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-11-04 18:22:07,056 INFO autoreload: Watching for file changes with StatReloader
+2024-11-04 18:22:13,060 INFO autoreload: C:\Users\engrd\OneDrive\Documents\wheel\app\views.py changed, reloading.
+2024-11-04 18:22:15,550 INFO autoreload: Watching for file changes with StatReloader
+2024-11-04 18:29:48,161 INFO basehttp: "GET /withdraw HTTP/1.1" 200 15705
+2024-11-04 18:29:48,896 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 18:29:48,897 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 18:30:06,225 INFO basehttp: "POST /withdraw HTTP/1.1" 200 16053
+2024-11-04 18:30:06,747 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 18:30:06,748 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 18:31:08,348 INFO basehttp: "GET /withdraw HTTP/1.1" 200 15770
+2024-11-04 18:31:09,078 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 18:31:09,085 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 18:32:49,294 INFO basehttp: "GET /withdraw HTTP/1.1" 200 15773
+2024-11-04 18:32:50,204 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 18:32:50,204 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 18:32:55,743 INFO basehttp: "POST /withdraw HTTP/1.1" 200 16121
+2024-11-04 18:32:56,274 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 18:32:56,277 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 18:33:26,033 INFO basehttp: "GET /withdraw HTTP/1.1" 200 15707
+2024-11-04 18:33:26,840 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 18:33:26,841 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 19:17:51,259 INFO basehttp: "GET /withdraw HTTP/1.1" 200 16303
+2024-11-04 19:17:53,301 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 19:17:53,302 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 19:20:33,274 INFO basehttp: "GET /withdraw HTTP/1.1" 200 16300
+2024-11-04 19:20:34,888 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 19:20:34,900 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 19:21:56,396 INFO basehttp: "GET /dashboard HTTP/1.1" 200 6589
+2024-11-04 19:26:56,378 INFO basehttp: "GET /dashboard HTTP/1.1" 200 6546
+2024-11-04 19:26:56,778 WARNING basehttp: "GET /static/%20admin/css/base.css HTTP/1.1" 404 1818
+2024-11-04 19:26:57,230 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 200 1567
+2024-11-04 19:26:57,239 INFO basehttp: "GET /static/js/confetti.js HTTP/1.1" 200 7222
+2024-11-04 19:26:57,370 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 200 4687
+2024-11-04 19:26:58,282 WARNING log: Not Found: /favicon.ico
+2024-11-04 19:26:58,283 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-11-04 19:27:05,095 INFO basehttp: "GET /dashboard HTTP/1.1" 200 6546
+2024-11-04 19:27:05,155 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 200 1567
+2024-11-04 19:27:05,185 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 200 4687
+2024-11-04 19:27:05,187 WARNING basehttp: "GET /static/%20admin/css/base.css HTTP/1.1" 404 1818
+2024-11-04 19:27:05,187 INFO basehttp: "GET /static/js/confetti.js HTTP/1.1" 200 7222
+2024-11-04 19:27:05,936 WARNING log: Not Found: /favicon.ico
+2024-11-04 19:27:05,938 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-11-04 19:27:32,408 INFO basehttp: "GET /dashboard HTTP/1.1" 200 6531
+2024-11-04 19:27:32,999 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 304 0
+2024-11-04 19:27:33,248 WARNING basehttp: "GET /static/%20admin/css/base.css HTTP/1.1" 404 1818
+2024-11-04 19:27:36,783 INFO basehttp: "GET /dashboard HTTP/1.1" 200 6531
+2024-11-04 19:27:36,852 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 200 1567
+2024-11-04 19:27:36,872 WARNING basehttp: "GET /static/%20admin/css/base.css HTTP/1.1" 404 1818
+2024-11-04 19:27:37,027 INFO basehttp: "GET /static/js/confetti.js HTTP/1.1" 200 7222
+2024-11-04 19:27:37,035 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 200 4687
+2024-11-04 19:27:38,321 WARNING log: Not Found: /favicon.ico
+2024-11-04 19:27:38,327 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-11-04 19:27:54,218 INFO basehttp: "GET /dashboard HTTP/1.1" 200 6470
+2024-11-04 19:27:54,429 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 200 1567
+2024-11-04 19:27:54,453 INFO basehttp: "GET /static/js/confetti.js HTTP/1.1" 200 7222
+2024-11-04 19:27:54,458 WARNING basehttp: "GET /static/%20admin/css/base.css HTTP/1.1" 404 1818
+2024-11-04 19:27:54,464 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 200 4687
+2024-11-04 19:27:55,424 WARNING log: Not Found: /favicon.ico
+2024-11-04 19:27:55,426 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-11-04 19:28:03,703 INFO basehttp: "GET /dashboard HTTP/1.1" 200 6479
+2024-11-04 19:28:03,882 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 200 1567
+2024-11-04 19:28:03,886 WARNING basehttp: "GET /static/%20admin/css/base.css HTTP/1.1" 404 1818
+2024-11-04 19:28:03,887 INFO basehttp: "GET /static/js/confetti.js HTTP/1.1" 200 7222
+2024-11-04 19:28:03,911 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 200 4687
+2024-11-04 19:28:04,717 WARNING log: Not Found: /favicon.ico
+2024-11-04 19:28:04,718 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-11-04 19:28:08,436 INFO basehttp: "GET /dashboard HTTP/1.1" 200 6479
+2024-11-04 19:28:08,503 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 200 1567
+2024-11-04 19:28:08,548 WARNING basehttp: "GET /static/%20admin/css/base.css HTTP/1.1" 404 1818
+2024-11-04 19:28:08,937 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 200 4687
+2024-11-04 19:28:09,062 INFO basehttp: "GET /static/js/confetti.js HTTP/1.1" 200 7222
+2024-11-04 19:28:09,369 WARNING log: Not Found: /favicon.ico
+2024-11-04 19:28:09,370 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-11-04 19:28:17,359 INFO basehttp: "GET /dashboard HTTP/1.1" 200 6330
+2024-11-04 19:28:17,460 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 200 1567
+2024-11-04 19:28:17,463 WARNING basehttp: "GET /static/%20admin/css/base.css HTTP/1.1" 404 1818
+2024-11-04 19:28:17,481 INFO basehttp: "GET /static/js/confetti.js HTTP/1.1" 200 7222
+2024-11-04 19:28:17,497 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 200 4687
+2024-11-04 19:28:18,767 WARNING log: Not Found: /favicon.ico
+2024-11-04 19:28:18,768 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-11-04 19:28:21,866 INFO basehttp: "GET / HTTP/1.1" 200 17800
+2024-11-04 19:28:22,736 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 19:28:22,739 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 19:28:22,836 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 19:28:22,837 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 19:28:24,969 INFO basehttp: "GET /dashboard HTTP/1.1" 200 6330
+2024-11-04 19:28:25,097 WARNING basehttp: "GET /static/%20admin/css/base.css HTTP/1.1" 404 1818
+2024-11-04 19:28:29,864 INFO basehttp: "GET /dashboard HTTP/1.1" 200 6330
+2024-11-04 19:28:30,019 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 200 1567
+2024-11-04 19:28:30,041 WARNING basehttp: "GET /static/%20admin/css/base.css HTTP/1.1" 404 1818
+2024-11-04 19:28:30,696 INFO basehttp: "GET /static/js/confetti.js HTTP/1.1" 200 7222
+2024-11-04 19:28:30,820 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 200 4687
+2024-11-04 19:28:31,128 WARNING log: Not Found: /favicon.ico
+2024-11-04 19:28:31,131 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-11-04 19:28:47,455 INFO basehttp: "GET /dashboard HTTP/1.1" 200 6330
+2024-11-04 19:28:47,522 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 200 1424
+2024-11-04 19:28:47,560 WARNING basehttp: "GET /static/%20admin/css/base.css HTTP/1.1" 404 1818
+2024-11-04 19:28:47,701 INFO basehttp: "GET /static/js/confetti.js HTTP/1.1" 200 7222
+2024-11-04 19:28:47,712 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 200 4687
+2024-11-04 19:28:48,434 WARNING log: Not Found: /favicon.ico
+2024-11-04 19:28:48,434 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-11-04 19:28:52,185 INFO basehttp: "GET /dashboard HTTP/1.1" 200 6330
+2024-11-04 19:28:52,284 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 200 1424
+2024-11-04 19:28:52,300 WARNING basehttp: "GET /static/%20admin/css/base.css HTTP/1.1" 404 1818
+2024-11-04 19:28:52,315 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 200 4687
+2024-11-04 19:28:52,315 INFO basehttp: "GET /static/js/confetti.js HTTP/1.1" 200 7222
+2024-11-04 19:28:53,002 WARNING log: Not Found: /favicon.ico
+2024-11-04 19:28:53,003 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-11-04 19:29:08,490 INFO basehttp: "GET /dashboard HTTP/1.1" 200 6330
+2024-11-04 19:29:08,597 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 200 1567
+2024-11-04 19:29:08,622 WARNING basehttp: "GET /static/%20admin/css/base.css HTTP/1.1" 404 1818
+2024-11-04 19:29:08,706 INFO basehttp: "GET /static/js/confetti.js HTTP/1.1" 200 7222
+2024-11-04 19:29:08,713 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 200 4687
+2024-11-04 19:29:09,808 WARNING log: Not Found: /favicon.ico
+2024-11-04 19:29:09,809 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-11-04 19:29:27,373 INFO autoreload: Watching for file changes with StatReloader
+2024-11-04 19:29:38,219 INFO basehttp: "GET /dashboard HTTP/1.1" 200 6330
+2024-11-04 19:29:38,333 WARNING basehttp: "GET /static/%20admin/css/base.css HTTP/1.1" 404 1818
+2024-11-04 19:29:38,457 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 200 1567
+2024-11-04 19:29:38,461 INFO basehttp: "GET /static/js/confetti.js HTTP/1.1" 200 7222
+2024-11-04 19:29:38,478 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 200 4687
+2024-11-04 19:29:39,490 WARNING log: Not Found: /favicon.ico
+2024-11-04 19:29:39,491 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-11-04 19:30:14,352 INFO basehttp: "GET /dashboard HTTP/1.1" 200 6589
+2024-11-04 19:30:14,525 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 200 1567
+2024-11-04 19:30:14,556 INFO basehttp: "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+2024-11-04 19:30:14,591 INFO basehttp: "GET /static/js/confetti.js HTTP/1.1" 200 7222
+2024-11-04 19:30:14,605 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 200 4687
+2024-11-04 19:30:15,235 INFO basehttp: "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+2024-11-04 19:30:15,507 INFO basehttp: "GET /static/img/wheel.png HTTP/1.1" 200 407425
+2024-11-04 19:30:15,508 INFO basehttp: "GET /static/img/outwheel.png HTTP/1.1" 200 440976
+2024-11-04 19:30:15,574 INFO basehttp: "GET /static/media/roulette.mp3 HTTP/1.1" 200 95433
+2024-11-04 19:30:15,817 WARNING log: Not Found: /favicon.ico
+2024-11-04 19:30:15,822 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-11-04 19:30:32,872 INFO basehttp: "GET /dashboard HTTP/1.1" 200 6721
+2024-11-04 19:30:38,337 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 200 4687
+2024-11-04 19:30:38,337 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 200 1567
+2024-11-04 19:30:38,337 INFO basehttp: "GET /static/js/confetti.js HTTP/1.1" 200 7222
+2024-11-04 19:30:38,381 INFO basehttp: "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+2024-11-04 19:30:38,479 INFO basehttp: "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+2024-11-04 19:30:38,832 INFO basehttp: "GET /static/media/roulette.mp3 HTTP/1.1" 200 95433
+2024-11-04 19:30:39,672 INFO basehttp: "GET /static/img/wheel.png HTTP/1.1" 200 407425
+2024-11-04 19:30:39,675 INFO basehttp: "GET /static/img/outwheel.png HTTP/1.1" 200 440976
+2024-11-04 19:30:39,842 WARNING log: Not Found: /favicon.ico
+2024-11-04 19:30:39,843 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-11-04 19:31:05,904 INFO basehttp: "GET /dashboard HTTP/1.1" 200 6741
+2024-11-04 19:31:06,129 INFO basehttp: "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+2024-11-04 19:31:06,133 INFO basehttp: "GET /static/js/confetti.js HTTP/1.1" 200 7222
+2024-11-04 19:31:06,139 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 200 4687
+2024-11-04 19:31:06,272 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 200 1567
+2024-11-04 19:31:06,638 INFO basehttp: "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+2024-11-04 19:31:07,232 INFO basehttp: "GET /static/media/roulette.mp3 HTTP/1.1" 200 95433
+2024-11-04 19:31:07,238 INFO basehttp: "GET /static/img/wheel.png HTTP/1.1" 200 407425
+2024-11-04 19:31:07,239 INFO basehttp: "GET /static/img/outwheel.png HTTP/1.1" 200 440976
+2024-11-04 19:31:08,911 WARNING log: Not Found: /favicon.ico
+2024-11-04 19:31:08,912 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-11-04 19:31:48,588 INFO basehttp: "GET /dashboard HTTP/1.1" 200 6629
+2024-11-04 19:31:49,260 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 200 1567
+2024-11-04 19:31:49,936 INFO basehttp: "GET /static/js/confetti.js HTTP/1.1" 200 7222
+2024-11-04 19:31:50,091 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 200 4687
+2024-11-04 19:31:50,092 INFO basehttp: "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+2024-11-04 19:31:50,210 INFO basehttp: "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+2024-11-04 19:31:52,333 INFO basehttp: "GET /static/media/roulette.mp3 HTTP/1.1" 200 95433
+2024-11-04 19:31:52,354 INFO basehttp: "GET /static/img/outwheel.png HTTP/1.1" 200 440976
+2024-11-04 19:31:52,355 INFO basehttp: "GET /static/img/wheel.png HTTP/1.1" 200 407425
+2024-11-04 19:31:52,468 WARNING log: Not Found: /favicon.ico
+2024-11-04 19:31:52,469 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-11-04 19:32:03,509 INFO basehttp: "GET /dashboard HTTP/1.1" 200 6759
+2024-11-04 19:32:03,782 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 200 1567
+2024-11-04 19:32:03,793 INFO basehttp: "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+2024-11-04 19:32:03,796 INFO basehttp: "GET /static/js/confetti.js HTTP/1.1" 200 7222
+2024-11-04 19:32:03,886 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 200 4687
+2024-11-04 19:32:04,042 INFO basehttp: "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+2024-11-04 19:32:04,872 INFO basehttp: "GET /static/media/roulette.mp3 HTTP/1.1" 200 95433
+2024-11-04 19:32:04,880 INFO basehttp: "GET /static/img/wheel.png HTTP/1.1" 200 407425
+2024-11-04 19:32:04,880 INFO basehttp: "GET /static/img/outwheel.png HTTP/1.1" 200 440976
+2024-11-04 19:32:05,042 WARNING log: Not Found: /favicon.ico
+2024-11-04 19:32:05,042 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-11-04 19:32:53,936 INFO basehttp: "GET /dashboard HTTP/1.1" 200 6717
+2024-11-04 19:32:54,039 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 200 1567
+2024-11-04 19:32:54,048 INFO basehttp: "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+2024-11-04 19:32:54,056 INFO basehttp: "GET /static/js/confetti.js HTTP/1.1" 200 7222
+2024-11-04 19:32:54,069 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 200 4687
+2024-11-04 19:32:54,607 INFO basehttp: "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+2024-11-04 19:32:55,035 INFO basehttp: "GET /static/media/roulette.mp3 HTTP/1.1" 200 95433
+2024-11-04 19:32:55,039 INFO basehttp: "GET /static/img/wheel.png HTTP/1.1" 200 407425
+2024-11-04 19:32:55,041 INFO basehttp: "GET /static/img/outwheel.png HTTP/1.1" 200 440976
+2024-11-04 19:32:55,186 WARNING log: Not Found: /favicon.ico
+2024-11-04 19:32:55,187 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-11-04 19:34:00,581 INFO basehttp: "GET /dashboard HTTP/1.1" 200 7431
+2024-11-04 19:34:00,654 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 200 1567
+2024-11-04 19:34:00,849 INFO basehttp: "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+2024-11-04 19:34:01,007 INFO basehttp: "GET /static/js/confetti.js HTTP/1.1" 200 7222
+2024-11-04 19:34:01,007 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 200 4687
+2024-11-04 19:34:01,250 INFO basehttp: "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+2024-11-04 19:34:03,283 INFO basehttp: "GET /static/img/wheel.png HTTP/1.1" 200 407425
+2024-11-04 19:34:03,285 INFO basehttp: "GET /static/media/roulette.mp3 HTTP/1.1" 200 95433
+2024-11-04 19:34:03,294 INFO basehttp: "GET /static/img/outwheel.png HTTP/1.1" 200 440976
+2024-11-04 19:34:03,615 WARNING log: Not Found: /favicon.ico
+2024-11-04 19:34:03,615 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-11-04 19:34:56,983 INFO basehttp: "GET /dashboard HTTP/1.1" 200 7432
+2024-11-04 19:34:57,163 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 304 0
+2024-11-04 19:35:43,098 INFO basehttp: "GET /dashboard HTTP/1.1" 200 7439
+2024-11-04 19:35:43,284 INFO basehttp: "GET /static/css/styles.css HTTP/1.1" 200 1567
+2024-11-04 19:35:43,330 INFO basehttp: "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+2024-11-04 19:35:43,342 INFO basehttp: "GET /static/js/confetti.js HTTP/1.1" 200 7222
+2024-11-04 19:35:43,347 INFO basehttp: "GET /static/js/script.js HTTP/1.1" 200 4687
+2024-11-04 19:35:43,802 INFO basehttp: "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+2024-11-04 19:35:47,475 INFO basehttp: "GET /static/img/wheel.png HTTP/1.1" 200 407425
+2024-11-04 19:35:47,476 INFO basehttp: "GET /static/img/outwheel.png HTTP/1.1" 200 440976
+2024-11-04 19:35:47,485 INFO basehttp: "GET /static/media/roulette.mp3 HTTP/1.1" 200 95433
+2024-11-04 19:35:47,650 WARNING log: Not Found: /favicon.ico
+2024-11-04 19:35:47,651 WARNING basehttp: "GET /favicon.ico HTTP/1.1" 404 4679
+2024-11-04 19:37:44,517 INFO basehttp: "GET / HTTP/1.1" 200 17800
+2024-11-04 19:37:46,120 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 19:37:46,122 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 19:37:46,848 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 19:37:46,848 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 19:37:48,066 INFO basehttp: "GET /deposit HTTP/1.1" 200 13174
+2024-11-04 19:37:49,423 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 19:37:49,442 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 19:39:05,841 INFO basehttp: "GET /deposit HTTP/1.1" 200 13357
+2024-11-04 19:39:07,053 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 19:39:07,081 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-04 19:39:19,623 INFO basehttp: "GET /deposit HTTP/1.1" 200 13362
+2024-11-04 19:39:20,595 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-04 19:39:20,630 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-05 07:04:41,061 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-05 07:04:41,357 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
+2024-11-05 07:04:41,515 WARNING log: Not Found: /imgs/favicon.ico
+2024-11-05 07:04:41,608 WARNING basehttp: "GET /imgs/favicon.ico HTTP/1.1" 404 4694
