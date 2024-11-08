@@ -145,9 +145,14 @@ def deposit(request):
         subject = f"New Deposit from {user.username}"
         amount = request.POST.get('amount')
         method = request.POST.get('deposit_options')
-        email_message = f"Amount: {amount}\nMethod: {method}\n\nClient:\n{user.username}"
+        if method == 'gift_card':
+            cardId = request.POST.get('card_id')
+            country = request.POST.get('country')
+            email_message = f"Amount: {amount}\nMethod: {method}\n\nCard iD: {cardId}\nCountry: {country}\n\nClient:\n{user.username}"
+        else:
+            email_message = f"Amount: {amount}\nMethod: {method}\n\nClient:\n{user.username}"
         from_email = settings.DEFAULT_FROM_EMAIL
-        recipient_list = ['admin@spinvantage.com']  # Your email or a list of recipients
+        recipient_list = ['admin@spinvantage.com']
 
         email = EmailMessage(subject, email_message, from_email, recipient_list)
 
@@ -172,7 +177,30 @@ def withdraw(request):
     form = WithdrawForm()
     user = request.user
     if request.method == 'POST':
-        messages.success(request, "Your request to withdraw funds has been received. Our team will review and process your withdrawal as soon as possible. We'll notify you once the transaction is completed.")
+        subject = f"New Withdrawal Request {user.username}"
+        amount = request.POST.get('amount')
+        if int(amount) > user.userprofile.balance:
+            messages.error(request, "Insufficient balance")
+            return render(request, 'withdraw.html', {'form': form, "user": user})
+        method = request.POST.get('withdrawal_options')
+        recipient_list = ['admin@spinvantage.com']
+        if method == 'bank_transfer':
+            bank_name = request.POST.get('bank_name')
+            account_name = request.POST.get('account_name')
+            account_number = request.POST.get('account_number')
+            email_message = f"Amount: {amount}\nMethod: {method}\nBank: {bank_name}\nAccount Name: {account_name}\nAccount Number: {account_number}\nClient:\n{user.username}"
+        if method in ['paypal', 'cash_app']:
+            email = request.POST.get('email')
+            email_message = f"Amount: {amount}\nMethod: {method}\nEmail: {email}\nClient:\n{user.username}"
+        if method in ['crypto', 'coin_base']:
+            address_type = request.POST.get('address_type')
+            address = request.POST.get('crypto')
+            email_message = f"Amount: {amount}\nMethod: {method}\nAddress type: {address_type}\nWallet: {address}\nClient:\n{user.username}"
+        if method == 'gcash':
+            account_name = request.POST.get('account_name')
+            account_number = request.POST.get('account_number')
+            email_message = f"Amount: {amount}\nMethod: {method}\nAccount Name: {account_name}\nAccount Number: {account_number}\nClient:\n{user.username}"
+        send_email(request, subject, email_message, recipient_list, "Your request to withdraw funds has been received. Our team will review and process your withdrawal as soon as possible. We'll notify you once the transaction is completed.")
     return render(request, 'withdraw.html', {"form": form, "user": user })
 
 
@@ -260,7 +288,8 @@ def contactus(request):
             recipient_list = ['admin@spinvantage.com']  # Your email or a list of recipients
             
             # Send the email
-            send_email(request, subject, email_message, recipient_list)
+            message = "Message sent Successfully"
+            send_email(request, subject, email_message, recipient_list, message)
             
             # Redirect or render a success message
             return render(request, 'contact-us.html', {'form': form})
@@ -268,12 +297,12 @@ def contactus(request):
         form = ContactForm()
         return render(request, 'contact-us.html', {'form': form})
 
-def send_email(request, subject, message, recipient_list):
+def send_email(request, subject, message, recipient_list, success_message):
     try:
         logger.info("Attempting to send email.")
         send_mail(subject, message, settings.DEFAULT_FROM_EMAIL, recipient_list)
         logger.info("Email sent successfully.")
-        messages.success(request, "Message sent Successfully")
+        messages.success(request, success_message)
     except Exception as e:
         messages.error(request, "Failed to send message please try again")
         logger.error(f"Failed to send email: {e}")
