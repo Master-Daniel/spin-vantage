@@ -176,6 +176,7 @@ def deposit(request):
 def withdraw(request):
     form = WithdrawForm()
     user = request.user
+    email_message = ""
     if request.method == 'POST':
         subject = f"New Withdrawal Request {user.username}"
         amount = request.POST.get('amount')
