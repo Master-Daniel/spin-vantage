@@ -50,7 +50,7 @@ def draw_spin(request):
                 instance = form.save(commit=False)
                 instance.date = timezone.now()
                 instance.requested_by = user
-                request.session['stake'] = code
+                request.session['stake'] = str(code)
 
                 # Retrieve or initialize a UniqueCode object
                 try:
@@ -118,7 +118,7 @@ def multiply_stored_value(stored_value, multiplier_str):
         raise ValueError("No numeric part found in the multiplier string")
 
     # Multiply the stored value by the extracted multiplier
-    result = stored_value * multiplier
+    result = int(stored_value) * multiplier
     return result
 
 
