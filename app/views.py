@@ -50,6 +50,7 @@ def draw_spin(request):
                 instance = form.save(commit=False)
                 instance.date = timezone.now()
                 instance.requested_by = user
+                request.session['stake'] = code
 
                 # Retrieve or initialize a UniqueCode object
                 try:
@@ -92,14 +93,33 @@ def draw_spin(request):
     })
 
 def draw_result(request, pk):
+    user = request.user
     prizes = get_list_or_404(Prize)
     draw = get_object_or_404(Draw, pk=pk)
     logger.info(f"Draw with {request.method} for id {draw.pk}")
     prize = get_prize(draw.prize.pk)
+    stake = request.session.get('stake')
+    result = multiply_stored_value(stake, prize)
+    user.userprofile.balance += result
+    user.userprofile.save()
     logger.info(f"Prize {prize.pk}, {prize.label}, {prize.winner}")
     if prize.try_again:
         set_code_used(draw.code, False)
     return render(request, 'draw.html', {'prizes': prizes, 'result_draw': draw, 'result_prize': prize})
+
+def multiply_stored_value(stored_value, multiplier_str):
+    # Extract the numeric part of the string by removing non-numeric characters
+    numeric_part = ''.join(filter(str.isdigit, multiplier_str))
+    
+    # Convert the numeric part to an integer or float
+    if numeric_part:
+        multiplier = int(numeric_part)  # Use `float(numeric_part)` if needed
+    else:
+        raise ValueError("No numeric part found in the multiplier string")
+
+    # Multiply the stored value by the extracted multiplier
+    result = stored_value * multiplier
+    return result
 
 
 @login_required
