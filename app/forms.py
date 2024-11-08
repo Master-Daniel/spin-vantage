@@ -114,3 +114,8 @@ class WithdrawForm(forms.ModelForm):
     class Meta:
         model = Deposit
         fields = ('amount',)  # Ensure this is a tuple with a trailing comma
+
+class ContactForm(forms.Form):
+    name = forms.CharField(max_length=100)
+    email = forms.EmailField()
+    message = forms.CharField(widget=forms.Textarea)

@@ -33,7 +33,14 @@
                             </strong>
                         </div>
 
-                        <form class="form-signin" method="POST"> {% csrf_token %}
+                        {% if messages %}
+                        <ul class="messagelist">{% for message in messages %}
+                            <li{% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message|capfirst }}</li>
+                                {% endfor %}
+                        </ul>
+                        {% endif %}
+
+                        <form class="form-signin" enctype="multipart/form-data" method="POST"> {% csrf_token %}
                             {% for field in form %}
                             <div class="form-group">
                                 <label htmlFor="{{ field.id_for_label }}">{{ field.label }}</label>
@@ -70,19 +77,18 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="country">Country</label>
-                                    <input type="text" class="form-control form-control-lg" id="country" name="country" />
-                                </div>
-                                <div class="form-group">
-                                    <label for="amount">Amount</label>
-                                    <input type="text" class="form-control form-control-lg" id="amount" name="amount" />
+                                    <input type="text" class="form-control form-control-lg" id="country"
+                                        name="country" />
                                 </div>
                             </div>
-                            <div class="form-group mt-3">
-                                <label for="file">Upload Deposit Receipt</label>
-                                <input type="file" id="file" class="form-control form-control-lg" name="file" />
+                            <div class="form-group mt-3" id="receipt">
+                                <label for="attachment">Upload Deposit Receipt</label>
+                                <input type="file" id="attachment" class="form-control form-control-lg"
+                                    name="attachment" />
                             </div>
                             <div class="mt-5">
-                                <button class="mt2 btn btn-lg btn-primary btn-block" id="submit" type="submit">Continue</button>
+                                <button class="mt2 btn btn-lg btn-primary btn-block" id="submit"
+                                    type="submit">Continue</button>
                             </div>
                         </form>
                     </div>
@@ -101,6 +107,7 @@
 
         if (selectedOption === 'crypto') {
             document.getElementById('submit').classList.remove('d-none')
+            document.getElementById('receipt').classList.remove('d-none')
             document.getElementById('card').classList.add('d-none')
             document.getElementById('usdt_wallet').classList.remove('d-none')
             document.getElementById('btc_wallet').classList.remove('d-none')
@@ -111,6 +118,7 @@
         } else if (selectedOption === 'bank_transfer' || selectedOption === 'paypal' || selectedOption === 'gcash' || selectedOption === 'zelle' || selectedOption === 'cash_app') {
             document.getElementById('message').classList.remove('d-none')
             document.getElementById('card').classList.add('d-none')
+            document.getElementById('receipt').classList.add('d-none')
             document.getElementById('usdt_wallet').classList.add('d-none')
             document.getElementById('btc_wallet').classList.add('d-none')
             document.getElementById('submit').classList.add('d-none')
@@ -119,6 +127,7 @@
             });
         } else {
             document.getElementById('submit').classList.remove('d-none')
+            document.getElementById('receipt').classList.remove('d-none')
             document.getElementById('message').classList.add('d-none')
             document.getElementById('card').classList.remove('d-none')
             document.getElementById('usdt_wallet').classList.add('d-none')

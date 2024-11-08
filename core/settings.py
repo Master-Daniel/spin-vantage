@@ -231,3 +231,13 @@ CSP_FRAME_SRC = ["https://preview.codecanyon.net"]
 CSP_INCLUDE_NONCE_IN = ["script-src"]
 
 CSP_REPORT_PERCENTAGE = 1
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'mail.spinvantage.com'
+EMAIL_PORT = 587
+EMAIL_TIMEOUT = 120
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
+EMAIL_HOST_USER = 'no-reply@spinvantage.com'
+EMAIL_HOST_PASSWORD = 'm8?wPY=J?^kv'
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER

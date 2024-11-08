@@ -1,7 +1,7 @@
 import logging
 
 from app.draw import calc_wheel_rotations, get_prize_result, set_code_used, get_prize
-from app.forms import DrawForm, LoginForm, RegisterForm, DepositForm, WithdrawForm, ForgottenPasswordForm
+from app.forms import DrawForm, LoginForm, RegisterForm, DepositForm, ContactForm, WithdrawForm, ForgottenPasswordForm
 from django.contrib.auth import authenticate, login as auth_login, logout as auth_logout  # Import logout
 from app.models import Draw, Prize, UniqueCode
 from django.shortcuts import render, get_object_or_404, get_list_or_404, redirect
@@ -11,6 +11,9 @@ from django.contrib.auth.models import User
 from django.contrib import messages
 from decimal import Decimal, InvalidOperation
 from django.contrib.auth.decorators import login_required
+from django.core.mail import send_mail
+from django.conf import settings
+from django.core.mail import EmailMessage
 
 # Get an instance of a logger
 logger = logging.getLogger(__name__)
@@ -117,8 +120,32 @@ def dashboard(request):
 @login_required
 def deposit(request):
     form = DepositForm()
-    return render(request, 'deposit.html',  {'form': form})
+    if request.method == 'POST':
+        user = request.user
+        subject = f"New Deposit from {user.username}"
+        amount = request.POST.get('amount')
+        method = request.POST.get('deposit_options')
+        email_message = f"Amount: {amount}\nMethod: {method}\n\nClient:\n{user.username}"
+        from_email = settings.DEFAULT_FROM_EMAIL
+        recipient_list = ['admin@spinvantage.com']  # Your email or a list of recipients
 
+        email = EmailMessage(subject, email_message, from_email, recipient_list)
+
+        if 'attachment' in request.FILES:
+            uploaded_file = request.FILES['attachment']
+            # Attach the uploaded file
+            email.attach(uploaded_file.name, uploaded_file.read(), uploaded_file.content_type)
+            
+        # Send the email
+        try:
+            email.send()
+            messages.success(request, "Deposit submitted successfully")
+            print("Email sent successfully with attachment!")
+        except Exception as e:
+            messages.error(request, "Failed to submit deposit please try again later")
+            print("Failed to send email:", e)
+        return render(request, 'deposit.html',  {'form': form})
+    return render(request, 'deposit.html',  {'form': form})
 
 @login_required
 def withdraw(request):
@@ -160,8 +187,7 @@ def register(request):
         form = RegisterForm(request.POST)
         if form.is_valid():
             form.save()
-            messages.success(
-                request, "Your account has been created successfully.")
+            messages.success(request, "Your account has been created successfully.")
             return redirect('/')
         return render(request, 'authentication/register.html', {'form': form})
     else:
@@ -199,10 +225,38 @@ def howToPlay(request):
 def faq(request):
     return render(request, 'faq.html')
 
-
 def contactus(request):
-    return render(request, 'contact-us.html')
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            # Extract the form data
+            name = form.cleaned_data['name']
+            email = form.cleaned_data['email']
+            message = form.cleaned_data['message']
+            
+            # Compose the email
+            subject = f"New Contact Form Submission from {name}"
+            email_message = f"Name: {name}\nEmail: {email}\n\nMessage:\n{message}"
+            recipient_list = ['admin@spinvantage.com']  # Your email or a list of recipients
+            
+            # Send the email
+            send_email(request, subject, email_message, recipient_list)
+            
+            # Redirect or render a success message
+            return render(request, 'contact-us.html', {'form': form})
+    else:
+        form = ContactForm()
+        return render(request, 'contact-us.html', {'form': form})
 
+def send_email(request, subject, message, recipient_list):
+    try:
+        logger.info("Attempting to send email.")
+        send_mail(subject, message, settings.DEFAULT_FROM_EMAIL, recipient_list)
+        logger.info("Email sent successfully.")
+        messages.success(request, "Message sent Successfully")
+    except Exception as e:
+        messages.error(request, "Failed to send message please try again")
+        logger.error(f"Failed to send email: {e}")
 
 def terms(request):
     return render(request, 'terms.html')
