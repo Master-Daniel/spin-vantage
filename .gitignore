@@ -3,3 +3,6 @@ version
 /logs
 /app/__pycache__
 db.sqlite3
+*.pyc
+*.pem
+*.log
