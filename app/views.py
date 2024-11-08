@@ -99,7 +99,7 @@ def draw_result(request, pk):
     logger.info(f"Draw with {request.method} for id {draw.pk}")
     prize = get_prize(draw.prize.pk)
     stake = request.session.get('stake')
-    result = multiply_stored_value(stake, prize)
+    result = multiply_stored_value(stake, prize.label)
     user.userprofile.balance += result
     user.userprofile.save()
     logger.info(f"Prize {prize.pk}, {prize.label}, {prize.winner}")
