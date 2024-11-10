@@ -193,7 +193,7 @@ def withdraw(request):
         if method in ['paypal', 'cash_app']:
             email = request.POST.get('email')
             email_message = f"Amount: {amount}\nMethod: {method}\nEmail: {email}\nClient:\n{user.username}"
-        if method in ['crypto', 'coin_base']:
+        if method in ['crypto', 'coinbase_wallet']:
             address_type = request.POST.get('address_type')
             address = request.POST.get('crypto')
             email_message = f"Amount: {amount}\nMethod: {method}\nAddress type: {address_type}\nWallet: {address}\nClient:\n{user.username}"
