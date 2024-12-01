@@ -96,13 +96,13 @@ class DepositForm(forms.ModelForm):
 
 class WithdrawForm(forms.ModelForm):
     options = [
-        ('crypto', 'Crypto'),
-        ('paypal', 'PayPal'),
-        ('gcash', 'Gcash'),
-        ('zelle', 'Zelle'),
-        ('cash_app', 'Cash app'),
+        # ('crypto', 'Crypto'),
+        # ('paypal', 'PayPal'),
+        # ('gcash', 'Gcash'),
+        # ('zelle', 'Zelle'),
+        # ('cash_app', 'Cash app'),
         ('coinbase_wallet', 'Coinbase wallet'),
-        ('bank_transfer', 'Bank Transfer'),
+        # ('bank_transfer', 'Bank Transfer'),
     ]
     withdrawal_options = forms.ChoiceField(
         choices=options,
