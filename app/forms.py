@@ -76,12 +76,12 @@ class LoginForm(forms.Form):
 class DepositForm(forms.ModelForm):
     options = [
         ('crypto', 'Crypto'),
-        ('paypal', 'PayPal'),
-        ('gcash', 'Gcash'),
-        ('zelle', 'Zelle'),
-        ('cash_app', 'Cash app'),
+        # ('paypal', 'PayPal'),
+        # ('gcash', 'Gcash'),
+        # ('zelle', 'Zelle'),
+        # ('cash_app', 'Cash app'),
         ('gift_card', 'Gift Card'),
-        ('bank_transfer', 'Bank Transfer'),
+        # ('bank_transfer', 'Bank Transfer'),
     ]
     deposit_options = forms.ChoiceField(
         choices=options,
