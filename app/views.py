@@ -18,17 +18,18 @@ from django.core.mail import EmailMessage
 # Get an instance of a logger
 logger = logging.getLogger(__name__)
 
+
 def draw_spin(request):
     logger.info(f"Draw_spin invoked with {request.method}")
     prizes = get_list_or_404(Prize)
-    
+
     if request.method == "POST":
         form = DrawForm(request.POST)
         user = request.user
 
         if form.is_valid():
             code = form.cleaned_data['code']
-            
+
             # Validate code as a positive decimal
             try:
                 code = Decimal(code)
@@ -64,11 +65,12 @@ def draw_spin(request):
                     instance.prize = ucode.prize
                 else:
                     instance.rotation = calc_wheel_rotations()
-                    instance.prize = get_prize(get_prize_result(instance.rotation))
+                    instance.prize = get_prize(
+                        get_prize_result(instance.rotation))
 
                 instance.save()
                 set_code_used(code, True)
-                
+
                 return render(request, 'dashboard.html', {
                     'form': form,
                     'spin': True,
@@ -92,6 +94,7 @@ def draw_spin(request):
         'prizes': prizes
     })
 
+
 def draw_result(request, pk):
     user = request.user
     prizes = get_list_or_404(Prize)
@@ -107,10 +110,11 @@ def draw_result(request, pk):
         set_code_used(draw.code, False)
     return render(request, 'draw.html', {'prizes': prizes, 'result_draw': draw, 'result_prize': prize})
 
+
 def multiply_stored_value(stored_value, multiplier_str):
     # Extract the numeric part of the string by removing non-numeric characters
     numeric_part = ''.join(filter(str.isdigit, multiplier_str))
-    
+
     # Convert the numeric part to an integer or float
     if numeric_part:
         multiplier = int(numeric_part)  # Use `float(numeric_part)` if needed
@@ -148,29 +152,35 @@ def deposit(request):
         if method == 'gift_card':
             cardId = request.POST.get('card_id')
             country = request.POST.get('country')
-            email_message = f"Amount: {amount}\nMethod: {method}\n\nCard iD: {cardId}\nCountry: {country}\n\nClient:\n{user.username}"
+            email_message = f"Amount: {amount}\nMethod: {method}\n\nCard iD: {
+                cardId}\nCountry: {country}\n\nClient:\n{user.username}"
         else:
-            email_message = f"Amount: {amount}\nMethod: {method}\n\nClient:\n{user.username}"
+            email_message = f"Amount: {amount}\nMethod: {
+                method}\n\nClient:\n{user.username}"
         from_email = settings.DEFAULT_FROM_EMAIL
         recipient_list = ['admin@spinvantage.com']
 
-        email = EmailMessage(subject, email_message, from_email, recipient_list)
+        email = EmailMessage(subject, email_message,
+                             from_email, recipient_list)
 
         if 'attachment' in request.FILES:
             uploaded_file = request.FILES['attachment']
             # Attach the uploaded file
-            email.attach(uploaded_file.name, uploaded_file.read(), uploaded_file.content_type)
-            
+            email.attach(uploaded_file.name, uploaded_file.read(),
+                         uploaded_file.content_type)
+
         # Send the email
         try:
             email.send()
             messages.success(request, "Deposit submitted successfully")
             print("Email sent successfully with attachment!")
         except Exception as e:
-            messages.error(request, "Failed to submit deposit please try again later")
+            messages.error(
+                request, "Failed to submit deposit please try again later")
             print("Failed to send email:", e)
         return render(request, 'deposit.html',  {'form': form})
     return render(request, 'deposit.html',  {'form': form})
+
 
 @login_required
 def withdraw(request):
@@ -189,20 +199,26 @@ def withdraw(request):
             bank_name = request.POST.get('bank_name')
             account_name = request.POST.get('account_name')
             account_number = request.POST.get('account_number')
-            email_message = f"Amount: {amount}\nMethod: {method}\nBank: {bank_name}\nAccount Name: {account_name}\nAccount Number: {account_number}\nClient:\n{user.username}"
+            email_message = f"Amount: {amount}\nMethod: {method}\nBank: {bank_name}\nAccount Name: {
+                account_name}\nAccount Number: {account_number}\nClient:\n{user.username}"
         if method in ['paypal', 'cash_app']:
             email = request.POST.get('email')
-            email_message = f"Amount: {amount}\nMethod: {method}\nEmail: {email}\nClient:\n{user.username}"
+            email_message = f"Amount: {amount}\nMethod: {
+                method}\nEmail: {email}\nClient:\n{user.username}"
         if method in ['crypto', 'coinbase_wallet']:
             address_type = request.POST.get('address_type')
             address = request.POST.get('crypto')
-            email_message = f"Amount: {amount}\nMethod: {method}\nAddress type: {address_type}\nWallet: {address}\nClient:\n{user.username}"
+            email_message = f"Amount: {amount}\nMethod: {method}\nAddress type: {
+                address_type}\nWallet: {address}\nClient:\n{user.username}"
         if method == 'gcash':
             account_name = request.POST.get('account_name')
             account_number = request.POST.get('account_number')
-            email_message = f"Amount: {amount}\nMethod: {method}\nAccount Name: {account_name}\nAccount Number: {account_number}\nClient:\n{user.username}"
+            email_message = f"Amount: {amount}\nMethod: {method}\nAccount Name: {
+                account_name}\nAccount Number: {account_number}\nClient:\n{user.username}"
         send_email(request, subject, email_message, recipient_list, "Your request to withdraw funds has been received. Our team will review and process your withdrawal as soon as possible. We'll notify you once the transaction is completed.")
-    return render(request, 'withdraw.html', {"form": form, "user": user })
+        user.userprofile.balance -= int(amount)
+        user.userprofile.save()
+    return render(request, 'withdraw.html', {"form": form, "user": user})
 
 
 def login(request):
@@ -236,7 +252,8 @@ def register(request):
         form = RegisterForm(request.POST)
         if form.is_valid():
             form.save()
-            messages.success(request, "Your account has been created successfully.")
+            messages.success(
+                request, "Your account has been created successfully.")
             return redirect('/')
         return render(request, 'authentication/register.html', {'form': form})
     else:
@@ -264,7 +281,7 @@ def logout(request):
 
 def index(request):
     user = request.user
-    return render(request, 'index.html', { "user": user })
+    return render(request, 'index.html', {"user": user})
 
 
 def howToPlay(request):
@@ -274,6 +291,7 @@ def howToPlay(request):
 def faq(request):
     return render(request, 'faq.html')
 
+
 def contactus(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
@@ -282,21 +300,25 @@ def contactus(request):
             name = form.cleaned_data['name']
             email = form.cleaned_data['email']
             message = form.cleaned_data['message']
-            
+
             # Compose the email
             subject = f"New Contact Form Submission from {name}"
-            email_message = f"Name: {name}\nEmail: {email}\n\nMessage:\n{message}"
-            recipient_list = ['admin@spinvantage.com']  # Your email or a list of recipients
-            
+            email_message = f"Name: {name}\nEmail: {
+                email}\n\nMessage:\n{message}"
+            # Your email or a list of recipients
+            recipient_list = ['admin@spinvantage.com']
+
             # Send the email
             message = "Message sent Successfully"
-            send_email(request, subject, email_message, recipient_list, message)
-            
+            send_email(request, subject, email_message,
+                       recipient_list, message)
+
             # Redirect or render a success message
             return render(request, 'contact-us.html', {'form': form})
     else:
         form = ContactForm()
         return render(request, 'contact-us.html', {'form': form})
+
 
 def send_email(request, subject, message, recipient_list, success_message):
     try:
@@ -307,6 +329,7 @@ def send_email(request, subject, message, recipient_list, success_message):
     except Exception as e:
         messages.error(request, "Failed to send message please try again")
         logger.error(f"Failed to send email: {e}")
+
 
 def terms(request):
     return render(request, 'terms.html')
