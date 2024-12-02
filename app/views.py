@@ -65,8 +65,7 @@ def draw_spin(request):
                     instance.prize = ucode.prize
                 else:
                     instance.rotation = calc_wheel_rotations()
-                    instance.prize = get_prize(
-                        get_prize_result(instance.rotation))
+                    instance.prize = get_prize(get_prize_result(instance.rotation))
 
                 instance.save()
                 set_code_used(code, True)
@@ -152,22 +151,18 @@ def deposit(request):
         if method == 'gift_card':
             cardId = request.POST.get('card_id')
             country = request.POST.get('country')
-            email_message = f"Amount: {amount}\nMethod: {method}\n\nCard iD: {
-                cardId}\nCountry: {country}\n\nClient:\n{user.username}"
+            email_message = f"Amount: {amount}\nMethod: {method}\n\nCard iD: {cardId}\nCountry: {country}\n\nClient:\n{user.username}"
         else:
-            email_message = f"Amount: {amount}\nMethod: {
-                method}\n\nClient:\n{user.username}"
+            email_message = f"Amount: {amount}\nMethod: {method}\n\nClient:\n{user.username}"
         from_email = settings.DEFAULT_FROM_EMAIL
         recipient_list = ['admin@spinvantage.com']
 
-        email = EmailMessage(subject, email_message,
-                             from_email, recipient_list)
+        email = EmailMessage(subject, email_message, from_email, recipient_list)
 
         if 'attachment' in request.FILES:
             uploaded_file = request.FILES['attachment']
             # Attach the uploaded file
-            email.attach(uploaded_file.name, uploaded_file.read(),
-                         uploaded_file.content_type)
+            email.attach(uploaded_file.name, uploaded_file.read(), uploaded_file.content_type)
 
         # Send the email
         try:
@@ -180,7 +175,6 @@ def deposit(request):
             print("Failed to send email:", e)
         return render(request, 'deposit.html',  {'form': form})
     return render(request, 'deposit.html',  {'form': form})
-
 
 @login_required
 def withdraw(request):
@@ -199,22 +193,18 @@ def withdraw(request):
             bank_name = request.POST.get('bank_name')
             account_name = request.POST.get('account_name')
             account_number = request.POST.get('account_number')
-            email_message = f"Amount: {amount}\nMethod: {method}\nBank: {bank_name}\nAccount Name: {
-                account_name}\nAccount Number: {account_number}\nClient:\n{user.username}"
+            email_message = f"Amount: {amount}\nMethod: {method}\nBank: {bank_name}\nAccount Name: {account_name}\nAccount Number: {account_number}\nClient:\n{user.username}"
         if method in ['paypal', 'cash_app']:
             email = request.POST.get('email')
-            email_message = f"Amount: {amount}\nMethod: {
-                method}\nEmail: {email}\nClient:\n{user.username}"
+            email_message = f"Amount: {amount}\nMethod: {method}\nEmail: {email}\nClient:\n{user.username}"
         if method in ['crypto', 'coinbase_wallet']:
             address_type = request.POST.get('address_type')
             address = request.POST.get('crypto')
-            email_message = f"Amount: {amount}\nMethod: {method}\nAddress type: {
-                address_type}\nWallet: {address}\nClient:\n{user.username}"
+            email_message = f"Amount: {amount}\nMethod: {method}\nAddress type: {address_type}\nWallet: {address}\nClient:\n{user.username}"
         if method == 'gcash':
             account_name = request.POST.get('account_name')
             account_number = request.POST.get('account_number')
-            email_message = f"Amount: {amount}\nMethod: {method}\nAccount Name: {
-                account_name}\nAccount Number: {account_number}\nClient:\n{user.username}"
+            email_message = f"Amount: {amount}\nMethod: {method}\nAccount Name: {account_name}\nAccount Number: {account_number}\nClient:\n{user.username}"
         send_email(request, subject, email_message, recipient_list, "Your request to withdraw funds has been received. Our team will review and process your withdrawal as soon as possible. We'll notify you once the transaction is completed.")
         user.userprofile.balance -= int(amount)
         user.userprofile.save()
@@ -252,8 +242,7 @@ def register(request):
         form = RegisterForm(request.POST)
         if form.is_valid():
             form.save()
-            messages.success(
-                request, "Your account has been created successfully.")
+            messages.success(request, "Your account has been created successfully.")
             return redirect('/')
         return render(request, 'authentication/register.html', {'form': form})
     else:
@@ -303,15 +292,13 @@ def contactus(request):
 
             # Compose the email
             subject = f"New Contact Form Submission from {name}"
-            email_message = f"Name: {name}\nEmail: {
-                email}\n\nMessage:\n{message}"
+            email_message = f"Name: {name}\nEmail: {email}\n\nMessage:\n{message}"
             # Your email or a list of recipients
             recipient_list = ['admin@spinvantage.com']
 
             # Send the email
             message = "Message sent Successfully"
-            send_email(request, subject, email_message,
-                       recipient_list, message)
+            send_email(request, subject, email_message, recipient_list, message)
 
             # Redirect or render a success message
             return render(request, 'contact-us.html', {'form': form})
